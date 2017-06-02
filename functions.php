@@ -83,7 +83,7 @@ $styles = [
 		'in_footer' => false,
 	],
 	'Google-Fonts' => [
-		'dir' => 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Montserrat:300,400,500|Poppins:600,700|Ubuntu:400,700|Dancing+Script:400,700|Petit+Formal+Script',
+		'dir' => 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Rochester|Montserrat:300,400,500|Poppins:600,700|Ubuntu:400,700',
 		'depends' => '',
 		'version' => '1',
 		'in_footer' => false,

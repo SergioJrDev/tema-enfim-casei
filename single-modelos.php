@@ -96,9 +96,9 @@
 				 		</header>
 						<div class="container">
 							<div class="descr">
-								<p class="a-center names style_font"><?php echo $noiva ?></p>
-								<p class="a-center names style_font">&</p>
-								<p class="a-center names style_font"><?php echo $noivo ?></p>
+								<h2 class="a-center names style_font"><?php echo $noiva ?></h2>
+								<h2 class="a-center names style_font">&</h2>
+								<h2 class="a-center names style_font"><?php echo $noivo ?></h2>
 							</div>
 							<div class="down a-center">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -130,7 +130,8 @@
 				 		</header>
 						<div class="container">
 							<div class="descr">
-								<h2 class="names rotate a-left style_font">Bem Vindo</br> ao nosso</br>casamento...</h2>
+								<p class=" rotate a-left style_font">Bem vindo ao melhor dia de nossas vidas...</p>
+								<h2 class="names rotate a-left style_font">Nosso casamento!</h2>
 							</div>
 							<div class="down a-center no-bg animate">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -146,7 +147,7 @@
 					<div class="container max-width-content">
 						<div class="column space-default">
 							<div class="sm-12-12 ">
-								<h2 class="a-center font-dancing section-title">Os Noivos</h2>
+								<h2 class="a-center font-dancing section-title color_demo">Os Noivos</h2>
 								<div class="couple-item couple">
 									<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/2.jpg')">
 										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/2.jpg" alt="">
@@ -177,7 +178,7 @@
 					<div class="container max-width-content">
 						<div class="space-default">
 							<div class="space-default container max-width-content">
-								<h2 class="a-center font-dancing section-title">Os Noivos</h2>
+								<h2 class="a-center font-dancing section-title color_demo">Os Noivos</h2>
 								<div class="column">
 									<div class="sm-6-12 ">
 										<div class="couple-item couple">
@@ -206,7 +207,7 @@
 					<div class="container max-width-content">
 						<div class="space-default">
 							<div class="couple-item couple space-default single-col container max-width-content">
-								<h2 class="a-center font-dancing section-title">Os Noivos</h2>
+								<h2 class="a-center font-dancing section-title color_demo">Os Noivos</h2>
 								<div class="couple-img circle-img   " style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/1.jpg')">
 									<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
 								</div>
@@ -223,7 +224,7 @@
 					<div class="container max-width-content">
 						<div class="space-default">
 							<div class="couple under-other single-col container max-width-content">
-								<h2 class="a-center font-dancing section-title">Os Noivos</h2>
+								<h2 class="a-center font-dancing section-title color_demo">Os Noivos</h2>
 								<div class="couple-item couple img-holder">
 									<div class="   couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/bride_1.jpg')">
 										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
@@ -243,14 +244,53 @@
 						</div>
 					</div>
 				<?php } ?>
+				<?php if($noivos == 5) { ?>
+					<div class="couple space-default block">
+						<div class="container max-width-content">
+							<h2 class="a-center font-dancing section-title color_demo ">Os Noivos</h2>
+							<div class="column">
+								<div class="sm-6-12 ">
+									<div class="couple-item">
+										<div class="couple-img " style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="sm-6-12 ">
+									<div class="couple-item a-ceter">
+										<p class="font-dancing couple-name">Natália C. Fazzolari</p>
+										<span class="write-by font-dancing">Escrito pelo noivo</span>
+										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+									</div>
+								</div>
+							</div>
+							<div class="column">
+								<div class="sm-6-12 ">
+									<div class="couple-item a-cener">
+										<p class="font-dancing couple-name ">Sérgio A M Junior</p>
+										<span class="write-by font-dancing">Escrito pela noiva</span>
+										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+									</div>
+								</div>
+								<div class="sm-6-12 ">
+									<div class="couple-item">
+										<div class="couple-img " style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
 			<?php } 
 
 			if(get_field('local') || get_post_meta(get_the_ID(), 'local')) {
 				$local = get_post_meta(get_the_ID(), 'local')[0];
-				if($local == 1) { ?>
+				if($local == 3) { ?>
 					<section class="space-defult local mg-bottom">
+						<h2 class="a-center font-dancing section-title color_demo">Eventos</h2>
 						<div class="container max-width-content">
-							<!-- <h2 class="a-center section-title">Eventos</h2> -->
 							<div class="column">
 								<div class="sm-6-12">
 									<div class="local-item a-center bordered">
@@ -355,49 +395,9 @@
 					</section>
 				<?php } ?>
 				<?php if($local == 2) { ?>
-					<section class="space-default local title-middle overlay mg-bottom">
-						<div class="container">
-							<div class="column">
-								<div class="sm-4-12">
-									<div class="local-item a-center bordered">
-										<h2 class="font-dancing title-event a-center">Cerimônia</h2>
-										<div class="local-details">
-											<p><i class="fa fa-calendar" aria-hidden="true"></i> </p>
-											<p class="date">10/12/2017, 20h00</p>
-											<p class="address">Local: Av Paulista, #188, São Paulo/SP</p>
-										</div>	
-										<div class="a-center mg-40-top">
-											<a href="#" class="btn btn-theme btn-pink btn-radius">Ver local</a>
-										</div>
-									</div>
-								</div>
-								<div class="sm-4-12">
-									<div class="local-item a-center justify-center flex-center">
-										<h2 class="font-dancing section-title rotate">Nossos</br>Eventos</br>Especiais</h2>
-									</div>
-								</div>
-								<div class="sm-4-12">
-									<div class="local-item a-center bordered">
-										<h2 class="font-dancing title-event">Festa do casamento</h2>
-										<div class="local-details">
-											<p><i class="fa fa-calendar" aria-hidden="true"></i> </p>
-											<p class="date">10/12/2017, 20h00</p>
-											<p class="address">Av Paulista, #188, São Paulo/SP</p>
-										</div>
-										<div class="a-center mg-40-top">
-											<a href="#" class="btn btn-theme btn-pink btn-radius">Ver local</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				<?php } ?>
-				<?php if($local == 3) { ?>
 					<section class="space-default local with-title">
-						<input type="radio" class="hidden" name="local" value="3">
+						<h2 class="a-center font-dancing section-title color_demo">Eventos</h2>
 						<div class="container max-widt-content">
-							<!-- <h2 class="font-dacing a-center mg-bottom">O Casamento</h2> -->
 							<div class="column">
 								<div class="sm-6-12 border-right">
 									<div class="local-item a-center">
@@ -419,25 +419,11 @@
 						</div>
 					</section>
 				<?php } ?>
-				<?php if($local == 4) { ?>
+				<?php if($local == 1) { ?>
 					<section class="space-default local with-img mg-bottom">
-						<input type="radio" class="hidden" name="local" value="4">
+						<h2 class="a-center font-dancing section-title color_demo mg-bottom">Eventos</h2>
 						<div class="container max-width-content">
 							<div class="column">
-					<!-- 			<div class="sm-4-12">
-									<div class="local-item a-center">
-										<div class="local-img bg-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/local/baby.jpg')">
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/local/party.jpg">
-										</div>
-										<div class="local-content">
-											<h2 >Chá de cozinha</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-											<p class="local-featured open-sans">Sábado, 15 de maio de 2017, ás 20h</p>
-											<p class="local-featured open-sans">Av Alberto Byington, #178</p>
-										</div>
-									</div>
-								</div> -->
-
 								<div class="sm-6-12">
 									<div class="local-item a-center">
 										<div class="local-img bg-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/local/wedding.jpg')">
@@ -471,98 +457,7 @@
 				<?php } ?>
 			<?php } 
 
-		
-			if(get_field('rsvp') || get_post_meta(get_the_ID(), 'rsvp')) {
-				$rsvp = get_post_meta(get_the_ID(), 'rsvp')[0];
-				if($rsvp == 1) { ?>
-					<div class="rsvp rsvp-default space-default mg-bottom">
-						<div class="container">
-							<h2 class="a-center">RSVP</h2>
-							<div class="form max-width">
-								<div class="input-group">
-									<label for="name" class="label">Digite seu nome</label>
-									<input type="text" class="input" id="name" name="name">
-								</div>
-								<div class="input-group">
-									<label for="email" class="label">Quantos convidados irá levar?</label>
-									<select class="input">
-										<option>0</option>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
-								</div>
-								<div class="a-center">
-									<button class="btn btn-theme btn-pink btn-uppercase" type="submit">Confirmar Presença</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				<?php } ?>
-				<?php if($rsvp == 2) { ?>
-					<div class="rsvp space-default rsvp-pink">
-						<div class="container">
-							<h2 class="a-center">RSVP</h2>
-							<p class="a-center">Sua presença é muito importante para nós!</p>
-							<div class="form max-width">
-								<div class="input-group">
-									<label for="name" class="label">Digite seu nome</label>
-									<input type="text" class="input" id="name" name="name">
-								</div>
-								<div class="input-group">
-									<label for="email" class="label">Quantos convidados irá levar?</label>
-									<select class="input">
-										<option>0</option>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
-								</div>
-								<button class="btn btn-theme btn-dark btn-block btn-uppercase" type="submit">Confirmar Presença</button>
-							</div>
-						</div>
-					</div>
-				<?php } ?>
-				<?php if($rsvp == 3) { ?>
-					<div class="rsvp space-default rsvp-font mg-bottom">
-						<div class="container">
-							<h2 class="a-center font-dancing">Confirmação de presença</h2>
-							<div class="form max-width">
-								<div class="column">
-									<div class="sm-8-12">
-										<div class="input-group">
-											<label for="name" class="label font-dancing">Digite seu nome</label>
-											<input type="text" class="input" id="name" name="name">
-										</div>
-									</div>
-									<div class="sm-4-12">
-										<div class="input-group">
-											<label for="email" class="label font-dancing"># Convidados</label>
-											<select class="input">
-												<option>0</option>
-												<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="a-rigt">
-								<button class="btn btn-theme btn-dark btn-uppercase" type="submit">Confirmar Presença</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				<?php } ?>
-			<?php } 
 
-			
 			if(get_field('contagem') || get_post_meta(get_the_ID(), 'contagem')) {
 				$contagem = get_post_meta(get_the_ID(), 'contagem')[0];
 				if($contagem == 1) { ?>
@@ -767,12 +662,147 @@
 						</div>
 					</section>
 				<?php } ?>
+				<?php if($contagem == 6) { ?>
+					<section class="no-background space-defaul timer">
+						<div class="containe max_width">
+							<h2 class="a-center section-title style_font">O Dia do casamento chega em...</h2>
+							<div class="column">
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-days">
+										02
+										</div>
+									</div>
+									<div class="a-center time">Dia(s)</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-hours">
+										03
+										</div>
+									</div>
+									<div class="a-center time">Hora(s)</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-minutes">
+										23
+										</div>
+									</div>
+									<div class="a-center time">Minuto(s)</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-seconds">
+										54
+										</div>
+									</div>
+									<div class="a-center time">Segundo(s)</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				<?php } ?>
+			<?php } 
+
+
+		
+			if(get_field('rsvp') || get_post_meta(get_the_ID(), 'rsvp')) {
+				$rsvp = get_post_meta(get_the_ID(), 'rsvp')[0];
+				if($rsvp == 1) { ?>
+					<div class="rsvp rsvp-default space-default">
+						<div class="container">
+							<h2 class="a-center font-dancing section-title color_demo" style="color: #333 !important;">RSVP</h2>
+							<div class="form max-width">
+								<div class="input-group">
+									<label for="name" class="label">Digite seu nome</label>
+									<input type="text" class="input" id="name" name="name">
+								</div>
+								<div class="input-group">
+									<label for="email" class="label">Quantos convidados irá levar?</label>
+									<select class="input">
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+								<div class="a-center">
+									<button class="btn btn-theme btn-pink btn-uppercase" type="submit">Confirmar Presença</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
+				<?php if($rsvp == 2) { ?>
+					<div class="rsvp space-default rsvp-pink">
+						<div class="container">
+							<h2 class="a-center font-dancing section-title color_demo">RSVP</h2>
+							<p class="a-center">Sua presença é muito importante para nós!</p>
+							<div class="form max-width">
+								<div class="input-group">
+									<label for="name" class="label">Digite seu nome</label>
+									<input type="text" class="input" id="name" name="name">
+								</div>
+								<div class="input-group">
+									<label for="email" class="label">Quantos convidados irá levar?</label>
+									<select class="input">
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+								<button class="btn btn-theme btn-dark btn-block btn-uppercase" type="submit">Confirmar Presença</button>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
+				<?php if($rsvp == 3) { ?>
+					<div class="rsvp space-default rsvp-font">
+						<div class="container">
+							<h2 class="a-center font-dancing section-title color_demo" style="color: #333 !important;">RSVP</h2>
+							<div class="form max-width">
+								<div class="column">
+									<div class="sm-8-12">
+										<div class="input-group">
+											<label for="name" class="label font-dancing">Digite seu nome</label>
+											<input type="text" class="input" id="name" name="name">
+										</div>
+									</div>
+									<div class="sm-4-12">
+										<div class="input-group">
+											<label for="email" class="label font-dancing"># Convidados</label>
+											<select class="input">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="a-rigt">
+								<button class="btn btn-theme btn-dark btn-uppercase" type="submit">Confirmar Presença</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
 			<?php } 
 
 			
 			if(get_field('galeria_de_fotos') || get_post_meta(get_the_ID(), 'galeria_de_fotos')) {
 				$galeria_de_fotos = get_post_meta(get_the_ID(), 'galeria_de_fotos')[0];
 				if($galeria_de_fotos == 1) { ?>
+				<div class="space-default">
+					<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
 					<div class="container">
 						<div class="components-item gallery column less-centered">
 							<div class="sm-6-12 md-4-12">
@@ -807,9 +837,11 @@
 							</div>
 						</div>
 					</div>
+				</div>
 				<?php } ?>
 				<?php if($galeria_de_fotos == 2) { ?>
 					<div class="container">
+						<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
 						<div class="components-item gallery gallery-tall less-centered">
 							<div class="sm-25">
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
@@ -836,6 +868,7 @@
 				<?php } ?>
 				<?php if($galeria_de_fotos == 3) { ?>
 					<div class="container">
+						<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
 						<div class="gallery gallery-featured">
 							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg" alt="">
@@ -861,6 +894,7 @@
 				<?php } ?>
 				<?php if($galeria_de_fotos == 4) { ?>
 					<div class="container">
+						<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
 						<div class="gallery gallery-five less-centered">				
 							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg')">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg" alt="">
@@ -886,11 +920,12 @@
 			if(get_field('recados') || get_post_meta(get_the_ID(), 'recados')) {
 				$recados = get_post_meta(get_the_ID(), 'recados')[0];
 				if($recados == 1) { ?>
+				<div class="mg-bottom">
 					<section class="space-defaul notes">
 						<div class="container">
-							<h2 class="component-title">Página de Recados</h2>
+							<h2 class="a-center font-dancing section-title color_demo">Mural de recados</h2>
 							<div class="notes-group ">
-								<div class="column">
+								<div class="owl-carousel slidertestimonial owl-theme">
 									<div class="sm-6-12">
 										<div class="notes-item">
 											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
@@ -905,7 +940,7 @@
 											<p class="notes-connect">-Cunhado</p>
 										</div>
 									</div>
-																		<div class="sm-6-12">
+									<div class="sm-6-12">
 										<div class="notes-item">
 											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
 											<p class="notes-author">Sérgio Junior, </p>
@@ -918,17 +953,18 @@
 											<p class="notes-author">Sérgio Junior</p>
 											<p class="notes-connect">-Cunhado</p>
 										</div>
-									</div
+									</div>
 								</div>
 							</div>
 						</div>
-					</section>				
+					</section>
+				</div>			
 				<?php } ?>
 				<?php if($recados == 2) { ?>
 					<section class="space-default notes overlay box">
 						<div class="container">
-							<h2 class="title-doc mg-bottom a-center">Página de Recados</h2>
-							<div class="notes-group column">
+							<h2 class="a-center font-dancing section-title" style="color: #fff">Mural de recados</h2>
+							<div class="notes-group owl-carousel slidertestimonial owl-theme">
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quo nam hic odio ratione, voluptas vero velit. Beatae fuga quam numquam sed iure sequi debitis, quibusdam labore qui voluptatem laboriosam.</p>
@@ -962,10 +998,10 @@
 					</section>
 				<?php } ?>
 				<?php if($recados == 3) { ?>
-					<section class="notes bordered-bottom">
+					<section class="notes bordered-bottom ">
 						<div class="container">
-							<h2 class="a-center mg-bottom">Página de Recados</h2>
-							<div class="notes-group column ">
+							<h2 class="a-center font-dancing section-title color_demo">Muraal de recados</h2>
+							<div class="notes-group owl-carousel slidertestimonial owl-theme">
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
@@ -995,6 +1031,42 @@
 						</div>
 					</section>
 				<?php } ?>
+				<?php if($recados == 4) { ?>
+			 		<section class="space-default testimonial">
+						<div class="containr max-width-content">
+							<h2 class="a-center font-dancing section-title color_demo">Mural de recados</h2>
+							<div class="owl-carousel slidertestimonial owl-theme">
+								<div class="sm-6-12">
+									<div class="holder">
+										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										<p class="author">Júlia, <span style="font-size: 14px;">irmã da noiva</span></p>
+									</div>
+								</div>
+						
+								<div class="sm-6-12">
+									<div class="holder">
+										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										<p class="author">Jéssica, <span style="font-size: 14px;">prima do noivo</span></p>
+									</div>
+								</div>
+								<div class="sm-6-12">
+									<div class="holder">
+										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										<p class="author">Jaqueline, <span style="font-size: 14px;">mãe da noiva</span></p>
+									</div>
+								</div>
+						
+								<div class="sm-6-12">
+									<div class="holder">
+										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										<p class="author">Ana Paula, <span style="font-size: 14px;">filha do noivo</span></p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</section>
+				<?php } ?>
 			<?php }
 
 		
@@ -1003,6 +1075,7 @@
 				if($blog == 1) { ?>
 					<div class="container">
 						<div class="space-default">
+							<h2 class="a-center font-dancing section-title color_demo">Blog</h2>
 							<div class="blog blog-default column">
 								<div class="sm-4-12">
 									<div class="blog_item">
@@ -1062,7 +1135,7 @@
 				<?php if($blog == 2) { ?>
 					<div class="container">
 						<div class="space-default">
-							<!-- <h2 class=" component-title">Blog do casal</h2> -->
+							<h2 class="a-center font-dancing section-title color_demo">Blog</h2>
 							<div class="blog bg-overlay column">
 								<div class="sm-4-12">
 									<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/bride.jpg')">
@@ -1156,11 +1229,11 @@
 							</div>
 						</div>
 					</div>
-				
 				<?php } ?>
 				<?php if($blog == 3) { ?>
 					<div class="container">
 						<div class="space-default">
+							<h2 class="a-center font-dancing section-title color_demo">Blog</h2>
 							<div class="card column">
 								<div class="sm-4-12 md-6-12">
 									<div class="card_item">
@@ -1273,7 +1346,54 @@
 							</div>
 						</div>
 					</div>
-				
+				<?php } ?>
+				<?php if($blog == 4) { ?>
+			 		<section class="space-default services new-blog">
+						<div class="container">
+							<h2 class="a-center font-dancing section-title color_demo">Blog</h2>
+							<div class="column">
+								<div class="sm-4-12">
+									<div class="new-blog-item">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										</div>
+										<div class="new-blog-content">
+											<h2>Qual melhor tipo de bolo?</h2>
+											<span>publicado em 12 de maio</span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+											<a href="#">Ler mais</a>
+										</div>
+									</div>
+								</div>
+								<div class="sm-4-12">
+									<div class="new-blog-item">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										</div>
+										<div class="new-blog-content">
+											<h2>5 destinos para a lua de mel</h2>
+											<span>publicado em 12 de maio</span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+											<a href="#">Ler mais</a>
+										</div>
+									</div>
+								</div>
+								<div class="sm-4-12">
+									<div class="new-blog-item">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										</div>
+										<div class="new-blog-content">
+											<h2>Como receber os convidados?</h2>
+											<span>publicado em 12 de maio</span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+											<a href="#">Ler mais</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 				<?php } ?>
 			<?php } 
 

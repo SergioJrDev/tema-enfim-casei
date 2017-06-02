@@ -108,9 +108,9 @@
 				 		</header>
 						<div class="container hidden-mobile">
 							<div class="descr">
-								<p class="a-center names style_font">Natália</p>
-								<p class="a-center names style_font">&</p>
-								<p class="a-center names style_font">Sérgio</p>
+								<h2 class="a-center names style_font">Natália</h2>
+								<h2 class="a-center names style_font">&</h2>
+								<h2 class="a-center names style_font">Sérgio</h2>
 							</div>
 							<div class="down a-center">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -251,6 +251,7 @@
 						</div>
 					</div>
 					<div class="couple space-default block">
+						<input type="radio" class="hidden" name="casal" value="5">
 						<div class="containe max-width-content">
 							<h2 class="a-center font-dancing section-title ">Os Noivos</h2>
 							<div class="column">
@@ -293,24 +294,10 @@
 				<div class="space-bottom">
 					<div class="owl-carousel slidersingle components">
 						<section class="space-default local with-img no-bg-mobile">
-							<input type="radio" class="hidden" name="local" value="4">
+							<input type="radio" class="hidden" name="local" value="1">
 							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/local1.jpg">
 							<div class="container max-width-content hidden-mobile">
 								<div class="column">
-						<!-- 			<div class="sm-4-12">
-										<div class="local-item a-center">
-											<div class="local-img bg-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/local/baby.jpg')">
-												<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/local/party.jpg">
-											</div>
-											<div class="local-content">
-												<h2 >Chá de cozinha</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-												<p class="local-featured open-sans">Sábado, 15 de maio de 2017</p>
-												<p class="local-featured open-sans">Av Alberto Byington, #178</p>
-											</div>
-										</div>
-									</div> -->
-
 									<div class="sm-6-12">
 										<div class="local-item a-center">
 											<div class="local-img bg-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/local/wedding.jpg')">
@@ -341,7 +328,7 @@
 							</div>
 						</section>
 						<section class="space-default local with-title">
-							<input type="radio" class="hidden" name="local" value="3">
+							<input type="radio" class="hidden" name="local" value="2">
 							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/local2.jpg">
 							<div class="container hidden-mobile max-widt-content">
 								<!-- <h2 class="font-dacing a-center mg-bottom">O Casamento</h2> -->
@@ -366,7 +353,7 @@
 							</div>
 						</section>
 						<section class="space-defult local">
-							<input type="radio" class="hidden" name="local" value="1">
+							<input type="radio" class="hidden" name="local" value="3">
 							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/local3.jpg">
 							<div class="containe hidden-mobile max-width-content ">
 								<!-- <h2 class="a-center section-title">Eventos</h2> -->
@@ -683,7 +670,9 @@
 							</div>
 						</div>
 					</section> 
+
 					<section class="no-background space-defaul timer">
+						<input type="radio" class="hidden" name="contagem" value="6">
 						<div class="containe max_width">
 							<h2 class="a-center section-title style_font">O Dia do casamento chega em...</h2>
 							<div class="column">
@@ -755,6 +744,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="rsvp space-default rsvp-pink">
 							<input type="radio" class="hidden" name="rsvp" value="2">
 							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp2.jpg">
@@ -781,6 +771,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="rsvp space-default rsvp-font no-bg-mobile">
 							<input type="radio" class="hidden" name="rsvp" value="3">
 							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp3.jpg">
@@ -856,10 +847,10 @@
 							</div>
 						</div>
 					</div>
+
 					<div>
 						<input type="radio" class="hidden" name="fotos" value="2">
 						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos2.jpg">
-						<!-- <h2 class=" component-title">Galeria de Fotos</h2> -->
 						<div class="components-item gallery hidden-mobile gallery-tall less-centered">
 							<div class="sm-25">
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
@@ -915,7 +906,6 @@
 					<div>
 						<input type="radio" class="hidden" name="fotos" value="4">
 						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos4.jpg">
-						<!-- <h2 class=" component-title">Galeria de Fotos</h2> -->
 						<div class="gallery hidden-mobile gallery-five less-centered">				
 							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg')">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg" alt="">
@@ -1047,10 +1037,10 @@
 							</div>
 						</div>
 					</section>
+
 			 		<section class="space-default testimonial">
+					 	<input type="radio" class="hidden" name="recados" value="4">
 						<div class="containr max-width-content">
-							<!-- <h2 class="font-playfair title-section a-center mg-bottom">Depoimentos</h2> -->
-							<!-- <p class="font-playfair a-center mg-bottom">Veja alguns dos nossos eventos</p> -->
 							<div class="owl-carousel slidertestimonial owl-theme">
 								<div class="sm-6-12">
 									<div class="holder">
@@ -1143,10 +1133,10 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="containr space-default">
 						<input type="radio" class="hidden" name="blog" value="2">
 						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog2.jpg">
-						<!-- <h2 class=" component-title">Blog do casal</h2> -->
 						<div class="blog bg-overlay hidden-mobile column">
 							<div class="sm-4-12">
 								<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/bride.jpg')">
@@ -1239,6 +1229,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="containe space-default">
 						<input type="radio" class="hidden" name="blog" value="3">
 						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog3.jpg">
@@ -1353,7 +1344,9 @@
 							</div>
 						</div>
 					</div>
+
 			 		<section class="space-default services new-blog">
+					 	<input type="radio" class="hidden" name="blog" value="4">
 						<div class="containe">
 							<div class="column">
 								<div class="sm-4-12">
