@@ -254,6 +254,29 @@ function createSite() {
 	}
 }
 
+// Delete modelo
+add_action('init', 'updateUser');
+
+function updateUser() {
+	if(isset($_REQUEST['updateUser'])) {
+		$user_name = $_REQUEST['user_name'];
+		$user_email = $_REQUEST['user_email'];
+		$user_phone = $_REQUEST['user_phone'];
+		$nome_noiva = $_REQUEST['nome_noiva'];
+		$nome_noivo = $_REQUEST['nome_noivo'];
+		$data_casamento = $_REQUEST['data_casamento'];
+
+		wp_update_user(array( 'ID' => get_current_user_id(), 'first_name' => $user_name ));
+		update_field('nome_da_noiva', $nome_noiva, 'user_'.get_current_user_id());
+		update_field('nome_do_noivo',$nome_noivo, 'user_'.get_current_user_id());
+		update_field('data_casamento', $data_casamento, 'user_'.get_current_user_id());
+		update_user_meta( get_current_user_id(), 'billing_phone', $user_phone );
+
+
+		// get_userdata(get_current_user_id())->user_email;
+		// get_user_meta( get_current_user_id(), 'billing_phone', true );
+	}
+}
 
 // Delete modelo
 add_action('init', 'deletePost');

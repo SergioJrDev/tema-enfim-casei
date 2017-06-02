@@ -119,7 +119,7 @@
 			 			<div data-show='1' class="dashboard-view active">
 							<h2 class="font-poppins">Meus dados pessoais</h2>
 							<div class="column">
-								<?php $noiva = get_field('noiva', 'user_'.get_current_user_id()); ?>
+								<?php $noiva = get_field('nome_da_noiva', 'user_'.get_current_user_id()); ?>
 								<div class="sm-6-12">
 									<div class="view-info">
 										<span class="title">Nome da noiva</span>
@@ -127,7 +127,7 @@
 									</div>
 								</div>
 
-								<?php $noivo = get_field('noivo', 'user_'.get_current_user_id()); ?>
+								<?php $noivo = get_field('nome_do_noivo', 'user_'.get_current_user_id()); ?>
 								<div class="sm-6-12">
 									<div class="view-info">
 										<span class="title">Nome do noivo</span>
@@ -139,7 +139,7 @@
 								<div class="sm-6-12">
 									<div class="view-info">
 										<span class="title">Data do casamento</span>
-										<p><?php echo $data_casamento ? $data_casamento : '-'; ?></p>
+										<p><?php echo $data_casamento ? date('d/m/Y', strtotime($data_casamento)) : '-'; ?></p>
 									</div>
 								</div>
 
