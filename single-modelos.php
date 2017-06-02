@@ -258,7 +258,7 @@
 								</div>
 								<div class="sm-6-12 ">
 									<div class="couple-item a-ceter">
-										<p class="font-dancing couple-name">Natália C. Fazzolari</p>
+										<p class="font-dancing couple-name"><?php echo $noiva ?></p>
 										<span class="write-by font-dancing">Escrito pelo noivo</span>
 										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
 									</div>
@@ -267,7 +267,7 @@
 							<div class="column">
 								<div class="sm-6-12 ">
 									<div class="couple-item a-cener">
-										<p class="font-dancing couple-name ">Sérgio A M Junior</p>
+										<p class="font-dancing couple-name "><?php echo $noivo ?></p>
 										<span class="write-by font-dancing">Escrito pela noiva</span>
 										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
 									</div>
@@ -840,25 +840,55 @@
 				</div>
 				<?php } ?>
 				<?php if($galeria_de_fotos == 2) { ?>
-					<div class="container">
-						<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
-						<div class="components-item gallery gallery-tall less-centered">
-							<div class="sm-25">
+					<div class="space-default">
+						<div class="container">
+							<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
+							<div class="components-item gallery gallery-tall less-centered">
+								<div class="sm-25">
+									<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg" alt="">
+									</div>
+								</div>
+								<div class="sm-25">
+									<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg')">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg" alt="">
+									</div>
+								</div>
+								<div class="sm-25">
+									<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg')">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg" alt="">
+									</div>
+								</div>
+								<div class="sm-25">
+									<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg')">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
+				<?php if($galeria_de_fotos == 3) { ?>
+					<div class="space-default">
+						<div class="container">
+							<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
+							<div class="gallery gallery-featured">
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg" alt="">
 								</div>
-							</div>
-							<div class="sm-25">
+						
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg')">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg" alt="">
 								</div>
-							</div>
-							<div class="sm-25">
+							
+								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_2.jpg')">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_2.jpg" alt="">
+								</div>
+							
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg')">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg" alt="">
 								</div>
-							</div>
-							<div class="sm-25">
+							
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg')">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg" alt="">
 								</div>
@@ -866,50 +896,26 @@
 						</div>
 					</div>
 				<?php } ?>
-				<?php if($galeria_de_fotos == 3) { ?>
-					<div class="container">
-						<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
-						<div class="gallery gallery-featured">
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg" alt="">
-							</div>
-					
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg" alt="">
-							</div>
-						
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_2.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_2.jpg" alt="">
-							</div>
-						
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg" alt="">
-							</div>
-						
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg" alt="">
-							</div>
-						</div>
-					</div>
-				<?php } ?>
 				<?php if($galeria_de_fotos == 4) { ?>
-					<div class="container">
-						<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
-						<div class="gallery gallery-five less-centered">				
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg" alt="">
-							</div>
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_2.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_2.jpg" alt="">
-							</div>
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg" alt="">
-							</div>
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg" alt="">
-							</div>
-							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_5.jpg')">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_5.jpg" alt="">
+					<div class="space-default">
+						<div class="container">
+							<h2 class="a-center font-dancing section-title color_demo">Nossas Fotos</h2>
+							<div class="gallery gallery-five less-centered">				
+								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg')">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg" alt="">
+								</div>
+								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_2.jpg')">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_2.jpg" alt="">
+								</div>
+								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg')">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_3.jpg" alt="">
+								</div>
+								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg')">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg" alt="">
+								</div>
+								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_5.jpg')">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_5.jpg" alt="">
+								</div>
 							</div>
 						</div>
 					</div>

@@ -1045,27 +1045,27 @@
 								<div class="sm-6-12">
 									<div class="holder">
 										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-										<p class="author">Júlia + Carlos</p>
+										<p class="author">Júlia, <span style="font-size: 14px;">prima da noiva</span></p>
 									</div>
 								</div>
 						
 								<div class="sm-6-12">
 									<div class="holder">
 										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-										<p class="author">Jéssica + Paulo</p>
+										<p class="author">Pedro, <span style="font-size: 14px;">irmão do noivo</span></p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="holder">
 										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-										<p class="author">Jaquelina + Lúcio</p>
+										<p class="author">Jaqueline, <span style="font-size: 14px;">mãe do noivo</span></p>
 									</div>
 								</div>
 						
 								<div class="sm-6-12">
 									<div class="holder">
 										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-										<p class="author">Ana Paula + Lucas</p>
+										<p class="author">Bruno, <span style="font-size: 14px;">Irmão da noiva</span></p>
 									</div>
 								</div>
 								

@@ -7,7 +7,7 @@
 	<body <?php body_class(); ?>>
 		<header class="default gradient">
  			<div class="container">
- 				<h1 class="logo font-poppins"><a href="<?php echo home_url(); ?>">Casei bem</a></h1>
+ 				<h1 class="logo font-poppins"><a href="<?php echo home_url(); ?>">Digital Wedding</a></h1>
  				<div class="nav">
  					<button class="hamburger hamburger--collapse" type="button">
  					  <span class="hamburger-box">
