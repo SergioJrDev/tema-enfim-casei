@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php
-			$noivo = get_post_meta(get_the_ID(), 'nome_do_noivo')[0];
-			$noiva = get_post_meta(get_the_ID(), 'nome_da_noiva')[0];
+			$noivo = get_post_meta(get_the_ID(), 'nome_noivo')[0];
+			$noiva = get_post_meta(get_the_ID(), 'nome_noiva')[0];
 
 			if(get_field('header') || get_post_meta(get_the_ID(), 'header')[0]) {
 				$header = get_post_meta(get_the_ID(), 'header')[0];
@@ -133,7 +133,7 @@
 								<p class=" rotate a-left style_font">Bem vindo ao melhor dia de nossas vidas...</p>
 								<h2 class="names rotate a-left style_font">Nosso casamento!</h2>
 							</div>
-							<div class="down a-center no-bg animate">
+							<div class="down a-center">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>
 							</div>
 						</div>
@@ -420,7 +420,7 @@
 					</section>
 				<?php } ?>
 				<?php if($local == 1) { ?>
-					<section class="space-default local with-img mg-bottom">
+					<section class="space-default local with-img ">
 						<h2 class="a-center font-dancing section-title color_demo mg-bottom">Eventos</h2>
 						<div class="container max-width-content">
 							<div class="column">
@@ -626,7 +626,7 @@
 					</section>
 				<?php } ?>
 				<?php if($contagem == 5) { ?>
-					<section class="timer one-color no-bg">
+					<section class="timer one-color no-bg no-mg" >
 						<div class="container">
 							<div class="column">
 								<div class="md-4-12 first-color"><h2 class="section-title">Faça a contagem regressiva conosco</h2></div>
@@ -1445,26 +1445,38 @@
 						<h2 class="title-descr tab-bottom font-poppins a-left">Criar conta</h2>
 						<div class="column">
 							<div class="sm-6-12">
-								<div class="input-group">
-									<label class="label"  for="user_name">Seu nome e sobrenome*</label>
+								<div class="input-group a-left">
+									<label class="label"  for="user_name">Seu nome</label>
 									<input type="text" class="input inline" id="user_name" name="user_name">
 								</div>
 							</div>
 							<div class="sm-6-12">
-								<div class="input-group">
-									<label class="label"  for="user_email">E-mail*</label>
+								<div class="input-group a-left">
+									<label class="label"  for="user_email">E-mail</label>
 									<input type="email" class="input inline" id="user_email" name="user_email">
 								</div>
 							</div>
 							<div class="sm-6-12">
-								<div class="input-group">
-									<label class="label"  for="user_pass">Sua senha*</label>
+								<div class="input-group a-left">
+									<label class="label"  for="nome_noiva">Nome da noiva</label>
+									<input type="text" class="input inline" id="nome_noiva" name="nome_noiva">
+								</div>
+							</div>
+							<div class="sm-6-12">
+								<div class="input-group a-left">
+									<label class="label"  for="nome_noivo">Nome do noivo</label>
+									<input type="text" class="input inline" id="nome_noivo" name="nome_noivo">
+								</div>
+							</div>
+							<div class="sm-6-12">
+								<div class="input-group a-left">
+									<label class="label"  for="user_pass">Sua senha</label>
 									<input type="password" class="input inline" id="user_pass" name="user_pass">
 								</div>
 							</div>
 							<div class="sm-6-12">
-								<div class="input-group">
-									<label class="label"  for="user_repass">Digite novamente sua senha*</label>
+								<div class="input-group a-left">
+									<label class="label"  for="user_repass">Confirme sua senha</label>
 									<input type="password" class="input inline" id="user_repass" name="user_repass">
 								</div>
 							</div>

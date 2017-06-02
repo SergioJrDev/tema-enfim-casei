@@ -36,19 +36,19 @@
 						<div class="sm-6-12">
 							<div class="input-group">
 								<label class="label"  for="nome_noiva">Nome da Noiva</label>
-								<input type="text"  value="<?php echo get_field('nome_da_noiva', 'user_'.get_current_user_id()); ?>" class="input inline" id="nome_noiva" name="nome_noiva">
+								<input type="text"  value="<?php echo get_user_meta(get_current_user_id())['nome_noiva'][0]; ?>" class="input inline" id="nome_noiva" name="nome_noiva">
 							</div>
 						</div>
 						<div class="sm-6-12">
 							<div class="input-group">
 								<label class="label"  for="nome_noivo">Nome do Noivo</label>
-								<input type="text"  value="<?php echo get_field('nome_do_noivo', 'user_'.get_current_user_id()); ?>" class="input inline" id="nome_noivo" name="nome_noivo">
+								<input type="text"  value="<?php echo get_user_meta(get_current_user_id())['nome_noivo'][0]; ?>" class="input inline" id="nome_noivo" name="nome_noivo">
 							</div>
 						</div>
 						<div class="sm-6-12">
 							<div class="input-group">
 								<label class="label"  for="data_casamento">Data do casamento</label>
-								<input type="date"  value="<?php echo get_field('data_casamento', 'user_'.get_current_user_id()); ?>" class="input inline" id="data_casamento" name="data_casamento">
+								<input type="date"  value="<?php echo get_user_meta(get_current_user_id())['data_casamento'][0]; ?>" class="input inline" id="data_casamento" name="data_casamento">
 							</div>
 						</div>
 					</div>

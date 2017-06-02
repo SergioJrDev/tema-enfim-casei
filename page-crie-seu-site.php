@@ -12,8 +12,8 @@
 		<form class="form" method="post">
 			<div class="mg-bottom ">
 				<?php
-				$noiva = get_field('nome_da_noiva', 'user_'.get_current_user_id());
-				$noivo = get_field('nome_do_noivo', 'user_'.get_current_user_id());
+				$noiva = get_user_meta(get_current_user_id())['nome_noiva'][0];
+				$noivo = get_user_meta(get_current_user_id())['nome_noivo'][0];
 				?>
 				<p>Escolha o modelo do seu site. As imagens e textos você poderá trocar depois quando ele estiver pronto.</p>
 				<div class="owl-carousel slidersingle components mg-bottom">
@@ -1406,11 +1406,11 @@
 						<div class="sm-12-12">
 							<div class="input-group">
 								<label class="label">Nome da noiva</label>
-								<input type="text" class="input" name="noiva" value="<?php echo get_field('nome_da_noiva', 'user_'.get_current_user_id()); ?>">
+								<input type="text" class="input" name="noiva" value="<?php echo $noiva ?>">
 							</div>
 							<div class="input-group">
 								<label class="label">Nome do noivo</label>
-								<input type="text" class="input" name="noivo"  value="<?php echo get_field('nome_do_noivo', 'user_'.get_current_user_id()); ?>">
+								<input type="text" class="input" name="noivo"  value="<?php echo $noivo ?>">
 							</div>
 						</div>
 					</div>

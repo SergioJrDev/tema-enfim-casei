@@ -186,8 +186,8 @@ function createModel() {
 					'galeria_de_fotos' => $fotos,	
 					'recados' => $recados,
 					'blog' => $blog,
-					'nome_do_noivo' => $noivo,
-					'nome_da_noiva' => $noiva,
+					'nome_noivo' => $noivo,
+					'nome_noiva' => $noiva,
 					'modelo' => get_permalink($post_id)
 				);
 
@@ -204,7 +204,7 @@ function createModel() {
 add_action('init', 'createSite');
 function createSite() {
 	if(isset($_REQUEST['create_site'])) {
-		if(!get_field('pronto', 'user_'.get_current_user_id())) {		
+		if(!get_user_meta(get_current_user_id())['pronto'][0] == 1) {
 			$post_id = $_REQUEST['create_site'];
 			$author = get_post($post_id)->post_author;
 
@@ -217,8 +217,8 @@ function createSite() {
 				$fotos = get_post_meta($post_id, 'galeria_de_fotos')[0];
 				$recados = get_post_meta($post_id, 'recados')[0];
 				$blog = get_post_meta($post_id, 'blog')[0];
-				$noiva = get_post_meta($post_id, 'nome_da_noiva')[0];
-				$noivo = get_post_meta($post_id, 'nome_do_noivo')[0];
+				$noiva = get_post_meta($post_id, 'nome_noiva')[0];
+				$noivo = get_post_meta($post_id, 'nome_noivo')[0];
 
 
 				$args = array(
@@ -238,8 +238,8 @@ function createSite() {
 							'galeria_de_fotos' => $fotos,	
 							'recados' => $recados,
 							'blog' => $blog,
-							'nome_do_noivo' => $noivo,
-							'nome_da_noiva' => $noiva,
+							'nome_noivo' => $noivo,
+							'nome_noiva' => $noiva,
 							'modelo' => get_permalink($post_id)
 						);
 
@@ -248,6 +248,7 @@ function createSite() {
 					update_post_meta($new_post_id, $key, $value);
 				}
 				update_field('pronto', 1, 'user_'.get_current_user_id());
+				update_user_meta(get_current_user_id(), 'pronto', 1);
 				wp_redirect(home_url('/meus-dados'));
 				exit;
 			} else {
@@ -271,22 +272,17 @@ function updateUser() {
 		$nome_noivo = $_REQUEST['nome_noivo'];
 		$data_casamento = $_REQUEST['data_casamento'];
 
-// echo $user_name.'<br/>';
-// // echo $user_emai.'<br/>';
-// echo $user_phone.'<br/>';
-// echo $nome_noiva.'<br/>';
-// echo $nome_noivo.'<br/>';
-// echo $data_casamento.'<br/>';
 
 		wp_update_user(array( 'ID' => get_current_user_id(), 'first_name' => $user_name ));
-		update_field('nome_da_noiva', $nome_noiva, 'user_'.get_current_user_id());
-		update_field('nome_do_noivo', $nome_noivo, 'user_'.get_current_user_id());
+		update_field('nome_noiva', $nome_noiva, 'user_'.get_current_user_id());
+		update_field('nome_noivo', $nome_noivo, 'user_'.get_current_user_id());
 		update_field('data_casamento', $data_casamento, 'user_'.get_current_user_id());
 		update_user_meta( get_current_user_id(), 'billing_phone', $user_phone );
 
+		update_user_meta(get_current_user_id(), 'nome_noiva', $nome_noiva);
+		update_user_meta(get_current_user_id(), 'nome_noivo', $nome_noivo);
+		update_user_meta(get_current_user_id(), 'data_casamento', $data_casamento);
 
-		// get_userdata(get_current_user_id())->user_email;
-		// get_user_meta( get_current_user_id(), 'billing_phone', true );
 	}
 }
 
@@ -326,8 +322,8 @@ function createAccount() {
 		$email = $_REQUEST['user_email'];
 		$senha = $_REQUEST['user_pass'];
 		$resenha = $_REQUEST['user_repass'];
-		$nome_da_noiva = $_REQUEST['nome_da_noiva'];
-		$nome_do_noivo = $_REQUEST['nome_do_noivo'];
+		$nome_da_noiva = $_REQUEST['nome_noiva'];
+		$nome_do_noivo = $_REQUEST['nome_noivo'];
 		$post_created = $_REQUEST['post_created'];
 		$errors = [];
 
@@ -353,8 +349,13 @@ function createAccount() {
 
 		if(count($errors) == 0) {
 	 		$id_user = wp_create_user($email, $senha, $email );
-	 		update_field('nome_da_noiva', $nome_da_noiva, 'user_'.$id_user);
-	 		update_field('nome_do_noivo', $nome_do_noivo, 'user_'.$id_user);
+	 		update_field('nome_noiva', $nome_da_noiva, 'user_'.$id_user);
+	 		update_field('nome_noivo', $nome_do_noivo, 'user_'.$id_user);
+
+	 		update_user_meta($id_user, 'nome_noiva', $nome_da_noiva);
+	 		update_user_meta($id_user, 'nome_noivo', $nome_do_noivo);
+
+			 wp_update_user(array( 'ID' => get_current_user_id(), 'first_name' => $nome ));
 
 	 		if($post_created) {
 				wp_update_post(array('ID' => $post_created, 'post_author' => $id_user));

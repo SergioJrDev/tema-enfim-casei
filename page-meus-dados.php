@@ -8,7 +8,7 @@
 				<li><a style="color: #333;" href="<?php the_permalink(); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i> Meus Dados</a></li>
 			</ul>
  				<h2 class=" title-descr tab-bottom font-poppins">Painel de controle</h2>
- 				<?php if(get_field('pronto', 'user_'.get_current_user_id()) == 1) { ?>
+ 				<?php if(get_user_meta(get_current_user_id())['pronto'][0] == 1) { ?>
 
  					<p class="alert alert-success a-center mg-boottom">
 					 	<i class="fa fa-cog fa-spin fa-1x fa-fw" aria-hidden="true"></i>
@@ -122,7 +122,7 @@
 			 			<div data-show='1' class="dashboard-view active">
 							<h2 class="font-poppins">Meus dados pessoais</h2>
 							<div class="column">
-								<?php $noiva = get_field('nome_da_noiva', 'user_'.get_current_user_id()); ?>
+								<?php $noiva = get_user_meta(get_current_user_id())['nome_noiva'][0]; ?>
 								<div class="sm-6-12">
 									<div class="view-info">
 										<span class="title">Nome da noiva</span>
@@ -130,7 +130,7 @@
 									</div>
 								</div>
 
-								<?php $noivo = get_field('nome_do_noivo', 'user_'.get_current_user_id()); ?>
+								<?php $noivo = get_user_meta(get_current_user_id())['nome_noivo'][0]; ?>
 								<div class="sm-6-12">
 									<div class="view-info">
 										<span class="title">Nome do noivo</span>
@@ -138,7 +138,7 @@
 									</div>
 								</div>
 								
-								<?php $data_casamento = get_field('data_casamento', 'user_'.get_current_user_id()); ?>
+								<?php $data_casamento = get_user_meta(get_current_user_id())['data_casamento'][0]; ?>
 								<div class="sm-6-12">
 									<div class="view-info">
 										<span class="title">Data do casamento</span>

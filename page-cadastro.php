@@ -34,25 +34,37 @@
 					<div class="column">
 						<div class="sm-6-12">
 							<div class="input-group">
-								<label class="label"  for="user_name">Seu nome e sobrenome*</label>
+								<label class="label"  for="user_name">Seu nome</label>
 								<input type="text" class="input inline" id="user_name" name="user_name">
 							</div>
 						</div>
 						<div class="sm-6-12">
 							<div class="input-group">
-								<label class="label"  for="user_email">E-mail*</label>
+								<label class="label"  for="user_email">E-mail</label>
 								<input type="email" class="input inline" id="user_email" name="user_email">
 							</div>
 						</div>
 						<div class="sm-6-12">
 							<div class="input-group">
-								<label class="label"  for="user_pass">Sua senha*</label>
+								<label class="label"  for="nome_noiva">Nome da noiva</label>
+								<input type="text" class="input inline" id="nome_noiva" name="nome_noiva">
+							</div>
+						</div>
+						<div class="sm-6-12">
+							<div class="input-group">
+								<label class="label"  for="nome_noivo">Nome do noivo</label>
+								<input type="text" class="input inline" id="nome_noivo" name="nome_noivo">
+							</div>
+						</div>
+						<div class="sm-6-12">
+							<div class="input-group">
+								<label class="label"  for="user_pass">Sua senha</label>
 								<input type="password" class="input inline" id="user_pass" name="user_pass">
 							</div>
 						</div>
 						<div class="sm-6-12">
 							<div class="input-group">
-								<label class="label"  for="user_repass">Digite novamente sua senha*</label>
+								<label class="label"  for="user_repass">Confirme sua senha</label>
 								<input type="password" class="input inline" id="user_repass" name="user_repass">
 							</div>
 						</div>
