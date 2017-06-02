@@ -8,9 +8,12 @@
 				<li><a style="color: #333;" href="<?php the_permalink(); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i> Meus Dados</a></li>
 			</ul>
  				<h2 class=" title-descr tab-bottom font-poppins">Painel de controle</h2>
- 				<?php if(isset($_GET['create'])) { ?>
- 					<p class="alert alert-success a-center mg-boottom">Seu site está sendo criado com muito carinho. Em breve você receberá todos os dados de acesso.</p>
- 				<?php } ?>
+ 				<?php if(get_field('pronto', 'user_'.get_current_user_id()) == 1) { ?>
+
+ 					<p class="alert alert-success a-center mg-boottom">
+					 	<i class="fa fa-cog fa-spin fa-1x fa-fw" aria-hidden="true"></i>
+						 Seu site está sendo criado. Em breve você receberá todos os dados de acesso.</p>
+				<?php } ?>
 				<div class="column">
 				<!-- 	<div class="sm-3-12">
 			 			<nav class="dashboard-menu">

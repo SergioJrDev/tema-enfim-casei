@@ -11,6 +11,10 @@
 		<h2 class=" title-descr tab-bottom font-poppins">Crie o modelo do seu site</h2>
 		<form class="form" method="post">
 			<div class="mg-bottom ">
+				<?php
+				$noiva = get_field('nome_da_noiva', 'user_'.get_current_user_id());
+				$noivo = get_field('nome_do_noivo', 'user_'.get_current_user_id());
+				?>
 				<p>Escolha o modelo do seu site. As imagens e textos você poderá trocar depois quando ele estiver pronto.</p>
 				<div class="owl-carousel slidersingle components mg-bottom">
 					<section class="main auto-h apresentation overlay no-bg-mobile">
@@ -39,7 +43,7 @@
 				 		</header>
 						<div class="container hidden-mobile">
 							<div class="descr">
-								<h2 class="font-petit a-center lines names">Natália <span class="break font-petit">&</span> Sérgio</h2>
+								<h2 class="font-petit a-center lines names"><?php echo $noiva ? $noiva : 'Natália' ?> <span class="break font-petit">&</span> <?php echo $noivo ? $noivo : "Sérgio" ?></h2>
 								<h3 class="font-petit date a-center">06 de Janeiro de 2018, São Paulo</h3>
 							</div>
 							<div class="down a-center">
@@ -76,7 +80,7 @@
 						<div class="container hidden-mobile">
 							<div class="descr">
 								<p class="style_font top-title a-center">Bem vindo a celebração do casamento de...</p>
-								<h2 class="names a-center">Natália <i class="break fa fa-heart-o" aria-hidden="true"></i> Sérgio</h2>
+								<h2 class="names a-center"><?php echo $noiva ? $noiva : 'Natália' ?> <i class="break fa fa-heart-o" aria-hidden="true"></i> <?php echo $noivo ? $noivo : "Sérgio" ?></h2>
 							</div>
 						</div>
 						
@@ -108,9 +112,9 @@
 				 		</header>
 						<div class="container hidden-mobile">
 							<div class="descr">
-								<h2 class="a-center names style_font">Natália</h2>
+								<h2 class="a-center names style_font"><?php echo $noiva ? $noiva : 'Natália' ?></h2>
 								<h2 class="a-center names style_font">&</h2>
-								<h2 class="a-center names style_font">Sérgio</h2>
+								<h2 class="a-center names style_font"><?php echo $noivo ? $noivo : "Sérgio" ?></h2>
 							</div>
 							<div class="down a-center">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -168,7 +172,7 @@
 										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/2.jpg" alt="">
 									</div>
 									<div class="a-center space-title">
-										<p class="font-dancing couple-name">Natália & Sérgio</p>
+										<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Natália' ?> & <?php echo $noivo ? $noivo : "Sérgio" ?></p>
 									</div>
 								</div>
 							</div>
@@ -198,7 +202,7 @@
 									<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg')">
 										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
 									</div>
-									<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title">Natália</p>
+									<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noiva ? $noiva : 'Natália' ?></p>
 									<span class="write-by font-dancing a-center">Escrito pelo noivo</span>
 									<p class="font-montserrrat a-center max-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
 								</div>
@@ -208,7 +212,7 @@
 									<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg')">
 										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg" alt="">
 									</div>
-									<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title">Sérgio</p>
+									<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noivo ? $noivo : "Sérgio" ?></p>
 									<span class="write-by font-dancing a-center">Escrito pela noiva</span>
 									<p class="font-montserrrat a-center max-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
 								</div>
@@ -223,7 +227,7 @@
 							<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
 						</div>
 						<div class="hidden-mobile">
-							<p class="font-dancing couple-name a-center space-title">Natália & Sérgio</p>
+							<p class="font-dancing couple-name a-center space-title"><?php echo $noiva ? $noiva : 'Natália' ?> & <?php echo $noivo ? $noivo : "Sérgio" ?></p>
 							<div class=" ">
 								<p class="font-montserrrat a-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
 								<p class="font-montserrrat a-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione deserunt aliquid exercitationem, ab dolores quo at modi quis. Nesciunt nisi dolores et ad doloremque molestiae, provident necessitatibus minus tempora dolore.</p>
@@ -243,7 +247,7 @@
 							</div>
 						</div>
 						<div class="a-center hidden-mobile  space-title">
-							<p class="font-dancing couple-name">Natália & Sérgio</p>
+							<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Natália' ?> & <?php echo $noivo ? $noivo : "Sérgio" ?></p>
 						</div>
 						<div class="couple-item a-center hidden-mobile ">
 							<p class="font-montserrrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt accusantium ea, commodi, ut maiores dolores sint excepturi pariatur vel numquam voluptates veniam? Ipsam eius dolor magnam, maxime neque nesciunt?</p>
@@ -264,7 +268,7 @@
 								</div>
 								<div class="sm-6-12 ">
 									<div class="couple-item a-ceter">
-										<p class="font-dancing couple-name">Natália C. Fazzolari</p>
+										<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Natália' ?></p>
 										<span class="write-by font-dancing">Escrito pelo noivo</span>
 										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
 									</div>
@@ -273,7 +277,7 @@
 							<div class="column">
 								<div class="sm-6-12 ">
 									<div class="couple-item a-cener">
-										<p class="font-dancing couple-name ">Sérgio A M Junior</p>
+										<p class="font-dancing couple-name "><?php echo $noivo ? $noivo : "Sérgio" ?></p>
 										<span class="write-by font-dancing">Escrito pela noiva</span>
 										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
 									</div>
@@ -937,29 +941,29 @@
 									<div class="sm-6-12">
 										<div class="notes-item">
 											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-											<p class="notes-author">Sérgio Junior, </p>
-											<p class="notes-connect">-Cunhado</p>
+											<p class="notes-author">Paloma, </p>
+											<p class="notes-connect">-Amiga do noivo</p>
 										</div>
 									</div>
 									<div class="sm-6-12">
 										<div class="notes-item">
 											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et inventore similique fugit, commodi excepturi aliquam explicabo, maiores nam cum sequi autem beatae officia! Aspernatur inventore aliquam eos hic, fuga.</p>
-											<p class="notes-author">Sérgio Junior</p>
-											<p class="notes-connect">-Cunhado</p>
+											<p class="notes-author">Patrícia</p>
+											<p class="notes-connect">-Irmã da noiva</p>
 										</div>
 									</div>
 									<div class="sm-6-12">
 										<div class="notes-item">
 											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-											<p class="notes-author">Sérgio Junior, </p>
-											<p class="notes-connect">-Cunhado</p>
+											<p class="notes-author">Gabriela, </p>
+											<p class="notes-connect">-Prima do noivo</p>
 										</div>
 									</div>
 									<div class="sm-6-12">
 										<div class="notes-item">
 											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et inventore similique fugit, commodi excepturi aliquam explicabo, maiores nam cum sequi autem beatae officia! Aspernatur inventore aliquam eos hic, fuga.</p>
-											<p class="notes-author">Sérgio Junior</p>
-											<p class="notes-connect">-Cunhado</p>
+											<p class="notes-author">Fábio</p>
+											<p class="notes-connect">-Irmão da noiva</p>
 										</div>
 									</div>
 								</div>
@@ -975,29 +979,29 @@
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quo nam hic odio ratione, voluptas vero velit. Beatae fuga quam numquam sed iure sequi debitis, quibusdam labore qui voluptatem laboriosam.</p>
-										<p class="notes-author">Sérgio Junior</p>
-										<p class="notes-connect">-Cunhado</p>
+										<p class="notes-author">Antonio Carlos</p>
+										<p class="notes-connect">-Avô do noivo</p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et inventore similique fugit, commodi excepturi aliquam explicabo, maiores nam cum sequi autem beatae officia! Aspernatur inventore aliquam eos hic, fuga.</p>
-										<p class="notes-author">Fernanda Muniz</p>
-										<p class="notes-connect">-Cunhado</p>
+										<p class="notes-author">Fernanda</p>
+										<p class="notes-connect">-Tia da noiva</p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quo nam hic odio ratione, voluptas vero velit. Beatae fuga quam numquam sed iure sequi debitis, quibusdam labore qui voluptatem laboriosam.</p>
-										<p class="notes-author">Sérgio Junior</p>
-										<p class="notes-connect">-Cunhado</p>
+										<p class="notes-author">Aline</p>
+										<p class="notes-connect">-Prima do noivo</p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et inventore similique fugit, commodi excepturi aliquam explicabo, maiores nam cum sequi autem beatae officia! Aspernatur inventore aliquam eos hic, fuga.</p>
-										<p class="notes-author">Fernanda Muniz</p>
-										<p class="notes-connect">-Cunhado</p>
+										<p class="notes-author">Fábio</p>
+										<p class="notes-connect">-Amigo da noiva</p>
 									</div>
 								</div>
 							</div>
@@ -1012,25 +1016,25 @@
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-										<p class="notes-author">Sérgio Junior, <span>Cunhado</span></p>
+										<p class="notes-author">Carlos, <span>pai da noiva</span></p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-										<p class="notes-author">Sérgio Junior, <span>Cunhado</span></p>
+										<p class="notes-author">Júnior, <span>colega do noivo</span></p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-										<p class="notes-author">Sérgio Junior, <span>Cunhado</span></p>
+										<p class="notes-author">Carla, <span>irmã do noivo</span></p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-										<p class="notes-author">Sérgio Junior, <span>Cunhado</span></p>
+										<p class="notes-author">Bruna, <span>amiga do casal</span></p>
 									</div>
 								</div>
 
@@ -1401,12 +1405,12 @@
 					<div class="column">
 						<div class="sm-12-12">
 							<div class="input-group">
-								<label class="label">Digite o nome da noiva</label>
-								<input type="text" ng-model="names.noiva" ng-change="changeName(names)" class="input" name="noiva">
+								<label class="label">Nome da noiva</label>
+								<input type="text" class="input" name="noiva" value="<?php echo get_field('nome_da_noiva', 'user_'.get_current_user_id()); ?>">
 							</div>
 							<div class="input-group">
-								<label class="label">Digite o nome do noivo</label>
-								<input type="text" ng-model="names.noivo" ng-change="changeName(names)" class="input" name="noivo">
+								<label class="label">Nome do noivo</label>
+								<input type="text" class="input" name="noivo"  value="<?php echo get_field('nome_do_noivo', 'user_'.get_current_user_id()); ?>">
 							</div>
 						</div>
 					</div>

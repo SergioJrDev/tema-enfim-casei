@@ -204,53 +204,58 @@ function createModel() {
 add_action('init', 'createSite');
 function createSite() {
 	if(isset($_REQUEST['create_site'])) {
-		$post_id = $_REQUEST['create_site'];
-		$author = get_post($post_id)->post_author;
+		if(!get_field('pronto', 'user_'.get_current_user_id())) {		
+			$post_id = $_REQUEST['create_site'];
+			$author = get_post($post_id)->post_author;
 
-		if(get_current_user_id() == $author) {
-			$header = get_post_meta($post_id, 'header')[0];
-			$casal = get_post_meta($post_id, 'noivos')[0];
-			$local = get_post_meta($post_id, 'local')[0];
-			$rsvp = get_post_meta($post_id, 'rsvp')[0];
-			$contagem = get_post_meta($post_id, 'contagem')[0];
-			$fotos = get_post_meta($post_id, 'galeria_de_fotos')[0];
-			$recados = get_post_meta($post_id, 'recados')[0];
-			$blog = get_post_meta($post_id, 'blog')[0];
-			$noiva = get_post_meta($post_id, 'nome_da_noiva')[0];
-			$noivo = get_post_meta($post_id, 'nome_do_noivo')[0];
+			if(get_current_user_id() == $author) {
+				$header = get_post_meta($post_id, 'header')[0];
+				$casal = get_post_meta($post_id, 'noivos')[0];
+				$local = get_post_meta($post_id, 'local')[0];
+				$rsvp = get_post_meta($post_id, 'rsvp')[0];
+				$contagem = get_post_meta($post_id, 'contagem')[0];
+				$fotos = get_post_meta($post_id, 'galeria_de_fotos')[0];
+				$recados = get_post_meta($post_id, 'recados')[0];
+				$blog = get_post_meta($post_id, 'blog')[0];
+				$noiva = get_post_meta($post_id, 'nome_da_noiva')[0];
+				$noivo = get_post_meta($post_id, 'nome_do_noivo')[0];
 
 
-			$args = array(
-				'post_title' => get_current_user_id().'-'.$noiva.'-e-'.$noivo,
-				'post_type' => 'pedidos',
-				'post_status' => 'publish',
-			);
+				$args = array(
+					'post_title' => get_current_user_id().'-'.$noiva.'-e-'.$noivo,
+					'post_type' => 'pedidos',
+					'post_status' => 'publish',
+				);
 
-			$new_post_id = wp_insert_post( $args );
+				$new_post_id = wp_insert_post( $args );
 
-			$fields = array(
-						'header' => $header,
-						'noivos' => $casal,
-						'local' => $local,
-						'rsvp' => $rsvp,
-						'contagem' => $contagem,
-						'galeria_de_fotos' => $fotos,	
-						'recados' => $recados,
-						'blog' => $blog,
-						'nome_do_noivo' => $noivo,
-						'nome_da_noiva' => $noiva,
-						'modelo' => get_permalink($post_id)
-					);
+				$fields = array(
+							'header' => $header,
+							'noivos' => $casal,
+							'local' => $local,
+							'rsvp' => $rsvp,
+							'contagem' => $contagem,
+							'galeria_de_fotos' => $fotos,	
+							'recados' => $recados,
+							'blog' => $blog,
+							'nome_do_noivo' => $noivo,
+							'nome_da_noiva' => $noiva,
+							'modelo' => get_permalink($post_id)
+						);
 
-			foreach ($fields as $key => $value) {
-				update_field($key, $value, $new_post_id);
-				update_post_meta($new_post_id, $key, $value);
-			}
-			wp_redirect(home_url('/meus-dados?create=1'));
-			exit;
+				foreach ($fields as $key => $value) {
+					update_field($key, $value, $new_post_id);
+					update_post_meta($new_post_id, $key, $value);
+				}
+				update_field('pronto', 1, 'user_'.get_current_user_id());
+				wp_redirect(home_url('/meus-dados'));
+				exit;
+			} else {
+				echo 'No no';
+			}	
 		} else {
-			echo 'No no';
-		}	
+			echo 'Opa, parece que vc já tem um site.';
+		}
 	}
 }
 
@@ -260,15 +265,22 @@ add_action('init', 'updateUser');
 function updateUser() {
 	if(isset($_REQUEST['updateUser'])) {
 		$user_name = $_REQUEST['user_name'];
-		$user_email = $_REQUEST['user_email'];
+		// $user_email = $_REQUEST['user_email'];
 		$user_phone = $_REQUEST['user_phone'];
 		$nome_noiva = $_REQUEST['nome_noiva'];
 		$nome_noivo = $_REQUEST['nome_noivo'];
 		$data_casamento = $_REQUEST['data_casamento'];
 
+// echo $user_name.'<br/>';
+// // echo $user_emai.'<br/>';
+// echo $user_phone.'<br/>';
+// echo $nome_noiva.'<br/>';
+// echo $nome_noivo.'<br/>';
+// echo $data_casamento.'<br/>';
+
 		wp_update_user(array( 'ID' => get_current_user_id(), 'first_name' => $user_name ));
 		update_field('nome_da_noiva', $nome_noiva, 'user_'.get_current_user_id());
-		update_field('nome_do_noivo',$nome_noivo, 'user_'.get_current_user_id());
+		update_field('nome_do_noivo', $nome_noivo, 'user_'.get_current_user_id());
 		update_field('data_casamento', $data_casamento, 'user_'.get_current_user_id());
 		update_user_meta( get_current_user_id(), 'billing_phone', $user_phone );
 
