@@ -147,40 +147,17 @@
  		</section>
 
  		<section class="space-default plan">
- 			<div class="container">
+ 			<div class="container max-width-content">
  				<h2 class=" animate delay to-top font-poppins title-descr a-center">Planos</h2>
  				<p class=" animate delay to-top a-center sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident porro animi numquam eos ex consequuntur, odio, ut a possimus fugit distinctio labore quidem magni laboriosam odit fuga commodi impedit.</p>
 
  				<div class="column">
- 					<div class="sm-4-12 animate delay to-top">
- 						<div class="plan-item a-center">
- 							<h3 class="font-poppins">Básico</h3>
- 							<p class="value "><span>R$</span>19,<span>00</span></p>
- 							<ul class="mg-bottom">
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Blog</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Galeria de fotos</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Domínio Próprio</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Lista de presentes</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> História do casal</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Página de recados</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Online por 1 ano</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Suporte</li>
- 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Confirmação de presença</li>
- 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Local da cerimônia/festa</li>
- 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Contribuir para lua de mel</li>
- 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Online para sempre</li>
- 							</ul>
- 							<a href="#" class="btn btn-theme btn-block">Comprar</a>
- 						</div>
- 					</div>
 
- 					<div class="sm-4-12 animate delay to-top">
- 						<div class="plan-item a-center featured">
- 							<div class="recomendado"></div>
+ 					<div class="sm-6-12 animate delay to-top">
+ 						<div class="plan-item a-center">
  							<h3 class="font-poppins">Intermediário</h3>
- 							<p class="value "><span>R$</span>29,<span>00</span></p>
+ 							<p class="value "><span>R$</span>199,<span>00</span></p>
+ 							<p>Em até 10x, sem juros</p>
  							<ul class="mg-bottom">
  								<li><i class="fa fa-check" aria-hidden="true"></i> Blog</li>
  								<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo</li>
@@ -201,10 +178,12 @@
  						</div>
  					</div>
 
- 					<div class="sm-4-12 animate delay to-top">
+ 					<div class="sm-6-12 animate delay to-top">
  						<div class="plan-item a-center">
+ 							<div class="recomendado"></div>
  							<h3 class="font-poppins">Avançado</h3>
- 							<p class="value "><span>R$</span>39,<span>00</span></p>
+ 							<p class="value "><span>R$</span>269,<span>00</span></p>
+ 							<p>Em até 10x, sem juros</p>
  							<ul class="mg-bottom">
  								<li><i class="fa fa-check" aria-hidden="true"></i> Blog</li>
  								<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo</li>

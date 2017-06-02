@@ -76,7 +76,7 @@
 			color: #333;
 		}
 		.color_theme {
-			background: color_theme;
+			background: var(--color_demo_theme);
 			padding-top: 30px;
 			padding-bottom: 30px;
 		}
@@ -116,6 +116,24 @@
 		margin: 10px 0 20px 0;
 		animation: pulse 0.4s ease infinite alternate;
 	}
+	&.no-background {
+		background: none;
+		.timer-box {
+			background: var(--color_demo_theme);
+			margin-bottom: 10px;
+		}
+		.number {
+			color: #fff;
+		}
+		.time {
+			color: #333;
+			/*font-weight: bold;*/
+			margin-bottom: 10px;
+		}
+		.section-title {
+			color: #333;
+		}
+	}
 }
 
 .no-bg {
@@ -139,7 +157,7 @@
 	&:before {
 		left: auto;
 		right: 0;
-		background: color_theme;
+		background: var(--color_demo_theme);
 	}
 
 }

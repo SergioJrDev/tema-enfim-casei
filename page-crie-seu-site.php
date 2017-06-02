@@ -10,20 +10,8 @@
 		</ul>
 		<h2 class=" title-descr tab-bottom font-poppins">Crie o modelo do seu site</h2>
 		<form class="form" method="post">
-
-			<!-- <div class="mg-bottom  form">
-				<p>Você gostaria de ter um domínio personalizado, por exemplo, www.nataliaesergio.com.br?</p>
-				<p>Ele custará R$40 por ano, mediante a disponibilidade no <a href="https://registro.br/" target="_blank">https://registro.br/</a></p>
-				<p>Caso contrário, o endereço do seu site será www.enfimcasei.com.br/nataliaesergio, sem nenhuma taxa.</p>
-				<div class="input-group">
-					<label class="label" for="domain">Sim, gostaria de um domínio personalizado.</label>
-					<input type="checkbox" class="checkbox" id="domain" name="domain">
-				</div>
-			</div> -->
-
 			<div class="mg-bottom ">
 				<p>Escolha o modelo do seu site. As imagens e textos você poderá trocar depois quando ele estiver pronto.</p>
-
 				<div class="owl-carousel slidersingle components mg-bottom">
 					<section class="main auto-h apresentation overlay no-bg-mobile">
 						<input type="radio" class="hidden" name="header" value="1">
@@ -157,7 +145,8 @@
 				 		</header>
 						<div class="container hidden-mobile">
 							<div class="descr">
-								<h2 class="names rotate a-left style_font">Bem Vindo</br> ao nosso</br>casamento...</h2>
+								<p class=" rotate a-left style_font">Bem vindo ao melhor dia de nossas vidas...</p>
+								<h2 class="names rotate a-left style_font">Nosso casamento!</h2>
 							</div>
 							<div class="down a-center">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -209,7 +198,8 @@
 									<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg')">
 										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
 									</div>
-									<p class="font-montserrrat font-dancing couple-name a-center space-title">Natália</p>
+									<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title">Natália</p>
+									<span class="write-by font-dancing a-center">Escrito pelo noivo</span>
 									<p class="font-montserrrat a-center max-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
 								</div>
 							</div>
@@ -218,7 +208,8 @@
 									<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg')">
 										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg" alt="">
 									</div>
-									<p class="font-montserrrat font-dancing couple-name a-center space-title">Sérgio</p>
+									<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title">Sérgio</p>
+									<span class="write-by font-dancing a-center">Escrito pela noiva</span>
 									<p class="font-montserrrat a-center max-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
 								</div>
 							</div>
@@ -257,6 +248,43 @@
 						<div class="couple-item a-center hidden-mobile ">
 							<p class="font-montserrrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt accusantium ea, commodi, ut maiores dolores sint excepturi pariatur vel numquam voluptates veniam? Ipsam eius dolor magnam, maxime neque nesciunt?</p>
 							<p class="font-montserrrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero distinctio, a ab modi similique ullam, animi quam cumque fugiat consectetur ut odit totam, recusandae expedita corrupti! Nam animi, distinctio sint.</p>
+						</div>
+					</div>
+					<div class="couple space-default block">
+						<div class="containe max-width-content">
+							<h2 class="a-center font-dancing section-title ">Os Noivos</h2>
+							<div class="column">
+								<div class="sm-6-12 ">
+									<div class="couple-item">
+										<div class="couple-img " style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="sm-6-12 ">
+									<div class="couple-item a-ceter">
+										<p class="font-dancing couple-name">Natália C. Fazzolari</p>
+										<span class="write-by font-dancing">Escrito pelo noivo</span>
+										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+									</div>
+								</div>
+							</div>
+							<div class="column">
+								<div class="sm-6-12 ">
+									<div class="couple-item a-cener">
+										<p class="font-dancing couple-name ">Sérgio A M Junior</p>
+										<span class="write-by font-dancing">Escrito pela noiva</span>
+										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+									</div>
+								</div>
+								<div class="sm-6-12 ">
+									<div class="couple-item">
+										<div class="couple-img " style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -444,49 +472,259 @@
 								</div>
 							</div>
 						</section>
+					</div>
+				</div>
 
-						<section class="space-default local title-middle overlay no-bg-mobile">
-							<input type="radio" class="hidden" name="local" value="2">
-							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/local4.jpg">
-							<div class="container hidden-mobile">
-								<div class="column">
-									<div class="sm-4-12">
-										<div class="local-item a-center bordered">
-											<h2 class="font-dancing title-event a-center">Cerimônia </h2>
-											<div class="local-details">
-												<p><i class="fa fa-calendar" aria-hidden="true"></i> </p>
-												<p class="date">10/12/2017, 20h00</p>
-												<p class="address">Local: Av Paulista, #188, São Paulo/SP</p>
-											</div>	
-											<div class="a-center mg-40-top">
-												<a href="#" class="btn btn-theme btn-pink btn-radius">Ver local</a>
-											</div>
+				<h2 class="component-title">Contagem regressiva</h2>
+				<div class="owl-carousel slidersingle components space-bottom">	
+					<section class="space-default timer overlay no-bg-mobile">
+						<input type="radio" class="hidden" name="contagem" value="1">
+						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem1.jpg">
+						<div class="cntainer max_width hidden-mobile">
+							<h2 class="a-center section-title font-montserrrat">Contagem regressiva para o grande dia...</h2>
+							<div class="column">
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-days">
+										02
 										</div>
+										<div class="time">Dia(s)</div>
 									</div>
-									<div class="sm-4-12">
-										<div class="local-item a-center justify-center flex-center">
-											<h2 class="font-dancing section-title rotate">Nossos</br>Eventos</br>Especiais</h2>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-hours">
+										03
 										</div>
+										<div class="time">Hora(s)</div>
 									</div>
-									<div class="sm-4-12">
-										<div class="local-item a-center bordered">
-											<h2 class="font-dancing title-event">Festa do casamento</h2>
-											<div class="local-details">
-												<p><i class="fa fa-calendar" aria-hidden="true"></i> </p>
-												<p class="date">10/12/2017, 20h00</p>
-												<p class="address">Av Paulista, #188, São Paulo/SP</p>
-											</div>
-											<div class="a-center mg-40-top">
-												<a href="#" class="btn btn-theme btn-pink btn-radius">Ver local</a>
-											</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-minutes">
+										23
+										</div>
+										<div class="time">Minuto(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-seconds">
+										54
+										</div>
+										<div class="time">Segundo(s)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="space-default timer overlay simple no-bg-mobile">
+						<input type="radio" class="hidden" name="contagem" value="2">
+						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem2.jpg">
+						<div class="cntainer max_width hidden-mobile">
+							<h2 class="a-center sans-serif section-title">Escolhemos o dia e estamos contando os segundos...</h2>
+							<div class="column">
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-days">
+										02
+										</div>
+										<div class="time">Dia(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-hours">
+										03
+										</div>
+										<div class="time">Hora(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-minutes">
+										23
+										</div>
+										<div class="time">Minuto(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-seconds">
+										54
+										</div>
+										<div class="time">Segundo(s)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="space-default timer simple triangle no-bg-mobile">
+						<input type="radio" class="hidden" name="contagem" value="3">
+						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem3.jpg">
+						<div class="cntainer max_width hidden-mobile">
+							<h2 class="a-center sans-serif section-title no-mg">25 de Outubro de 2018, São Paulo/SP</h2>
+							<i class="fa a-center icon pulse fa-heart" aria-hidden="true"></i>
+							<div class="column">
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-days">
+										02
+										</div>
+										<div class="time">Dia(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-hours">
+										03
+										</div>
+										<div class="time">Hora(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-minutes">
+										23
+										</div>
+										<div class="time">Minuto(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-seconds">
+										54
+										</div>
+										<div class="time">Segundo(s)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="space-default timer simple triangle overlay circle no-bg-mobile">
+						<input type="radio" class="hidden" name="contagem" value="4">
+						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem4.jpg">
+						<div class="cntainer max_width hidden-mobile">
+							<h2 class="a-center sans-serif section-title">Venha celebrar nosso amor com a gente em...</h2>
+							<div class="column">
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-days">
+										02
+										</div>
+										<div class="time">Dia(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-hours">
+										03
+										</div>
+										<div class="time">Hora(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-minutes">
+										23
+										</div>
+										<div class="time">Minuto(s)</div>
+									</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-seconds">
+										54
+										</div>
+										<div class="time">Segundo(s)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="timer one-color no-bg">
+						<input type="radio" class="hidden" name="contagem" value="5">
+						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem5.jpg">
+						<div class="containr hidden-mobile">
+							<div class="column">
+								<div class="md-4-12 first-color"><h2 class="section-title">Faça a contagem regressiva conosco</h2></div>
+								<div class="md-8-12 color_theme">
+									<div class="column">
+										<div class="sm-3-12 a-center">
+												<div class="number number-days">
+												02
+												</div>
+												<div class="time">Dia(s)</div>
+										</div>
+										<div class="sm-3-12 a-center">
+												<div class="number number-hours">
+												03
+												</div>
+												<div class="time">Hora(s)</div>
+										</div>
+										<div class="sm-3-12 a-center">
+												<div class="number number-minutes">
+												23
+												</div>
+												<div class="time">Minuto(s)</div>
+										</div>
+										<div class="sm-3-12 a-center">
+												<div class="number number-seconds">
+												54
+												</div>
+												<div class="time">Segundo(s)</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</section>
-					</div>
-				</div>
+						</div>
+					</section> 
+					<section class="no-background space-defaul timer">
+						<div class="containe max_width">
+							<h2 class="a-center section-title style_font">O Dia do casamento chega em...</h2>
+							<div class="column">
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-days">
+										02
+										</div>
+									</div>
+									<div class="a-center time">Dia(s)</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-hours">
+										03
+										</div>
+									</div>
+									<div class="a-center time">Hora(s)</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-minutes">
+										23
+										</div>
+									</div>
+									<div class="a-center time">Minuto(s)</div>
+								</div>
+								<div class="xs-6-12 sm-3-12">
+									<div class="timer-box a-center">
+										<div class="number number-seconds">
+										54
+										</div>
+									</div>
+									<div class="a-center time">Segundo(s)</div>
+								</div>
+							</div>
+						</div>
+					</section>
 
+				</div>
+				
 				<h2 class="component-title">Confirmação de presença</h2>
 				<div class="space-bottom">
 					<div class="owl-carousel slidersingle components ">
@@ -577,217 +815,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<h2 class="component-title">Contagem regressiva</h2>
-				<div class="owl-carousel slidersingle components space-bottom">	
-					<section class="space-default timer overlay no-bg-mobile">
-						<input type="radio" class="hidden" name="contagem" value="1">
-						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem1.jpg">
-						<div class="cntainer max_width hidden-mobile">
-							<h2 class="a-center section-title font-montserrrat">Contagem regressiva para o grande dia...</h2>
-							<div class="column">
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-days">
-										02
-										</div>
-										<div class="time">Dias</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-hours">
-										03
-										</div>
-										<div class="time">Horas</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-minutes">
-										23
-										</div>
-										<div class="time">Minutos</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-seconds">
-										54
-										</div>
-										<div class="time">Segundos</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section class="space-default timer overlay simple no-bg-mobile">
-						<input type="radio" class="hidden" name="contagem" value="2">
-						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem2.jpg">
-						<div class="cntainer max_width hidden-mobile">
-							<h2 class="a-center sans-serif section-title">Escolhemos o dia e estamos contando os segundos...</h2>
-							<div class="column">
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-days">
-										02
-										</div>
-										<div class="time">Dias</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-hours">
-										03
-										</div>
-										<div class="time">Horas</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-minutes">
-										23
-										</div>
-										<div class="time">Minutos</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-seconds">
-										54
-										</div>
-										<div class="time">Segundos</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section class="space-default timer simple triangle no-bg-mobile">
-						<input type="radio" class="hidden" name="contagem" value="3">
-						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem3.jpg">
-						<div class="cntainer max_width hidden-mobile">
-							<h2 class="a-center sans-serif section-title no-mg">25 de Outubro de 2018, São Paulo/SP</h2>
-							<i class="fa a-center icon pulse fa-heart" aria-hidden="true"></i>
-							<div class="column">
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-days">
-										02
-										</div>
-										<div class="time">Dias</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-hours">
-										03
-										</div>
-										<div class="time">Horas</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-minutes">
-										23
-										</div>
-										<div class="time">Minutos</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-seconds">
-										54
-										</div>
-										<div class="time">Segundos</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section class="space-default timer simple triangle overlay circle no-bg-mobile">
-						<input type="radio" class="hidden" name="contagem" value="4">
-						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem4.jpg">
-						<div class="cntainer max_width hidden-mobile">
-							<h2 class="a-center sans-serif section-title">Venha celebrar nosso amor com a gente em...</h2>
-							<div class="column">
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-days">
-										02
-										</div>
-										<div class="time">Dias</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-hours">
-										03
-										</div>
-										<div class="time">Horas</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-minutes">
-										23
-										</div>
-										<div class="time">Minutos</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-seconds">
-										54
-										</div>
-										<div class="time">Segundos</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section class="timer one-color no-bg">
-						<input type="radio" class="hidden" name="contagem" value="5">
-						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem5.jpg">
-						<div class="containr hidden-mobile">
-							<div class="column">
-								<div class="md-4-12 first-color"><h2 class="section-title">Faça a contagem regressiva conosco</h2></div>
-								<div class="md-8-12 color_theme">
-									<div class="column">
-										<div class="sm-3-12 a-center">
-												<div class="number number-days">
-												02
-												</div>
-												<div class="time">Dias</div>
-										</div>
-										<div class="sm-3-12 a-center">
-												<div class="number number-hours">
-												03
-												</div>
-												<div class="time">Horas</div>
-										</div>
-										<div class="sm-3-12 a-center">
-												<div class="number number-minutes">
-												23
-												</div>
-												<div class="time">Minutos</div>
-										</div>
-										<div class="sm-3-12 a-center">
-												<div class="number number-seconds">
-												54
-												</div>
-												<div class="time">Segundos</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
 				</div>
 
 				<!-- <h3 class="components-title">Galeria de Foto</h3> -->
@@ -916,7 +943,7 @@
 						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados1.jpg">
 						<div class="container hidden-mobile ">
 							<div class="notes-group ">
-								<div class="column">
+								<div class="owl-carousel slidertestimonial owl-theme">
 									<div class="sm-6-12">
 										<div class="notes-item">
 											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
@@ -954,7 +981,7 @@
 						<input type="radio" class="hidden" name="recados" value="2">
 						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados2.jpg">
 						<div class="container hidden-mobile">
-							<div class="notes-group column">
+							<div class="notes-group owl-carousel slidertestimonial owl-theme">
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quo nam hic odio ratione, voluptas vero velit. Beatae fuga quam numquam sed iure sequi debitis, quibusdam labore qui voluptatem laboriosam.</p>
@@ -991,7 +1018,7 @@
 						<input type="radio" class="hidden" name="recados" value="3">
 						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados3.jpg">
 						<div class="container hidden-mobile">
-							<div class="notes-group column ">
+							<div class="notes-group owl-carousel slidertestimonial owl-theme">
 								<div class="sm-6-12">
 									<div class="notes-item">
 										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
@@ -1017,6 +1044,41 @@
 									</div>
 								</div>
 
+							</div>
+						</div>
+					</section>
+			 		<section class="space-default testimonial">
+						<div class="containr max-width-content">
+							<!-- <h2 class="font-playfair title-section a-center mg-bottom">Depoimentos</h2> -->
+							<!-- <p class="font-playfair a-center mg-bottom">Veja alguns dos nossos eventos</p> -->
+							<div class="owl-carousel slidertestimonial owl-theme">
+								<div class="sm-6-12">
+									<div class="holder">
+										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										<p class="author">Júlia + Carlos</p>
+									</div>
+								</div>
+						
+								<div class="sm-6-12">
+									<div class="holder">
+										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										<p class="author">Jéssica + Paulo</p>
+									</div>
+								</div>
+								<div class="sm-6-12">
+									<div class="holder">
+										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										<p class="author">Jaquelina + Lúcio</p>
+									</div>
+								</div>
+						
+								<div class="sm-6-12">
+									<div class="holder">
+										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										<p class="author">Ana Paula + Lucas</p>
+									</div>
+								</div>
+								
 							</div>
 						</div>
 					</section>
@@ -1291,6 +1353,52 @@
 							</div>
 						</div>
 					</div>
+			 		<section class="space-default services new-blog">
+						<div class="containe">
+							<div class="column">
+								<div class="sm-4-12">
+									<div class="new-blog-item">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										</div>
+										<div class="new-blog-content">
+											<h2>Qual melhor tipo de bolo?</h2>
+											<span>publicado em 12 de maio</span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+											<a href="#">Ler mais</a>
+										</div>
+									</div>
+								</div>
+								<div class="sm-4-12">
+									<div class="new-blog-item">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										</div>
+										<div class="new-blog-content">
+											<h2>5 destinos para a lua de mel</h2>
+											<span>publicado em 12 de maio</span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+											<a href="#">Ler mais</a>
+										</div>
+									</div>
+								</div>
+								<div class="sm-4-12">
+									<div class="new-blog-item">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										</div>
+										<div class="new-blog-content">
+											<h2>Como receber os convidados?</h2>
+											<span>publicado em 12 de maio</span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+											<a href="#">Ler mais</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
 				</div>
 				<input type="hidden" value="1" name="createPage">
 			</div>
