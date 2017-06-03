@@ -1,11 +1,13 @@
 $(document).ready(function(){
 	$('.hamburger').click(function() {
-		$(this).toggleClass('is-active');
-		 if($(".nav-content").hasClass('showMenu')) {
-			$(".nav-content").removeClass('showMenu').slideUp('slow');
-		} else {
-			$(".nav-content").addClass('showMenu').slideDown('slow');	 
-	 	}  
+		if(!$(this).hasClass('demo')) {
+			$(this).toggleClass('is-active');
+			if($(".nav-content").hasClass('showMenu')) {
+				$(".nav-content").removeClass('showMenu').slideUp('slow');
+			} else {
+				$(".nav-content").addClass('showMenu').slideDown('slow');	 
+			}  
+		}
 	});
 	
 	$(document).on('submit', "form", function(e) {

@@ -3,7 +3,6 @@
 		<?php
 			$noivo = get_post_meta(get_the_ID(), 'nome_noivo')[0];
 			$noiva = get_post_meta(get_the_ID(), 'nome_noiva')[0];
-
 			if(get_field('header') || get_post_meta(get_the_ID(), 'header')[0]) {
 				$header = get_post_meta(get_the_ID(), 'header')[0];
 				if($header == 1) { ?>
@@ -12,13 +11,13 @@
 				 			<div class="container">
 				 				<h1 class="logo"></h1>
 				 				<div class="nav">
-				 					<button class="hamburger hamburger--collapse" type="button">
+				 					<button class="demo hamburger hamburger--collapse" type="button">
 				 					  <span class="hamburger-box">
 				 					    <span class="hamburger-inner"></span>
 				 					  </span>
 				 					</button>
 				 					<div class="clearfix"></div>
-				 					<nav class="nav-content">
+				 					<nav class="nav-content demo_nav">
 				 						<ul class="nav-list">
 				 							<li><a href="#">Início</a></li>
 				 							<li><a href="#">Local</a></li>
@@ -46,13 +45,13 @@
 				 			<div class="container">
 				 				<h1 class="logo"></h1>
 				 				<div class="nav">
-				 					<button class="hamburger hamburger--collapse" type="button">
+				 					<button class="demo hamburger hamburger--collapse" type="button">
 				 					  <span class="hamburger-box">
 				 					    <span class="hamburger-inner"></span>
 				 					  </span>
 				 					</button>
 				 					<div class="clearfix"></div>
-				 					<nav class="nav-content">
+				 					<nav class="nav-content demo_nav">
 				 						<ul class="nav-list">
 				 							<li><a href="#">Início</a></li>
 				 							<li><a href="#">Local</a></li>
@@ -77,13 +76,13 @@
 				 			<div class="container">
 				 				<h1 class="logo"></h1>
 				 				<div class="nav">
-				 					<button class="hamburger hamburger--collapse" type="button">
+				 					<button class="demo hamburger hamburger--collapse" type="button">
 				 					  <span class="hamburger-box">
 				 					    <span class="hamburger-inner"></span>
 				 					  </span>
 				 					</button>
 				 					<div class="clearfix"></div>
-				 					<nav class="nav-content">
+				 					<nav class="nav-content demo_nav">
 				 						<ul class="nav-list">
 				 							<li><a href="#">Início</a></li>
 				 							<li><a href="#">Local</a></li>
@@ -111,13 +110,13 @@
 						<header class="default transparent vertical">
 				 			<div class="container">
 				 				<div class="nav">
-				 					<button class="hamburger hamburger--collapse" type="button">
+				 					<button class="demo hamburger hamburger--collapse" type="button">
 				 					  <span class="hamburger-box">
 				 					    <span class="hamburger-inner"></span>
 				 					  </span>
 				 					</button>
 				 					<div class="clearfix"></div>
-				 					<nav class="nav-content">
+				 					<nav class="nav-content demo_nav">
 				 						<ul class="nav-list">
 				 							<li class="a-right"><a href="#">Início</a></li>
 				 							<li class="a-right"><a href="#">Local</a></li>
@@ -1415,79 +1414,97 @@
 			<?php } */
 		?>
 	<?php endwhile; ?>
-	<div class="info a-center">
-		<div class="container">
-			<?php if(is_user_logged_in()) { ?>
-				<div class="column">
-					<div class="xs-6-12">
-						<p>Quer seu site como esse modelo?</p>
-						<form method="post">
-							<input type="hidden" name="create_site" value="<?php echo get_the_ID(); ?>">
-							<button type="submit" class="btn btn-theme btn-radius btn-uppercase">Sim, quero esse modelo</button>
-						</form>
-						
-					</div>
-					<div class="xs-6-12">
-						<p>Gostaria de criar outro modelo? Esse estará salvo em <a href="<?php echo home_url('/meus-dados') ?>">meus dados</a>.</p>
-						<a href="<?php echo home_url('crie-seu-site') ?>" class="btn btn-theme btn-small btn-radius">Criar um novo</a>
-					</div>
 
+	<?php if(is_user_logged_in()) {
+		if(get_the_author_meta('ID') == get_current_user_id()) { ?>
+			<div class="info a-center">
+				<div class="container">
+					<div class="column">
+						<div class="xs-6-12">
+							<p>Quer seu site como esse modelo?</p>
+							<form method="post">
+								<input type="hidden" name="create_site" value="<?php echo get_the_ID(); ?>">
+								<button type="submit" class="btn btn-theme btn-radius btn-uppercase">Sim, quero esse modelo</button>
+							</form>
+							
+						</div>
+						<div class="xs-6-12">
+							<p>Gostaria de criar outro modelo? Esse estará salvo em <a href="<?php echo home_url('/meus-dados') ?>">meus dados</a>.</p>
+							<a href="<?php echo home_url('crie-seu-site') ?>" class="btn btn-theme btn-small btn-radius">Criar um novo</a>
+						</div>
+					</div>
 				</div>
-			<?php }  else { ?>
+			</div>
+	<?php } else { ?>
+		<div class="info a-center">
+			<div class="container">
 				<div class="column">
 					<div class="xs-12-12">
-						<p>Gostaria de salvar esse modelo?</p>
-						<a href="#" class="btn btn-theme btn-small btn-radius btn-acount">Crie sua conta</a>
+						<p>Gostaria de criar um site assim?</p>
+						<a href="<?php echo home_url('crie-seu-site') ?>" class="btn btn-theme btn-small btn-radius">Criar um modelo pra você</a>
 					</div>
 				</div>
-				<div class="modal">	
-					<form class="form" id="create-login">
-						<h2 class="title-descr tab-bottom font-poppins a-left">Criar conta</h2>
-						<div class="column">
-							<div class="sm-6-12">
-								<div class="input-group a-left">
-									<label class="label"  for="user_name">Seu nome</label>
-									<input type="text" class="input inline" id="user_name" name="user_name">
-								</div>
-							</div>
-							<div class="sm-6-12">
-								<div class="input-group a-left">
-									<label class="label"  for="user_email">E-mail</label>
-									<input type="email" class="input inline" id="user_email" name="user_email">
-								</div>
-							</div>
-							<div class="sm-6-12">
-								<div class="input-group a-left">
-									<label class="label"  for="nome_noiva">Nome da noiva</label>
-									<input type="text" class="input inline" id="nome_noiva" name="nome_noiva">
-								</div>
-							</div>
-							<div class="sm-6-12">
-								<div class="input-group a-left">
-									<label class="label"  for="nome_noivo">Nome do noivo</label>
-									<input type="text" class="input inline" id="nome_noivo" name="nome_noivo">
-								</div>
-							</div>
-							<div class="sm-6-12">
-								<div class="input-group a-left">
-									<label class="label"  for="user_pass">Sua senha</label>
-									<input type="password" class="input inline" id="user_pass" name="user_pass">
-								</div>
-							</div>
-							<div class="sm-6-12">
-								<div class="input-group a-left">
-									<label class="label"  for="user_repass">Confirme sua senha</label>
-									<input type="password" class="input inline" id="user_repass" name="user_repass">
-								</div>
+			</div>
+		</div>
+	<?php } };
+
+	if(!is_user_logged_in()) { ?>
+	<div class="info a-center">
+		<div class="container">
+			<div class="column">
+				<div class="xs-12-12">
+					<p>Gostaria de ter um site assim?</p>
+					<a href="#" class="btn btn-theme btn-small btn-radius btn-acount">Crie sua conta</a>
+				</div>
+			</div>
+			<div class="modal">	
+				<form class="form" id="create-login">
+					<h2 class="title-descr tab-bottom font-poppins a-left">Criar conta</h2>
+					<div class="column">
+						<div class="sm-6-12">
+							<div class="input-group a-left">
+								<label class="label"  for="user_name">Seu nome</label>
+								<input type="text" class="input inline" id="user_name" name="user_name">
 							</div>
 						</div>
+						<div class="sm-6-12">
+							<div class="input-group a-left">
+								<label class="label"  for="user_email">E-mail</label>
+								<input type="email" class="input inline" id="user_email" name="user_email">
+							</div>
+						</div>
+						<div class="sm-6-12">
+							<div class="input-group a-left">
+								<label class="label"  for="nome_noiva">Nome da noiva</label>
+								<input type="text" class="input inline" id="nome_noiva" name="nome_noiva">
+							</div>
+						</div>
+						<div class="sm-6-12">
+							<div class="input-group a-left">
+								<label class="label"  for="nome_noivo">Nome do noivo</label>
+								<input type="text" class="input inline" id="nome_noivo" name="nome_noivo">
+							</div>
+						</div>
+						<div class="sm-6-12">
+							<div class="input-group a-left">
+								<label class="label"  for="user_pass">Sua senha</label>
+								<input type="password" class="input inline" id="user_pass" name="user_pass">
+							</div>
+						</div>
+						<div class="sm-6-12">
+							<div class="input-group a-left">
+								<label class="label"  for="user_repass">Confirme sua senha</label>
+								<input type="password" class="input inline" id="user_repass" name="user_repass">
+							</div>
+						</div>
+					</div>
 
-						<input type="hidden" name="createAccount" value="1">
-						<input type="hidden" name="post_created" value="<?php echo get_the_ID(); ?>">
-						<button type="submit" class="btn btn-theme btn-uppercase">Criar conta</button>
-					</form>
-				</div>
-			<?php } ?>
+					<input type="hidden" name="createAccount" value="1">
+					<input type="hidden" name="post_created" value="<?php echo get_the_ID(); ?>">
+					<button type="submit" class="btn btn-theme btn-uppercase">Criar conta</button>
+				</form>
+			</div>
 		</div>
 	</div>
+	<?php } ?>
 <?php get_footer(); ?>
