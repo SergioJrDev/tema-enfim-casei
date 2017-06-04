@@ -30,7 +30,7 @@
 						</div>
 					<?php } ?>
 
-				<form class="form mg-bottom form bordered" method="post" id="create-login">
+				<form class="form animate delay to-top mg-bottom form bordered" method="post" id="create-login">
 					<div class="column">
 						<div class="sm-6-12">
 							<div class="input-group">

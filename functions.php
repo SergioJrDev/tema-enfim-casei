@@ -133,7 +133,6 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
-
 // Add Menu
 add_action( 'after_setup_theme', 'registerMenu' );
 function registerMenu() {
@@ -403,6 +402,18 @@ function makeLogin() {
 				returnError(1, $errors);
 			}
 		}
+	}
+}
+
+
+// Salva plano
+// Login
+add_action('init', 'savePlan');
+function savePlan() {
+	if(isset($_REQUEST['save_plan'])) {
+		$plano = $_REQUEST['radio-plan'];
+		$periodo = $_REQUEST['periodo'];
+		update_user_meta(get_current_user_id(), 'plan', $plano.'-'.$periodo);
 	}
 }
 

@@ -106,7 +106,48 @@ var x = setInterval(function() {
  		$('.dashboard').find("[data-show='" + $(this).data().menu + "']").addClass('active');
  		// console.log($(this).data().menu);
  		e.preventDefault();
- 	}); 
+ 	});
+
+ 	function setValue() {
+ 		var radio = $('.radio-plan:checked').val(),
+ 			preview = document.querySelector('.span-value')
+ 			select = $('#periodo').val();
+ 			preview.innerHTML = 'das'; 
+ 		if(radio == 1 && select == 3) {
+ 			preview.innerHTML = '49'; 
+ 		};
+
+ 		if(radio == 1 && select == 6) {
+ 			preview.innerHTML = '79'; 
+ 		};
+
+ 		if(radio == 1 && select == 1) {
+ 			preview.innerHTML = '149'; 
+ 		};
+
+ 		if(radio == 2 && select == 3) {
+ 			preview.innerHTML = '79'; 
+ 		};
+
+ 		if(radio == 2 && select == 6) {
+ 			preview.innerHTML = '149'; 
+ 		};
+
+ 		if(radio == 2 && select == 1) {
+ 			preview.innerHTML = '199'; 
+ 		};
+
+ 	} 
+
+ 	$('#periodo').change(function() {
+ 		setValue();
+ 	});	
+
+ 	$('.radio-plan').change(function() {
+ 		setValue();
+ 	});	
+
+ 	setValue();
 });
 
 $(window).on('load', function() {
