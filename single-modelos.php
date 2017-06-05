@@ -1,5 +1,19 @@
 <?php get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
+		<div class="change-color">
+			<p>Escolha a cor do site</p>
+			<div class="colors-holder">
+				<a data-color="#0B90AA" href="#" style="background-color: #0B90AA" class="red color"></a>
+				<a data-color="#1abc9c" href="#" style="background-color: #1abc9c" class="blue color"></a>
+				<a data-color="#38bbff" href="#" style="background-color: #38bbff" class="red color"></a>
+				<a data-color=" #B2998E" href="#" style="background-color:  #B2998E" class="red color"></a>
+				
+				<a data-color=" #F65676" href="#" style="background-color:  #F65676" class="red color"></a>
+				<a data-color="#34495e" href="#" style="background-color: #34495e" class="blue color"></a>
+				<a data-color="#e74c3c" href="#" style="background-color: #e74c3c" class="yellow color"></a>
+				<a data-color="#248888" href="#" style="background-color: #248888" class="red color"></a>
+			</div>
+		</div>
 		<?php
 			$noivo = get_post_meta(get_the_ID(), 'nome_noivo')[0];
 			$noiva = get_post_meta(get_the_ID(), 'nome_noiva')[0];

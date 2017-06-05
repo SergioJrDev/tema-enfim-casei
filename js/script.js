@@ -185,6 +185,14 @@ var x = setInterval(function() {
 			preview_parceled.innerHTML = '9';
 		}
 	 });
+
+	 $('.color').click(function(e){
+		var color = $(this).data().color;
+		// console.log(document.documentElement.style);
+		document.documentElement.style.setProperty('--color_demo_theme', color);  
+
+		e.preventDefault();
+	 }); 
 });
 
 $(window).on('load', function() {
