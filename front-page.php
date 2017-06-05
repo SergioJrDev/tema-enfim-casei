@@ -149,118 +149,86 @@
  		<section class="space-default plan">
  			<div class="container max-width-content">
  				<h2 class=" animate delay to-top font-poppins title-descr a-center">Planos</h2>
- 				<p class=" animate delay to-top a-center sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident porro animi numquam eos ex consequuntur, odio, ut a possimus fugit distinctio labore quidem magni laboriosam odit fuga commodi impedit.</p>
+ 				<p class=" animate delay to-top a-center sub-text">Temos apenas dois planos, os sites são os mesmos, a diferença é ter ou não a lista de presente virtual. Para você não ficar muito indeciso.</p>
 
  				<div class="column">
 
  					<div class="sm-6-12 animate delay to-top">
- 						<div class="plan-item a-center">
- 							<h3 class="font-poppins">Intermediário</h3>
- 							<p class="value "><span>R$</span>199,<span>00</span></p>
- 							<p>Em até 10x, sem juros</p>
+ 						<div class="plan-item form a-center">
+						 	<form class="plan-header">
+								<h3 class="font-poppin">Simples</h3>
+							
+								<div class="plan-value">
+									<p class="value-icon">6x<br/>R$</p>
+									<p class="value-self value_parceled_simples">6</p>
+									<p><span>,90</span></p>
+								</div>
+								<p>ou R$<span class="value_total_simples">59,40</span> pelo período de</p>
+								<select class="select_simples">
+									<option value="3">3 meses</option>
+									<option value="6">6 meses</option>
+									<option value="1">12 meses</option>
+								</select>
+								<div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/img/svg/paper-plane.png" alt=""></div>
+							 </form>
  							<ul class="mg-bottom">
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Blog</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Galeria de fotos</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Domínio Próprio</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Lista de presentes</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> História do casal</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Página de recados</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Online por 1 ano</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Confirmação de presença</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Local da cerimônia/festa</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Suporte</li>
- 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Contribuir para lua de mel</li>
- 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Online para sempre</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Blog Profissional</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Responsivo</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Albuns de fotos</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Save the date	</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Contagem Regressiva/Progressiva</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Mural de recados</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Banner com multiplas fotos</i></li>		
+								<li><i class="fa fa-check" aria-hidden="true"></i>Suporte e manutenção</i></li>		
+								<li><i class="fa fa-check" aria-hidden="true"></i>História do Casal</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Proteção do site com senha</i></li>		
+								<li><i class="fa fa-check" aria-hidden="true"></i>Confirmação de presença/RSVP</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Compartilhamento em redes sociais</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Local dos eventos	</i></li>
+								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i>Lista de presentes virtual</i></li>		
+								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i>Contribuição p/ lua de mel</i></li>		
+								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i>Pagamento pelo site</i></li>
+								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i>Recebimento do valor em dinheiro</i></li>			
  							</ul>
- 							<a href="#" class="btn btn-theme btn-block">Comprar</a>
  						</div>
  					</div>
-
  					<div class="sm-6-12 animate delay to-top">
- 						<div class="plan-item a-center">
- 							<div class="recomendado"></div>
- 							<h3 class="font-poppins">Avançado</h3>
- 							<p class="value "><span>R$</span>269,<span>00</span></p>
- 							<p>Em até 10x, sem juros</p>
+ 						<div class="plan-item form a-center">
+						 	<form class="plan-header">
+								<h3 class="font-poppin">Avançado</h3>
+								
+								<div class="plan-value">
+									<p class="value-icon">6x<br/>R$</p>
+									<p class="value-self value_parceled_advanced">9</p>
+									<p><span>,90</span></p>
+								</div>
+								<p>ou R$<span class="value_total_advanced">59,40</span> pelo período de</p>
+								<select class="select_advanced">
+									<option value="3">3 meses</option>
+									<option value="6">6 meses</option>
+									<option value="1">12 meses</option>
+								</select>
+								<div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/img/svg/aeroplane.png" alt=""></div>
+							 </form>
  							<ul class="mg-bottom">
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Blog</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Galeria de fotos</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Domínio Próprio</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Lista de presentes</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> História do casal</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Página de recados</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Confirmação de presença</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Local da cerimônia/festa</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Contribuir para lua de mel</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Online para sempre</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Online por 1 ano</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Suporte</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Blog Profissional</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Responsivo</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Albuns de fotos</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Save the date	</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Contagem Regressiva/Progressiva</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Mural de recados</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Banner com multiplas fotos</i></li>		
+								<li><i class="fa fa-check" aria-hidden="true"></i>Suporte e manutenção</i></li>		
+								<li><i class="fa fa-check" aria-hidden="true"></i>História do Casal</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Proteção do site com senha</i></li>		
+								<li><i class="fa fa-check" aria-hidden="true"></i>Confirmação de presença/RSVP</i></li>	
+								<li><i class="fa fa-check" aria-hidden="true"></i>Compartilhamento em redes sociais</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Local dos eventos	</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Lista de presentes virtual</i></li>		
+								<li><i class="fa fa-check" aria-hidden="true"></i>Contribuição p/ lua de mel</i></li>		
+								<li><i class="fa fa-check" aria-hidden="true"></i>Pagamento pelo site</i></li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Recebimento do valor em dinheiro</i></li>			
  							</ul>
- 							<a href="#" class="btn btn-theme btn-block">Comprar</a>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</section>
- 		<section class="space-default plan">
- 			<div class="container max-width-content">
- 				<h2 class=" animate delay to-top font-poppins title-descr a-center">Planos</h2>
- 				<p class=" animate delay to-top a-center sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident porro animi numquam eos ex consequuntur, odio, ut a possimus fugit distinctio labore quidem magni laboriosam odit fuga commodi impedit.</p>
-
- 				<div class="column">
-
- 					<div class="sm-6-12 animate delay to-top">
- 						<div class="plan-item a-center">
- 							<h3 class="font-poppins">Intermediário</h3>
- 							<p class="value "><span>R$</span>199,<span>00</span></p>
- 							<p>Em até 10x, sem juros</p>
- 							<ul class="mg-bottom">
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Blog</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Galeria de fotos</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Domínio Próprio</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Lista de presentes</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> História do casal</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Página de recados</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Online por 1 ano</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Confirmação de presença</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Local da cerimônia/festa</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Suporte</li>
- 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Contribuir para lua de mel</li>
- 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Online para sempre</li>
- 							</ul>
- 							<a href="#" class="btn btn-theme btn-block">Comprar</a>
- 						</div>
- 					</div>
-
- 					<div class="sm-6-12 animate delay to-top">
- 						<div class="plan-item a-center">
- 							<div class="recomendado"></div>
- 							<h3 class="font-poppins">Avançado</h3>
- 							<p class="value "><span>R$</span>269,<span>00</span></p>
- 							<p>Em até 10x, sem juros</p>
- 							<ul class="mg-bottom">
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Blog</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Galeria de fotos</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Domínio Próprio</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Lista de presentes</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> História do casal</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Página de recados</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Confirmação de presença</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Local da cerimônia/festa</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Contribuir para lua de mel</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Online para sempre</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Online por 1 ano</li>
- 								<li><i class="fa fa-check" aria-hidden="true"></i> Suporte</li>
- 							</ul>
- 							<a href="#" class="btn btn-theme btn-block">Comprar</a>
  						</div>
  					</div>
  				</div>

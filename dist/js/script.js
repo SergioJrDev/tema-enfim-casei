@@ -147,7 +147,44 @@ var x = setInterval(function() {
  		setValue();
  	});	
 
- 	setValue();
+ 	// setValue();
+
+	 $('.select_simples').change(function() {
+		 var option = $(this).val(),
+		 	preview_value_s = document.querySelector('.value_total_simples');
+			 preview_parceled_s = document.querySelector('.value_parceled_simples');
+		if(option == 1) {
+			preview_value_s.innerHTML = '197,40';
+			preview_parceled_s.innerHTML = '32';
+		}
+		if(option == 6) {
+			preview_value_s.innerHTML = '89,40';
+			preview_parceled_s.innerHTML = '14';
+		}
+		if(option == 3) {
+			preview_value_s.innerHTML = '41,40';
+			preview_parceled_s.innerHTML = '6';
+		} 
+	 });
+
+
+	 $('.select_advanced').change(function() {
+		 var option = $(this).val(),
+		 	preview_value = document.querySelector('.value_total_advanced');
+			 preview_parceled = document.querySelector('.value_parceled_advanced');
+		if(option == 1) {
+			preview_value.innerHTML = '257,40';
+			preview_parceled.innerHTML = '42';
+		}
+		if(option == 6) {
+			preview_value.innerHTML = '137,40';
+			preview_parceled.innerHTML = '22';
+		}
+		if(option == 3) {
+			preview_value.innerHTML = '59,40';
+			preview_parceled.innerHTML = '9';
+		}
+	 });
 });
 
 $(window).on('load', function() {
