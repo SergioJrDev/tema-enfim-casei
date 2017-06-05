@@ -43,7 +43,7 @@
  						<p class="animate delay to-top ">Você escolhe um modelo de site entre vários prontos ou combinar as partes que desejar e criar seu site do seu jeito.</p>
  					</div>
  					<div class="sm-6-12">
-						<div class="slide" >
+						<div class="slide animate delay to-top" >
 							<div class="slider-ite owl-carousel" id="sliderhome">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/mobile/header1.png" alt="">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/mobile/header2.jpg" alt="">
@@ -120,26 +120,26 @@
  			</div>
  		</section>
 
- 		<section class="space-default how-works">
- 			<div class="container max-width-content">
+ 		<section class="space-default gradient how-works">
+ 			<div class="container max-width-conten">
  				<h2 class="title-descr font-poppins a-center">Como funciona</h2>
  				<div class="column">
- 					<div class="sm-4-12">
+ 					<div class="sm-4-12 animate delay to-top">
  						<div class="how-item">
 	 						<span>1</span>
-	 						<p>Você se cadastra e cria quantos modelos de sites quiser, do seu jeito.</p>
+	 						<p>Você se cadastra, cria quantos modelos de sites quiser e escolhe um entre eles pra ser seu site.</p>
  						</div>
  					</div>
- 					<div class="sm-4-12">
+ 					<div class="sm-4-12 animate delay to-top">
  						<div class="how-item">
 	 						<span>2</span>
-	 						<p>Depois de escolher entre um entre eles, ele será montado e você receberá a senha para acessa-lo.</p>
+	 						<p>Nós receberemos seu pedido, montamos seu site e pouco depois te mandamos os dados de acesso.</p>
  						</div>
  					</div>
- 					<div class="sm-4-12">
+ 					<div class="sm-4-12 animate delay to-top">
  						<div class="how-item">
 	 						<span>3</span>
-	 						<p>Pronto, agora é só começar a publicar suas fotos, textos e divulgar.</p>
+	 						<p>Pronto, você já pode colocar suas fotos, editar os textos e divulgar para todo mundo acessar.</p>
  						</div>
  					</div>
  				</div>
@@ -206,12 +206,72 @@
  				</div>
  			</div>
  		</section>
-<!--  		<section class="space-default ">
+ 		<section class="space-default plan">
+ 			<div class="container max-width-content">
+ 				<h2 class=" animate delay to-top font-poppins title-descr a-center">Planos</h2>
+ 				<p class=" animate delay to-top a-center sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident porro animi numquam eos ex consequuntur, odio, ut a possimus fugit distinctio labore quidem magni laboriosam odit fuga commodi impedit.</p>
+
+ 				<div class="column">
+
+ 					<div class="sm-6-12 animate delay to-top">
+ 						<div class="plan-item a-center">
+ 							<h3 class="font-poppins">Intermediário</h3>
+ 							<p class="value "><span>R$</span>199,<span>00</span></p>
+ 							<p>Em até 10x, sem juros</p>
+ 							<ul class="mg-bottom">
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Blog</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Galeria de fotos</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Domínio Próprio</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Lista de presentes</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> História do casal</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Página de recados</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Online por 1 ano</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Confirmação de presença</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Local da cerimônia/festa</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Suporte</li>
+ 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Contribuir para lua de mel</li>
+ 								<li class="no-has"><i class="fa fa-times" aria-hidden="true"></i> Online para sempre</li>
+ 							</ul>
+ 							<a href="#" class="btn btn-theme btn-block">Comprar</a>
+ 						</div>
+ 					</div>
+
+ 					<div class="sm-6-12 animate delay to-top">
+ 						<div class="plan-item a-center">
+ 							<div class="recomendado"></div>
+ 							<h3 class="font-poppins">Avançado</h3>
+ 							<p class="value "><span>R$</span>269,<span>00</span></p>
+ 							<p>Em até 10x, sem juros</p>
+ 							<ul class="mg-bottom">
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Blog</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Galeria de fotos</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Domínio Próprio</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Lista de presentes</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> História do casal</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Página de recados</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Confirmação de presença</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Local da cerimônia/festa</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Contribuir para lua de mel</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Online para sempre</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Online por 1 ano</li>
+ 								<li><i class="fa fa-check" aria-hidden="true"></i> Suporte</li>
+ 							</ul>
+ 							<a href="#" class="btn btn-theme btn-block">Comprar</a>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</section>
+  		<section class="space-default ">
  			<div class="container">
  				<h2 class="title-descr a-center animate delay to-top font-poppins">Depoimentos</h2>
 
  			</div>
- 		</section> -->
+ 		</section> 
 
 		<?php
 			// $args = array(
