@@ -14,6 +14,13 @@
 		</div>
 		<div class="container max-width-content">
 
+					<?php 
+						if($_GET['email']) { ?>
+							<div class="alert a-center animate delay to-top alert-danger">
+								<p>E-mail já registrado. Esqueceu sua senha?</p>
+							 </div>
+						<?php }	?>
+
 					<?php $errors = $GLOBALS['errors'];
 						if($errors) { ?>
 							<div class="alert a-center alert-danger">

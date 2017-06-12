@@ -14,7 +14,14 @@
 						 	<i class="fa fa-cog fa-spin fa-1x fa-fw" aria-hidden="true"></i>
 							 Seu site está sendo criado. Em breve você receberá todos os dados de acesso.</p>
 					<?php } ?>
-	 				<?php if($progress == 2 AND get_user_meta( get_current_user_id(), 'payment_success')) { ?>
+
+	 				<?php if($progress == 2) { ?>
+	 					<p class="alert alert-success a-center mg-boottom">
+						 	<!--<i class="fa fa-smile-o" aria-hidden="true"></i>-->
+							 Seu site está pronto! Use as informações a baixo para acessa-lo.</p>
+					<?php } ?>
+
+	 				<?php if($progress == 2 AND get_user_meta( get_current_user_id(), 'payment_uccess')) { ?>
 							<div data-show='1' class="dashboard-view active">
 								<h2 class="font-poppins">Pagamento</h2>
 								<div class="alert a-center alert-danger">
@@ -23,7 +30,6 @@
 								<div class="column">
 									<div class="sm-12-12">
 										<div class="view-info mg-bottom model-group">
-											<!-- <span class="title">Meus Modelos</span> -->
 											<div class="payment-box column">
 												<?php
 													$plan_user = get_user_meta(get_current_user_id(), 'plan')[0];
@@ -113,6 +119,7 @@
 								</div> -->
 								<div class="column">
 									<div class="sm-12-12">
+										<?php if(!$progress == 2) { ?>
 										<div class="view-info mg-bottom model-group">
 											<span class="title">Meus Modelos</span>
 											<div class="model-list">
@@ -138,6 +145,7 @@
 											</div>
 											<a href="<?php echo home_url('/crie-seu-site') ?>" class="btn btn-theme btn-small btn-radius">Criar modelo</a>
 										</div>
+										<?php } ?>
 									</div>
 									<?php $url = get_field('url', 'user_'.get_current_user_id());
 									if($url) { ?>

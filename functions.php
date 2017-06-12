@@ -223,7 +223,7 @@ function createSite() {
 				$args = array(
 					'post_title' => get_current_user_id().'-'.$noiva.'-e-'.$noivo,
 					'post_type' => 'pedidos',
-					'post_status' => 'publish',
+					// 'post_status' => 'publish',
 				);
 
 				$new_post_id = wp_insert_post( $args );
@@ -259,7 +259,7 @@ function createSite() {
 	}
 }
 
-// Delete modelo
+// Update User
 add_action('init', 'updateUser');
 
 function updateUser() {
@@ -281,6 +281,9 @@ function updateUser() {
 		update_user_meta(get_current_user_id(), 'nome_noiva', $nome_noiva);
 		update_user_meta(get_current_user_id(), 'nome_noivo', $nome_noivo);
 		update_user_meta(get_current_user_id(), 'data_casamento', $data_casamento);
+
+		wp_redirect(home_url('/meus-dados/atualizar-dados/?success=1'));
+		exit;
 
 	}
 }
@@ -354,11 +357,12 @@ function createAccount() {
 	 		update_user_meta($id_user, 'nome_noiva', $nome_da_noiva);
 	 		update_user_meta($id_user, 'nome_noivo', $nome_do_noivo);
 
-			 wp_update_user(array( 'ID' => get_current_user_id(), 'first_name' => $nome ));
 
-	 		if($post_created) {
-				wp_update_post(array('ID' => $post_created, 'post_author' => $id_user));
-	 		}
+			wp_update_user(array( 'ID' => $id_user, 'first_name' => $nome ));
+
+			update_field('data_casamento', $data_casamento, 'user_'.$id_user);
+			update_user_meta( $id_user, 'billing_phone', $user_phone );
+			update_user_meta($id_user, 'data_casamento', $data_casamento);
 
 			$info = array();
 			$info['user_login'] = $email;
@@ -369,7 +373,12 @@ function createAccount() {
 			wp_redirect(home_url('/meus-dados'));
 			exit;
 		} else {
-			returnError(1, $errors);
+	 		if($post_created) {
+				wp_redirect(home_url('/cadastro?email=1'));
+				exit;
+	 		} else {
+				returnError(1, $errors);
+			 }
 		}
 	}
 }

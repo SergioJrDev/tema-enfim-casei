@@ -13,6 +13,11 @@
  		</section>
  		<section class="mg-bottom">
  			<div class="container max-width-content">
+				 <?php if($_GET['success']) { ?>
+				 	<div class="alert a-center animate delay to-top alert-success">
+			 			<p class="">Dados salvos com sucesso.</p>
+					</div>
+				 <?php } ?>
  				<form class="form bordered" method="post">
 					<div class="column">
 						<div class="sm-12-12">

@@ -33,7 +33,7 @@
 				 					<div class="clearfix"></div>
 				 					<nav class="nav-content demo_nav">
 				 						<ul class="nav-list">
-				 							<li><a href="#">Início</a></li>
+				 							<li><a href="#" class="menu_active_demo">Início</a></li>
 				 							<li><a href="#">Local</a></li>
 				 							<li><a href="#">RSVP</a></li>
 				 							<li><a href="#">Contato</a></li>
@@ -67,7 +67,7 @@
 				 					<div class="clearfix"></div>
 				 					<nav class="nav-content demo_nav">
 				 						<ul class="nav-list">
-				 							<li><a href="#">Início</a></li>
+				 							<li><a href="#" class="menu_active_demo">Início</a></li>
 				 							<li><a href="#">Local</a></li>
 				 							<li><a href="#">RSVP</a></li>
 				 							<li><a href="#">Contato</a></li>
@@ -98,7 +98,7 @@
 				 					<div class="clearfix"></div>
 				 					<nav class="nav-content demo_nav">
 				 						<ul class="nav-list">
-				 							<li><a href="#">Início</a></li>
+				 							<li><a href="#" class="menu_active_demo">Início</a></li>
 				 							<li><a href="#">Local</a></li>
 				 							<li><a href="#">RSVP</a></li>
 				 							<li><a href="#">Contato</a></li>
@@ -132,7 +132,7 @@
 				 					<div class="clearfix"></div>
 				 					<nav class="nav-content demo_nav">
 				 						<ul class="nav-list">
-				 							<li class="a-right"><a href="#">Início</a></li>
+				 							<li class="a-right"><a href="#" class="menu_active_demo">Início</a></li>
 				 							<li class="a-right"><a href="#">Local</a></li>
 				 							<li class="a-right"><a href="#">RSVP</a></li>
 				 							<li class="a-right"><a href="#">Contato</a></li>
@@ -279,7 +279,7 @@
 							</div>
 							<div class="column">
 								<div class="sm-6-12 ">
-									<div class="couple-item a-cener">
+									<div class="couple-item a-cener aright">
 										<p class="font-dancing couple-name "><?php echo $noivo ?></p>
 										<span class="write-by font-dancing">Escrito pela noiva</span>
 										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
@@ -676,7 +676,7 @@
 					</section>
 				<?php } ?>
 				<?php if($contagem == 6) { ?>
-					<section class="no-background space-defaul timer">
+					<section class="no-background space-defaul space-default-top timer">
 						<div class="containe max_width">
 							<h2 class="a-center section-title style_font">O Dia do casamento chega em...</h2>
 							<div class="column">
@@ -1368,16 +1368,15 @@
 				<?php } ?>
 				<?php if($blog == 4) { ?>
 			 		<section class="space-default services new-blog">
-						<div class="container">
-							<h2 class="a-center font-dancing section-title color_demo">Blog</h2>
+						<div class="container hidden-mobil">
 							<div class="column">
 								<div class="sm-4-12">
 									<div class="new-blog-item">
-										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/party.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/party.jpg">
 										</div>
 										<div class="new-blog-content">
-											<h2>Qual melhor tipo de bolo?</h2>
+											<h2>Qual música você gostaria de ouvir na festa?</h2>
 											<span>publicado em 12 de maio</span>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 											<a href="#">Ler mais</a>
@@ -1386,11 +1385,11 @@
 								</div>
 								<div class="sm-4-12">
 									<div class="new-blog-item">
-										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/flores.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/flores.jpg">
 										</div>
 										<div class="new-blog-content">
-											<h2>5 destinos para a lua de mel</h2>
+											<h2>Quem será que vai pegar o buquê?</h2>
 											<span>publicado em 12 de maio</span>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 											<a href="#">Ler mais</a>
@@ -1399,11 +1398,11 @@
 								</div>
 								<div class="sm-4-12">
 									<div class="new-blog-item">
-										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/cup.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/cup.jpg">
 										</div>
 										<div class="new-blog-content">
-											<h2>Como receber os convidados?</h2>
+											<h2>Lista de docinhos</h2>
 											<span>publicado em 12 de maio</span>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 											<a href="#">Ler mais</a>

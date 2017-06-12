@@ -45,7 +45,7 @@
  					<div class="sm-6-12">
 						<div class="slide animate delay to-top" >
 							<div class="slider-ite owl-carousel" id="sliderhome">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/mobile/header1.png" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/mobile/header1.jpg" alt="">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/mobile/header2.jpg" alt="">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/mobile/header3.jpg" alt="">
 							</div>

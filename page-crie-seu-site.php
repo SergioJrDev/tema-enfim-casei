@@ -19,7 +19,7 @@
 				<div class="owl-carousel slidersingle components mg-bottom">
 					<section class="main auto-h apresentation overlay no-bg-mobile">
 						<input type="radio" class="hidden" name="header" value="1">
-						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header1.png">
+						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header1.jpg">
 						<header class="default transparent hidden-mobile">
 				 			<div class="container">
 				 				<h1 class="logo"></h1>
@@ -204,7 +204,7 @@
 									</div>
 									<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noiva ? $noiva : 'Natália' ?></p>
 									<span class="write-by font-dancing a-center">Escrito pelo noivo</span>
-									<p class="font-montserrrat a-center max-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+									<p class="font-montserrrat a-center max-width">Desde quando conheci a Natália, eu soube que ela era a pessoa certa para mim, que eu gostaria de passar o resto de nossas vidas juntos. Estar com ela foi a melhor coisa que me aconteceu e hoje sou a pessoa mais feliz do mundo por casar com ela.</p>
 								</div>
 							</div>
 							<div class="sm-6-12 ">
@@ -214,7 +214,7 @@
 									</div>
 									<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noivo ? $noivo : "Sérgio" ?></p>
 									<span class="write-by font-dancing a-center">Escrito pela noiva</span>
-									<p class="font-montserrrat a-center max-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+									<p class="font-montserrrat a-center max-width">Me faltam palavras pra descrever o Sérgio, ele é carinhoso, romântico, dedicado, meu melhor amigo e o amor da minha vida. Não consigo imaginar um dia longe dele e quero fazê-lo muito feliz, assim como ele me faz, pelo resto da minha vida.</p>
 								</div>
 							</div>
 						</div>
@@ -255,8 +255,9 @@
 						</div>
 					</div>
 					<div class="couple space-default block">
+						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos5.jpg">
 						<input type="radio" class="hidden" name="casal" value="5">
-						<div class="containe max-width-content">
+						<div class="containe max-width-content hidden-mobile">
 							<h2 class="a-center font-dancing section-title ">Os Noivos</h2>
 							<div class="column">
 								<div class="sm-6-12 ">
@@ -270,16 +271,16 @@
 									<div class="couple-item a-ceter">
 										<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Natália' ?></p>
 										<span class="write-by font-dancing">Escrito pelo noivo</span>
-										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+										<p class="h">Desde quando conheci a Natália, eu soube que ela era a pessoa certa para mim, que eu gostaria de passar o resto de nossas vidas juntos. Estar com ela foi a melhor coisa que me aconteceu e hoje sou a pessoa mais feliz do mundo por casar com ela.</p>
 									</div>
 								</div>
 							</div>
 							<div class="column">
 								<div class="sm-6-12 ">
-									<div class="couple-item a-cener">
+									<div class="couple-item a-cener aright">
 										<p class="font-dancing couple-name "><?php echo $noivo ? $noivo : "Sérgio" ?></p>
 										<span class="write-by font-dancing">Escrito pela noiva</span>
-										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+										<p class="h">Me faltam palavras pra descrever o Sérgio, ele é carinhoso, romântico, dedicado, meu melhor amigo e o amor da minha vida. Não consigo imaginar um dia longe dele e quero fazê-lo muito feliz, assim como ele me faz, pelo resto da minha vida.</p>
 									</div>
 								</div>
 								<div class="sm-6-12 ">
@@ -299,7 +300,7 @@
 					<div class="owl-carousel slidersingle components">
 						<section class="space-default local with-img no-bg-mobile">
 							<input type="radio" class="hidden" name="local" value="1">
-							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/local1.jpg">
+							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos1.jpg">
 							<div class="container max-width-content hidden-mobile">
 								<div class="column">
 									<div class="sm-6-12">
@@ -333,7 +334,7 @@
 						</section>
 						<section class="space-default local with-title">
 							<input type="radio" class="hidden" name="local" value="2">
-							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/local2.jpg">
+							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos2.jpg">
 							<div class="container hidden-mobile max-widt-content">
 								<!-- <h2 class="font-dacing a-center mg-bottom">O Casamento</h2> -->
 								<div class="column">
@@ -358,7 +359,7 @@
 						</section>
 						<section class="space-defult local">
 							<input type="radio" class="hidden" name="local" value="3">
-							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/local3.jpg">
+							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos3.jpg">
 							<div class="containe hidden-mobile max-width-content ">
 								<!-- <h2 class="a-center section-title">Eventos</h2> -->
 								<div class="column">
@@ -676,8 +677,9 @@
 					</section> 
 
 					<section class="no-background space-defaul timer">
+						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem6.jpg">
 						<input type="radio" class="hidden" name="contagem" value="6">
-						<div class="containe max_width">
+						<div class="containe max_width hidden-mobile">
 							<h2 class="a-center section-title style_font">O Dia do casamento chega em...</h2>
 							<div class="column">
 								<div class="xs-6-12 sm-3-12">
@@ -1043,8 +1045,9 @@
 					</section>
 
 			 		<section class="space-default testimonial">
+						 <img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados4.jpg">
 					 	<input type="radio" class="hidden" name="recados" value="4">
-						<div class="containr max-width-content">
+						<div class="containr max-width-content hidden-mobile">
 							<div class="owl-carousel slidertestimonial owl-theme">
 								<div class="sm-6-12">
 									<div class="holder">
@@ -1350,16 +1353,17 @@
 					</div>
 
 			 		<section class="space-default services new-blog">
+						 <img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog4.jpg">
 					 	<input type="radio" class="hidden" name="blog" value="4">
-						<div class="containe">
+						<div class="containe hidden-mobile">
 							<div class="column">
 								<div class="sm-4-12">
 									<div class="new-blog-item">
-										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/party.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/party.jpg">
 										</div>
 										<div class="new-blog-content">
-											<h2>Qual melhor tipo de bolo?</h2>
+											<h2>Qual música você gostaria de ouvir na festa?</h2>
 											<span>publicado em 12 de maio</span>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 											<a href="#">Ler mais</a>
@@ -1368,11 +1372,11 @@
 								</div>
 								<div class="sm-4-12">
 									<div class="new-blog-item">
-										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/flores.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/flores.jpg">
 										</div>
 										<div class="new-blog-content">
-											<h2>5 destinos para a lua de mel</h2>
+											<h2>Quem será que vai pegar o buquê?</h2>
 											<span>publicado em 12 de maio</span>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 											<a href="#">Ler mais</a>
@@ -1381,11 +1385,11 @@
 								</div>
 								<div class="sm-4-12">
 									<div class="new-blog-item">
-										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg')">
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg">
+										<div class="new-blog-img cover-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/cup.jpg')">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/cup.jpg">
 										</div>
 										<div class="new-blog-content">
-											<h2>Como receber os convidados?</h2>
+											<h2>Lista de docinhos</h2>
 											<span>publicado em 12 de maio</span>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 											<a href="#">Ler mais</a>
