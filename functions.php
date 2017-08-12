@@ -203,8 +203,9 @@ function createModel() {
 add_action('init', 'createSite');
 function createSite() {
 	if(isset($_REQUEST['create_site'])) {
-		if(!get_user_meta(get_current_user_id())['pronto'][0] == 1) {
+		// if(!get_user_meta(get_current_user_id())['pronto'][0] == 1) {
 			$post_id = $_REQUEST['create_site'];
+			$color = $_REQUEST['color'];
 			$author = get_post($post_id)->post_author;
 
 			if(get_current_user_id() == $author) {
@@ -239,7 +240,8 @@ function createSite() {
 							'blog' => $blog,
 							'nome_noivo' => $noivo,
 							'nome_noiva' => $noiva,
-							'modelo' => get_permalink($post_id)
+							'modelo' => get_permalink($post_id),
+							'color' => $color
 						);
 
 				foreach ($fields as $key => $value) {
@@ -250,12 +252,10 @@ function createSite() {
 				update_user_meta(get_current_user_id(), 'pronto', 1);
 				wp_redirect(home_url('/meus-dados'));
 				exit;
-			} else {
-				echo 'No no';
-			}	
-		} else {
-			echo 'Opa, parece que vc já tem um site.';
-		}
+			};
+		// } else {
+		// 	echo 'Opa, parece que vc já tem um site.';
+		// }
 	}
 }
 

@@ -23,6 +23,7 @@
 								<input type="hidden" name="in-front" value="1">
 								<button type="submit" class="btn btn-theme gradient btn-block">Entrar</button>
 							</div>
+							<?php echo do_shortcode('[fbl_login_button redirect="" hide_if_logged=""]'); ?>
 							<p>ou</p>
 							<a href="<?php echo home_url('/cadastro') ?>">Criar minha conta</a>
 						</form>
@@ -144,9 +145,52 @@
  					</div>
  				</div>
  			</div>
- 		</section>
+		 </section>
+		 <section class="space-default pricing">
+			 <div class="container">
+				 <h2 class="title-descr mg-bottom font-poppins a-center">Custo/Benefício</h2>
+				 <div class="column">
+					 <div class="sm-6-12 plan-item">
+						 <p class="a-center">Tenha um site próprio com:</p>
+						 <ul>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Blog Profissional</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo para celular</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Albuns de fotos</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Contagem Regressiva/Progressiva</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Mural de recados</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Banner com multiplas fotos</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Suporte e manutenção</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> História do Casal</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Proteção do site com senha</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Confirmação de presença/RSVP</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Compartilhamento em redes sociais</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Local dos eventos</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Lista de presentes virtual</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Contribuição p/ lua de mel</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Pagamento pelo site</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Recebimento do valor em dinheiro</li>
+						 </ul>
+					 </div>
+					 <div class="sm-6-12">
+						<p class="a-center">Por apenas</p>
+						 <div class="a-center pricing-details">
+							<h2><span>R$</span>299<span>,00</span></h2>
+							<p>em até 6 vezes </p>
+							<div class="adds">
+								<p>Sem planos para você ficar indeciso.</p>
+								<p>Sem taxas adicionais por outras coisas.</p>
+								<p>Sem brincadeira.</p>
+							</div>
+							<p>Ainda experimente gratuitamente por 5 dias!</p>
+							<a href="<?php echo home_url('/crie-seu-site') ?>" class="btn btn-theme">Crie seu site</a>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </section>
 
- 		<section class="space-default plan">
+ 		<!-- <section class="space-default plan">
  			<div class="container max-width-content">
  				<h2 class=" animate delay to-top font-poppins title-descr a-center">Planos</h2>
  				<p class=" animate delay to-top a-center sub-text">Temos apenas dois planos, os sites são os mesmos, a diferença é ter ou não a lista de presente virtual. Para você não ficar muito indeciso.</p>
@@ -239,7 +283,7 @@
  				<h2 class="title-descr a-center animate delay to-top font-poppins">Depoimentos</h2>
 
  			</div>
- 		</section> 
+ 		</section>  -->
 
 		<?php
 			// $args = array(

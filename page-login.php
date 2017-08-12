@@ -38,6 +38,7 @@
 					</div>
 					<div class="sm-12-12">
 						<p class="a-center">Ainda não tem conta? <a href="<?php echo home_url('/cadastro') ?>">Crie uma aqui</a></p>
+						<?php echo do_shortcode('[fbl_login_button redirect="" hide_if_logged=""]'); ?>
 					</div>
 				</div>
  			</div>

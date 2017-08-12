@@ -2,59 +2,51 @@
 			<div class="container">
 				<div class="column">
 					<div class="sm-3-12">
-						<div class="footer-item">
-							<h3 class="footer-title">Super Components</h3>
-							<p>
-								Caramelo Comisco eorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptas possimus, culpa
-								spernatur fugiat atque odio.
-							</p>
+						<div class="footer-social footer-item">
+							<h3 class="footer-title">Sobre o Meu Casamento Ideal</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsa doloremque dolores harum, numquam sed facere! Nisi molestiae ex animi delectus harum numquam deserunt atque! Distinctio maiores architecto minus, eos!</p>
+						</div>
+					</div>
+					<div class="sm-3-12">
+						<div class="footer-social footer-item">
+							<h3 class="footer-title">Dúvidas frequentes</h3>
+							<div class="icon">
+								<a href="#">
+									<i class="fa fa-github" aria-hidden="true"></i>
+									/Sergioamjr
+								</a>
+							</div>
 						</div>
 					</div>
 					<div class="sm-3-12">
 						<div class="nav-footer  footer-item">
 							<h3 class="footer-title">Mapa do Site</h3>
-							<nav>
-								<ul>
-									<li><a href="#">Início</a></li>
-		 							<li><a href="#">Como usar</a></li>
-									<li><a href="#">Componentes</a></li>
-		 							<li><a href="#">Contribua no Github</a></li>
-		 							<li><a href="#">Contato</a></li>
+							<?php $let = array(
+								'menu' => 'primary',
+								// 'menu_class' => 'nav-list',
+								'container' => 'nav',
+								'container_class' => 'nav-content not-demo'
+							);
+							wp_nav_menu($let);
+							?>
+							<nav class="nav-content">
+								<ul class="nav-list">
+									<?php if(!is_user_logged_in()) { ?>
+										<li><a href="<?php echo home_url('login'); ?>">Entrar</a></li>
+									<?php } else { ?>
+										<li><a href="<?php echo home_url('/meus-dados'); ?>">Meus dados</a></li>
+										<li><a href="<?php echo wp_logout_url(home_url()); ?>">Sair</a></li>
+									<?php } ?>
 								</ul>
 							</nav>
 						</div>
 					</div>
 					<div class="sm-3-12">
 						<div class="footer-social footer-item">
-							<h3 class="footer-title">Minhas redes sociais</h3>
+							<h3 class="footer-title">Entre em contato</h3>
 							<div class="icon">
-								<a href="#">
-									<i class="fa fa-facebook" aria-hidden="true"></i>
-									/sergiojunior
-								</a>
-							</div>
-							<div class="icon">
-								<a href="#">
-									<i class="fa fa-instagram" aria-hidden="true"></i>
-									@ahserginho
-								</a>
-							</div>
-							<div class="icon">
-								<a href="#">
-									<i class="fa fa-twitter" aria-hidden="true"></i>
-									@ahserginho
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="sm-3-12">
-						<div class="footer-social footer-item">
-							<h3 class="footer-title">Contribua no Github!</h3>
-							<div class="icon">
-								<a href="#">
-									<i class="fa fa-github" aria-hidden="true"></i>
-									/Sergioamjr
-								</a>
+								<p>Mande um email para oi@meucasamentoideal.com.br</p>
+								<p>Ou pelo whatsapp 11 94927-8243</p>
 							</div>
 						</div>
 					</div>

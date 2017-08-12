@@ -33,30 +33,47 @@
 	.form {
 	    max-width: 350px;
 	    background: rgb(255, 255, 255);
-	    padding: 25px 20px;
+	    padding: 15px;
 	    border-top: 5px solid #47a6e0;
 	    border-radius: 4px;
 	    margin: 0 auto;
 	    .label {
-	    	font-weight: normal;
+			font-weight: normal;
+			margin-bottom: 5px;
+			font-size: 14px;
+			line-height: 1;
+			display: block;
 	    }
+		.input, input {
+			padding: 4px 5px;
+		}
+		.input-group {
+			margin-bottom: 10px;
+		}
 	    .title, p {
 		    color: #585858;
 		    text-align: center;
 		    margin-bottom: 15px;
-		    font-size: 18px;
+		    font-size: 14px;
 		    text-transform: uppercase;
 		    font-weight: bold;
 	    }
 	    p {
 	    	font-size: 12px;
+			margin-bottom: 5px;
 	    }
-
 	    a {
-	    	
 	    	text-align: center;
 	    	display: block;
+			margin: 0px;
+			width: 100%;
+			max-width: 100%;
+			font-size: 14px;
+			text-align: center;
 	    }
+		.css-fbl {
+			margin-bottom: 10px;
+		}
 	}
 	@media (max-width: max_sm) {
 		.hide-sm {
@@ -201,7 +218,6 @@
 	}
 	&-item {
 		margin-bottom: 20px;
-		background: #fff;
 		position: relative;
 	    border-radius: 4px;
 	    h3 {
@@ -274,6 +290,47 @@
 		}
 		.sub-text {
 			margin-bottom: 60px;
+		}
+	}
+}
+
+.pricing {
+	position: relative;
+	overflow: hidden;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 90%;
+		height: 100%;
+		background: #f6f6f6;
+		top: 0;
+		right: -390px;
+		transform: skew(-20deg);
+	}
+	.container {
+		z-index: 1;
+	}
+	&-details {
+		h2 {
+			font-size: 70px;
+			line-height: 1;
+			color: #dc5a5a;
+			span {
+				font-size: 14px;
+			}
+		}
+	}
+	.adds {
+		margin: 20px 0;
+		p {
+			margin-bottom: 0;
+		}
+	}
+	@media (min-width: 666px) and (max-width: sm) {
+		& { 
+			ul {
+				column-count: 2;
+			}
 		}
 	}
 }

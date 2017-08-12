@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="change-color">
-			<p>Escolha a cor do site</p>
+			<p>Escolha a cor do seu site</p>
 			<div class="colors-holder">
 				<a data-color="#0B90AA" href="#" style="background-color: #0B90AA" class="red color"></a>
 				<a data-color="#1abc9c" href="#" style="background-color: #1abc9c" class="blue color"></a>
@@ -1436,6 +1436,7 @@
 						<div class="xs-6-12">
 							<p>Quer seu site como esse modelo?</p>
 							<form method="post">
+								<input type="hidden" name="color" id="color">
 								<input type="hidden" name="create_site" value="<?php echo get_the_ID(); ?>">
 								<button type="submit" class="btn btn-theme btn-radius btn-uppercase">Sim, quero esse modelo</button>
 							</form>
@@ -1466,6 +1467,9 @@
 		<div class="container">
 			<div class="column">
 				<div class="xs-12-12">
+						<form>
+							<input type="hidden" name="color" id="color">
+						</form>
 					<p>Gostaria de ter um site assim?</p>
 					<a href="#" class="btn btn-theme btn-small btn-radius btn-acount">Crie sua conta</a>
 				</div>
@@ -1514,7 +1518,8 @@
 
 					<input type="hidden" name="createAccount" value="1">
 					<input type="hidden" name="post_created" value="<?php echo get_the_ID(); ?>">
-					<button type="submit" class="btn btn-theme btn-uppercase">Criar conta</button>
+					<button type="submit" class="btn btn-theme mg-bottom btn-uppercase">Criar conta</button>
+					<?php echo do_shortcode('[fbl_login_button redirect="" hide_if_logged=""]'); ?>
 				</form>
 			</div>
 		</div>

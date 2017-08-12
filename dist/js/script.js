@@ -190,9 +190,9 @@ var x = setInterval(function() {
 		var color = $(this).data().color;
 		// console.log(document.documentElement.style);
 		document.documentElement.style.setProperty('--color_demo_theme', color);  
-
+		document.getElementById('color').value = color;
 		e.preventDefault();
-	 }); 
+	 });  
 });
 
 $(window).on('load', function() {

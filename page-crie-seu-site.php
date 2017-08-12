@@ -1146,9 +1146,9 @@
 						<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog2.jpg">
 						<div class="blog bg-overlay hidden-mobile column">
 							<div class="sm-4-12">
-								<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/bride.jpg')">
+								<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/bride.jpg')">
 									<figure>
-										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/Blog/bride.jpg" alt="">
+										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/bride.jpg" alt="">
 									</figure>
 									<div>
 										<h2>Saiba como foi meu dia de noiva</h2>
@@ -1176,9 +1176,9 @@
 							</div>
 
 							<div class="sm-4-12 ">
-								<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/hotel.jpg')">
+								<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/hotel.jpg')">
 									<figure>
-										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/Blog/hotel.jpg" alt="">
+										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/hotel.jpg" alt="">
 									</figure>
 									<div>
 										<h2>Onde se hospedar próximo a cerimônia?</h2>
@@ -1206,9 +1206,9 @@
 							</div>
 
 							<div class="sm-4-12 ">
-								<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/music.jpg')">
+								<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/music.jpg')">
 									<figure>
-										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/Blog/music.jpg" alt="">
+										<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/music.jpg" alt="">
 									</figure>
 									<div>
 										<h2>Como será a playlist?</h2>
