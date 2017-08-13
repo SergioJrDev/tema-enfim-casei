@@ -12,7 +12,7 @@
 	 				<?php if($progress == 1) { ?>
 	 					<p class="alert alert-success a-center mg-boottom">
 						 	<i class="fa fa-cog fa-spin fa-1x fa-fw" aria-hidden="true"></i>
-							 Seu site está sendo criado. Em breve você receberá todos os dados de acesso.</p>
+							 Seu site está sendo criado. Em breve você receberá todos os dados de acesso.<br/>Se tiver alguma dúvida, por favor, entre em contato conosco pelo telefone ou email no rodapé do site.</p>
 					<?php } ?>
 
 	 				<?php if($progress == 2) { ?>
@@ -112,11 +112,9 @@
 						}; ?>
 					<div class="column">
 				 		<div class="sm-12-12">
-				 			<div data-show='1' class="dashboard-view active">
+							<?php if($progress !== '1') { ?>
+				 				<div data-show='1' class="dashboard-view active">
 								<h2 class="font-poppins">Dados do meu site</h2>
-								<!-- <div class="alert a-center alert-danger">
-									<p>Atenção, faltam 5 dias para expirar seu teste.</p>
-								</div> -->
 								<div class="column">
 									<div class="sm-12-12">
 										<?php if(!$progress == 2) { ?>
@@ -198,17 +196,10 @@
 									</div>
 									<?php }	?>
 
-									<?php $modelo = get_field('modelo', 'user_'.get_current_user_id());
-									if($modelo) { ?>
-									<div class="sm-6-12">
-										<div class="view-info">
-											<span class="title">Modelo</span>
-											<p><a href="<?php echo $modelo ?>"> <?php echo $modelo; ?></a></p>
-										</div>
-									</div>
-									<?php }	?>
+									<?php $modelo = get_field('modelo', 'user_'.get_current_user_id()); ?>
 								</div>
 							</div>	
+							<?php } ?>
 				 			<div data-show='1' class="dashboard-view active">
 								<h2 class="font-poppins">Meus dados pessoais</h2>
 								<div class="column">

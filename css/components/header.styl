@@ -12,6 +12,19 @@ header {
 	position: relative;
 	padding: 10px 0;
 	z-index: 999;
+	@media (max-width: max_sm) {
+		& {
+			div {
+				.logo {
+					a {
+						width: 170px;
+						height: 70px;
+						top: -12px;
+					}
+				}
+			}
+		}
+	}
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -25,6 +38,14 @@ header {
 			color: #fff;
 			font-weight: lighter;
 			font-size: 30px;
+			font-size: 0;
+			width: 190px;
+			height: 70px;
+			top: -32px;
+			display: block;
+			position: absolute;
+			background-position: center;
+			background-size: cover;
 		}
 	}
 	.nav {
@@ -50,7 +71,10 @@ header {
 					padding: 10px;
 				}
 				&:hover {
-					background: color_theme_dark;
+					background: var(--color_btn);
+					// a {
+					// 	color: #ff7182;
+					// }
 				}
 			}
 		}
@@ -95,7 +119,9 @@ header {
 
 @media screen and (min-width: sm) {
 	header {
-		height: 70px;
+		height: 90px;
+		line-height: 80px;
+		padding: 0;
 		.container {
 			align-items: center;
 			.logo {

@@ -250,6 +250,7 @@ function createSite() {
 				}
 				update_field('pronto', 1, 'user_'.get_current_user_id());
 				update_user_meta(get_current_user_id(), 'pronto', 1);
+				wp_mail('sergioamjr91@gmail.com', 'OBA - MAIS UM SITE :)', 'Tem mais um site :)');
 				wp_redirect(home_url('/meus-dados'));
 				exit;
 			};

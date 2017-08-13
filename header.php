@@ -26,7 +26,7 @@
 </script>
 		<header class="default gradient">
  			<div class="container">
- 				<h1 class="logo font-poppins"><a href="<?php echo home_url(); ?>">Casamento Digital</a></h1>
+ 				<h1 class="logo font-poppins"><a style="background-image: url('<?php echo get_template_directory_uri().'/img/logo.png' ?>')" href="<?php echo home_url(); ?>">Meu Casamento Ideal</a></h1>
  				<div class="nav">
  					<button class="hamburger hamburger--collapse" type="button">
  					  <span class="hamburger-box">

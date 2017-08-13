@@ -3,7 +3,7 @@ a, button {
 }
 
 a {
-	color: color_theme;
+	color: var(--color_btn);
 } 
 
 .disabled {
@@ -12,7 +12,7 @@ a {
 }
 
 .btn {
-	color: color_theme;
+	color: var(--color_btn);
 	display: inline-block;
 	position: relative;
 	border: 0;
@@ -21,12 +21,12 @@ a {
 		padding: 5px;
 	}
 	&-theme {
-		background: color_theme;
+		background: var(--color_btn);
 		color: #fff;
 		padding: 10px;
 	}
 	&-theme-invert {
-		color: color_theme;
+		color: var(--color_btn);
 		background: #fff;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -35,7 +35,7 @@ a {
 		borderRadius(3px);
 	}
 	&-shadow {
-		box-shadow: 4px 4px color_theme_dark;
+		box-shadow: 4px 4px var(--color_btn)_dark;
 	}
 	&-danger {
 	    background: #ff6d6d;

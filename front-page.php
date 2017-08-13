@@ -121,7 +121,7 @@
  			</div>
  		</section>
 
- 		<section class="space-default gradient how-works">
+ 		<section class="space-default how-works">
  			<div class="container max-width-conten">
  				<h2 class="title-descr font-poppins a-center">Como funciona</h2>
  				<div class="column">

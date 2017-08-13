@@ -173,15 +173,15 @@
 							<div class="sm-6-12  ">
 								<div class="couple-item couple">
 									<h2>Nossa História</h2>
-									<p class="font-montserrrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
-									<p class="font-montserrrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora molestias adipisci obcaecati necessitatibus, et, odit amet aliquid magni harum totam repellendus dolore quia, autem ab, laudantium dicta blanditiis perferendis!</p>
+									<p class="font-montserrrat">Eu conheci meu namorado quando tinha seis anos. Ele era colega da minha irmã. Fomos em aniversários um do outro, nossas mães conversavam e etc, mas depois ele pulou uma série e mais tarde trocou de colégio.</p>
+									<p class="font-montserrrat">Um belo dia estava almoçando com conhecidos na rua da minha universidade, eis que um moço senta na nossa mesa e de repente começa a falar: "Elisa, eu não sei se tu lembra de mim, era colega da tua irmã" e blábláblá. Foi uma surpresa! Depois disso começamos a conversar. Nunca imaginei que fosse namorar uma pessoa que conheci quinze anos atrás.</p>
 								</div>
 							</div>
 							<div class="sm-6-12  ">
 								<div class="couple-item couple">
 									<h2>O pedido</h2>
-									<p class="font-montserrrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt accusantium ea, commodi, ut maiores dolores sint excepturi pariatur vel numquam voluptates veniam? Ipsam eius dolor magnam, maxime neque nesciunt?</p>
-									<p class="font-montserrrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero distinctio, a ab modi similique ullam, animi quam cumque fugiat consectetur ut odit totam, recusandae expedita corrupti! Nam animi, distinctio sint.</p>
+									<p class="font-montserrrat">Meu então namorado tinha combinado para que uma amiga artista estivesse na feira de agricultores que sempre visitamos. Então, para darmos uma força a ela (eu pensei), pedimos que ela fizesse um desenho nosso. Quando ela se virou para me mostrar o desenho pronto, ele estava desenhado de joelhos! Eu fiquei muito surpresa!</p>
+									<p class="font-montserrrat">Eu adorei que ele já tivesse combinado com alguém para tirar fotos do momento. O desenho está emoldurado agora e é um lembrete incrível daquele dia especial!</p>
 								</div>
 							</div>
 						</div>
@@ -198,8 +198,9 @@
 											<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg')">
 												<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
 											</div>
-											<p class="font-montserrrat font-dancing couple-name a-center space-title"><?php echo $noiva ?></p>
-											<p class="font-montserrrat a-center max-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+											<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noiva ?></p>
+											<span class="write-by font-dancing a-center">Escrito pelo noivo</span>
+											<p class="font-montserrrat a-center max-width">Desde quando conheci a Natália, eu soube que ela era a pessoa certa para mim, que eu gostaria de passar o resto de nossas vidas juntos. Estar com ela foi a melhor coisa que me aconteceu e hoje sou a pessoa mais feliz do mundo por casar com ela.</p>
 										</div>
 									</div>
 									<div class="sm-6-12 ">
@@ -207,8 +208,9 @@
 											<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg')">
 												<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg" alt="">
 											</div>
-											<p class="font-montserrrat font-dancing couple-name a-center space-title"><?php echo $noivo ?></p>
-											<p class="font-montserrrat a-center max-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+											<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noivo ?></p>
+											<span class="write-by font-dancing a-center ">Escrito pela noiva</span>
+											<p class="font-montserrrat a-center max-width">Me faltam palavras pra descrever o Sérgio, ele é carinhoso, romântico, dedicado, meu melhor amigo e o amor da minha vida. Não consigo imaginar um dia longe dele e quero fazê-lo muito feliz, assim como ele me faz, pelo resto da minha vida.</p>
 										</div>
 									</div>
 								</div>
@@ -225,9 +227,9 @@
 									<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
 								</div>
 								<p class="   font-dancing couple-name a-center space-title"><?php echo $noiva ?> & <?php echo $noivo ?></p>
-								<div class=" ">
-									<p class="font-montserrrat a-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
-									<p class="font-montserrrat a-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione deserunt aliquid exercitationem, ab dolores quo at modi quis. Nesciunt nisi dolores et ad doloremque molestiae, provident necessitatibus minus tempora dolore.</p>
+								<div class="a-center">
+										<p class="font-montserrrat center">Eu conheci meu namorado quando tinha seis anos. Ele era colega da minha irmã. Fomos em aniversários um do outro, nossas mães conversavam e etc, mas depois ele pulou uma série e mais tarde trocou de colégio.</p>
+										<p class="font-montserrrat center">Um belo dia estava almoçando com conhecidos na rua da minha universidade, eis que um moço senta na nossa mesa e de repente começa a falar: "Elisa, eu não sei se tu lembra de mim, era colega da tua irmã" e blábláblá. Foi uma surpresa! Depois disso começamos a conversar. Nunca imaginei que fosse namorar uma pessoa que conheci quinze anos atrás.</p>
 								</div>
 							</div>
 						</div>
@@ -250,8 +252,8 @@
 									<p class="font-dancing couple-name"><?php echo $noiva ?> & <?php echo $noivo ?></p>
 								</div>
 								<div class="couple-item couple a-center  ">
-									<p class="font-montserrrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt accusantium ea, commodi, ut maiores dolores sint excepturi pariatur vel numquam voluptates veniam? Ipsam eius dolor magnam, maxime neque nesciunt?</p>
-									<p class="font-montserrrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero distinctio, a ab modi similique ullam, animi quam cumque fugiat consectetur ut odit totam, recusandae expedita corrupti! Nam animi, distinctio sint.</p>
+									<p class="font-montserrrat">Eu conheci meu namorado quando tinha seis anos. Ele era colega da minha irmã. Fomos em aniversários um do outro, nossas mães conversavam e etc, mas depois ele pulou uma série e mais tarde trocou de colégio.</p>
+									<p class="font-montserrrat">Um belo dia estava almoçando com conhecidos na rua da minha universidade, eis que um moço senta na nossa mesa e de repente começa a falar: "Elisa, eu não sei se tu lembra de mim, era colega da tua irmã" e blábláblá. Foi uma surpresa! Depois disso começamos a conversar. Nunca imaginei que fosse namorar uma pessoa que conheci quinze anos atrás.</p>
 								</div>
 							</div>
 						</div>
@@ -273,7 +275,7 @@
 									<div class="couple-item a-ceter">
 										<p class="font-dancing couple-name"><?php echo $noiva ?></p>
 										<span class="write-by font-dancing">Escrito pelo noivo</span>
-										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+										<p class="font-montserrrat  max-width">Desde quando conheci a Natália, eu soube que ela era a pessoa certa para mim, que eu gostaria de passar o resto de nossas vidas juntos. Estar com ela foi a melhor coisa que me aconteceu e hoje sou a pessoa mais feliz do mundo por casar com ela.</p>
 									</div>
 								</div>
 							</div>
@@ -282,7 +284,7 @@
 									<div class="couple-item a-cener aright">
 										<p class="font-dancing couple-name "><?php echo $noivo ?></p>
 										<span class="write-by font-dancing">Escrito pela noiva</span>
-										<p class="h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat porro vel ut, obcaecati repellendus dolorem possimus eveniet aperiam sint, distinctio quis provident asperiores velit nisi ratione maiores exercitationem inventore sunt.</p>
+										<p class="font-montserrrat  max-width">Me faltam palavras pra descrever o Sérgio, ele é carinhoso, romântico, dedicado, meu melhor amigo e o amor da minha vida. Não consigo imaginar um dia longe dele e quero fazê-lo muito feliz, assim como ele me faz, pelo resto da minha vida.</p>
 									</div>
 								</div>
 								<div class="sm-6-12 ">
@@ -416,7 +418,7 @@
 									<div class="local-item a-center">
 										<h2 >Cerimônia</h2>
 										<p>15 de maio de 2017, ás 20h</p>
-										<p>Av Alberto Byington, #178</p>
+										<p>Av das Rosas, #178</p>
 									</div>
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7312.976294812386!2d-46.66058329394004!3d-23.58682003096726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque+Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1494531597526" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</div>
@@ -424,7 +426,7 @@
 									<div class="local-item a-center">
 										<h2 >Festa</h2>
 										<p class="local-featured open-sans">Sábado, 15 de maio de 2017, ás 20h</p>
-										<p class="local-featured open-sans">Av Alberto Byington, #178</p>
+										<p class="local-featured open-sans">Av das Rosas, #178</p>
 									</div>
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.145903743023!2d-46.656441185020775!3d-23.563202767545324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1494531673158"  height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</div>
@@ -444,9 +446,9 @@
 										</div>
 										<div class="local-content">
 											<h2 >Cerimônia</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+											<p>Chegou o grande momento, aquela hora que arrepia, que emociona. E contamos com sua presença para esse ser muito mais que especial... Porém só quem tem o direito de atrasar é a NOIVA.</p>
 											<p class="local-featured open-sans">Sábado, 15 de maio de 2017, ás 20h</p>
-											<p class="local-featured open-sans">Av Alberto Byington, #178</p>
+											<p class="local-featured open-sans">Av do Brasil, #1788</p>
 										</div>
 									</div>
 								</div>
@@ -457,9 +459,9 @@
 										</div>
 										<div class="local-content">
 											<h2 >Festa</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+											<p>Agora vamos ao que interessa! Delicioso coquetel, com salgados fabulosos e uma massa deliciosa, com direito a se acabar nos doces finos. Bebida é o que não falta. Ah! E alonguem as pernas, porque a balada vai ser TOP!</p>
 											<p class="local-featured open-sans">Sábado, 15 de maio de 2017, ás 20h</p>
-											<p class="local-featured open-sans">Av Alberto Byington, #178</p>
+											<p class="local-featured open-sans">Av do Brasil, #1788</p>
 										</div>
 									</div>
 								</div>
@@ -947,30 +949,30 @@
 								<div class="owl-carousel slidertestimonial owl-theme">
 									<div class="sm-6-12">
 										<div class="notes-item">
-											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-											<p class="notes-author">Sérgio Junior, </p>
-											<p class="notes-connect">-Cunhado</p>
+											<p class="notes-p first-letter">Que a felicidade a dois continue sendo o objetivo principal de suas vidas. Que a caminhada seja longa, repleta de amor e compreensão. Sinceros votos de felicidades.</p>
+											<p class="notes-author">Paloma, </p>
+											<p class="notes-connect">-Amiga do noivo</p>
 										</div>
 									</div>
 									<div class="sm-6-12">
 										<div class="notes-item">
-											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et inventore similique fugit, commodi excepturi aliquam explicabo, maiores nam cum sequi autem beatae officia! Aspernatur inventore aliquam eos hic, fuga.</p>
-											<p class="notes-author">Sérgio Junior</p>
-											<p class="notes-connect">-Cunhado</p>
+											<p class="notes-p first-letter">Que vocês estejam unidos para a nova vida que hora se inicia, e que ela seja de muito amor, paz e alegria.</p>
+											<p class="notes-author">Patrícia</p>
+											<p class="notes-connect">-Irmã da noiva</p>
 										</div>
 									</div>
 									<div class="sm-6-12">
 										<div class="notes-item">
-											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-											<p class="notes-author">Sérgio Junior, </p>
-											<p class="notes-connect">-Cunhado</p>
+											<p class="notes-p first-letter">Que a felicidade a dois continue sendo o objetivo principal de suas vidas. Que a caminhada seja longa, repleta de amor e compreensão. Sinceros votos de felicidades.</p>
+											<p class="notes-author">Gabriela, </p>
+											<p class="notes-connect">-Prima do noivo</p>
 										</div>
 									</div>
 									<div class="sm-6-12">
 										<div class="notes-item">
-											<p class="notes-p first-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et inventore similique fugit, commodi excepturi aliquam explicabo, maiores nam cum sequi autem beatae officia! Aspernatur inventore aliquam eos hic, fuga.</p>
-											<p class="notes-author">Sérgio Junior</p>
-											<p class="notes-connect">-Cunhado</p>
+											<p class="notes-p first-letter">Um casamento feliz se constrói com muito amor, carinho e compreensão. Que estes sentimentos estejam sempre presentes na vida de vocês!</p>
+											<p class="notes-author">Fábio</p>
+											<p class="notes-connect">-Irmão da noiva</p>
 										</div>
 									</div>
 								</div>
@@ -986,30 +988,30 @@
 							<div class="notes-group owl-carousel slidertestimonial owl-theme">
 								<div class="sm-6-12">
 									<div class="notes-item">
-										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quo nam hic odio ratione, voluptas vero velit. Beatae fuga quam numquam sed iure sequi debitis, quibusdam labore qui voluptatem laboriosam.</p>
-										<p class="notes-author">Sérgio Junior</p>
-										<p class="notes-connect">-Cunhado</p>
+										<p class="notes-p">Que a caminhada que se inicia seja repleta de amor, felicidade, carinho e cumplicidade. Parabéns ao novo casal!</p>
+										<p class="notes-author">Antonio Carlos</p>
+										<p class="notes-connect">-Avô do noivo</p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
-										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et inventore similique fugit, commodi excepturi aliquam explicabo, maiores nam cum sequi autem beatae officia! Aspernatur inventore aliquam eos hic, fuga.</p>
-										<p class="notes-author">Fernanda Muniz</p>
-										<p class="notes-connect">-Cunhado</p>
+										<p class="notes-p">Que esta nova etapa de suas vidas seja coberta de bênçãos, recheada de felicidade e repleta de harmonia. Parabéns!</p>
+										<p class="notes-author">Fernanda</p>
+										<p class="notes-connect">-Tia da noiva</p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
-										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quo nam hic odio ratione, voluptas vero velit. Beatae fuga quam numquam sed iure sequi debitis, quibusdam labore qui voluptatem laboriosam.</p>
-										<p class="notes-author">Sérgio Junior</p>
-										<p class="notes-connect">-Cunhado</p>
+										<p class="notes-p">Que este amor que vos uniu se multiplique a cada dia desta nova vida que se inicia. Felicidades ao casal!</p>
+										<p class="notes-author">Aline</p>
+										<p class="notes-connect">-Prima do noivo</p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
-										<p class="notes-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et inventore similique fugit, commodi excepturi aliquam explicabo, maiores nam cum sequi autem beatae officia! Aspernatur inventore aliquam eos hic, fuga.</p>
-										<p class="notes-author">Fernanda Muniz</p>
-										<p class="notes-connect">-Cunhado</p>
+										<p class="notes-p">Até que enfim o casório saiu... Parabéns! Que vocês continuem unidos, companheiros e, acima de tudo, felizes.</p>
+										<p class="notes-author">Fábio</p>
+										<p class="notes-connect">-Amigo da noiva</p>
 									</div>
 								</div>
 							</div>
@@ -1023,26 +1025,26 @@
 							<div class="notes-group owl-carousel slidertestimonial owl-theme">
 								<div class="sm-6-12">
 									<div class="notes-item">
-										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-										<p class="notes-author">Sérgio Junior, <span>Cunhado</span></p>
+										<p class="notes-p ">Um casamento feliz se constrói com muito amor, carinho e compreensão. Que estes sentimentos estejam sempre presentes em suas vidas. Parabéns!</p>
+										<p class="notes-author">Carlos, <span>pai da noiva</span></p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
-										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-										<p class="notes-author">Sérgio Junior, <span>Cunhado</span></p>
+										<p class="notes-p ">Que todos os sonhos que compartilham se tornem realidade, e que esta nova vida seja repleta de amor, paz e alegria, para que possam desfrutar da felicidade tão sonhada! Parabéns!</p>
+										<p class="notes-author">Júnior, <span>colega do noivo</span></p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
-										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-										<p class="notes-author">Sérgio Junior, <span>Cunhado</span></p>
+										<p class="notes-p ">A vida é feita de momentos bons e ruins. Aproveitem intensamente os bons e estejam sempre unidos para superar os ruins. Assim se constrói um casamento duradouro e feliz! Felicidades!</p>
+										<p class="notes-author">Carla, <span>irmã do noivo</span></p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="notes-item">
-										<p class="notes-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsum a quia ducimus adipisci perferendis eius dignissimos harum amet voluptas cupiditate aliquid, iusto accusantium illo eligendi ad? Odio, libero, veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nobis fugit, quae facilis tempore ullam!</p>
-										<p class="notes-author">Sérgio Junior, <span>Cunhado</span></p>
+										<p class="notes-p ">Parabéns por esse passo tão importante em suas vidas. Que vocês sejam muito felizes!</p>
+										<p class="notes-author">Bruna, <span>amiga do casal</span></p>
 									</div>
 								</div>
 
@@ -1057,30 +1059,31 @@
 							<div class="owl-carousel slidertestimonial owl-theme">
 								<div class="sm-6-12">
 									<div class="holder">
-										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-										<p class="author">Júlia, <span style="font-size: 14px;">irmã da noiva</span></p>
+										<p class="font-playfair messages">Que esta união tão bonita seja repleta de amor e perdure para sempre. Sejam muito felizes!</p>
+										<p class="author">Júlia, <span style="font-size: 14px;">prima da noiva</span></p>
 									</div>
 								</div>
 						
 								<div class="sm-6-12">
 									<div class="holder">
-										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-										<p class="author">Jéssica, <span style="font-size: 14px;">prima do noivo</span></p>
+										<p class="font-playfair messages">As boas energias que prevalecem em cada momento da vida vêm do amor mais sincero. Felicidades nessa união!</p>
+										<p class="author">Pedro, <span style="font-size: 14px;">irmão do noivo</span></p>
 									</div>
 								</div>
 								<div class="sm-6-12">
 									<div class="holder">
-										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-										<p class="author">Jaqueline, <span style="font-size: 14px;">mãe da noiva</span></p>
+										<p class="font-playfair messages">Parabéns por este momento tão sublime da união entre duas pessoas que se amam. Toda a felicidade do mundo à vocês!</p>
+										<p class="author">Jaqueline, <span style="font-size: 14px;">mãe do noivo</span></p>
 									</div>
 								</div>
 						
 								<div class="sm-6-12">
 									<div class="holder">
-										<p class="font-playfair messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-										<p class="author">Ana Paula, <span style="font-size: 14px;">filha do noivo</span></p>
+										<p class="font-playfair messages">No momento em que vocês assumem o compromisso de serem felizes juntos, só posso desejar que tal felicidade se realize plenamente, e que o passar dos anos só venha a confirmar e reforçar o amor que os une.</p>
+										<p class="author">Bruno, <span style="font-size: 14px;">Irmão da noiva</span></p>
 									</div>
 								</div>
+								
 								
 							</div>
 						</div>
@@ -1250,123 +1253,6 @@
 					</div>
 				<?php } ?>
 				<?php if($blog == 3) { ?>
-					<div class="container">
-						<div class="space-default">
-							<h2 class="a-center font-dancing section-title color_demo">Blog</h2>
-							<div class="card column">
-								<div class="sm-4-12 md-6-12">
-									<div class="card_item">
-										<div class="card_img">
-											<figure>
-												<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg" alt=""></a>
-											</figure>
-										</div>
-										<div class="card_content">
-											<a href="#"><h2 class="card_content-title">Saiba como foi o meu dia de noiva</h2></a>
-											<div class="shared-list">
-
-												<ul>
-													<li>
-														<p>Compartilhar</p>	
-													</li>
-													<li>
-														<a class="facebook" href="#">
-															<i class="fa fa-facebook" aria-hidden="true"></i>
-														</a>
-													</li>
-													<li>
-														<a class="twitter" href="#">
-															<i class="fa fa-twitter" aria-hidden="true"></i>
-														</a>
-													</li>
-													<li>
-														<a class="whatsapp" href="#">
-															<i class="fa fa-whatsapp" aria-hidden="true"></i>
-														</a>
-													</li>
-												</ul>
-											</div>
-											<p class="card_content-p">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam optio iusto numquam fugit omnis! Similique distinctio reiciendis, voluptatem praesentium ipsum...
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="sm-4-12 md-3-12">
-									<div class="card_item">
-										<div class="card_img">
-											<figure>
-												<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/festa.jpg" alt=""></a>
-											</figure>
-										</div>
-										<div class="card_content">
-											<a href="#"><h2 class="card_content-title">Conheça um pouco sobre a decoração</h2></a>
-											<div class="shared-list">
-												<ul>
-													<li>
-														<a class="facebook" href="#">
-															<i class="fa fa-facebook" aria-hidden="true"></i>
-														</a>
-													</li>
-													<li>
-														<a class="twitter" href="#">
-															<i class="fa fa-twitter" aria-hidden="true"></i>
-														</a>
-													</li>
-													<li>
-														<a class="whatsapp" href="#">
-															<i class="fa fa-whatsapp" aria-hidden="true"></i>
-														</a>
-													</li>
-												</ul>
-											</div>
-											<p class="card_content-p">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam optio iusto numquam fugit omnis! Similique distinctio reiciendis, voluptatem praesentium ipsum...
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="sm-4-12 md-3-12">
-									<div class="card_item">
-										<div class="card_img">
-											<figure>
-												<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/madrinhas.jpg" alt=""></a>
-											</figure>
-										</div>
-										<div class="card_content">
-											<a href="#"><h2 class="card_content-title">Saiba quem serão as madrinhas</h2></a>
-											<div class="shared-list">
-												<ul>
-													<li>
-														<a class="facebook" href="#">
-															<i class="fa fa-facebook" aria-hidden="true"></i>
-														</a>
-													</li>
-													<li>
-														<a class="twitter" href="#">
-															<i class="fa fa-twitter" aria-hidden="true"></i>
-														</a>
-													</li>
-													<li>
-														<a class="whatsapp" href="#">
-															<i class="fa fa-whatsapp" aria-hidden="true"></i>
-														</a>
-													</li>
-												</ul>
-											</div>
-											<p class="card_content-p">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam optio iusto numquam fugit omnis! Similique distinctio reiciendis, voluptatem praesentium ipsum...
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				<?php } ?>
-				<?php if($blog == 4) { ?>
 			 		<section class="space-default services new-blog">
 						<div class="container hidden-mobil">
 							<div class="column">
@@ -1454,6 +1340,9 @@
 			<div class="container">
 				<div class="column">
 					<div class="xs-12-12">
+						<form>
+							<input type="hidden" name="color" id="color">
+						</form>
 						<p>Gostaria de criar um site assim?</p>
 						<a href="<?php echo home_url('crie-seu-site') ?>" class="btn btn-theme btn-small btn-radius">Criar um modelo pra você</a>
 					</div>
@@ -1476,6 +1365,7 @@
 			</div>
 			<div class="modal">	
 				<form class="form" id="create-login">
+					<a href="#" class="btn btn-close"><i class="fa fa-times" aria-hidden="true"></i></a>
 					<h2 class="title-descr tab-bottom font-poppins a-left">Criar conta</h2>
 					<div class="column">
 						<div class="sm-6-12">

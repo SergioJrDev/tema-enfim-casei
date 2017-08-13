@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	console.log('ready');
 	$('.hamburger').click(function() {
 		if(!$(this).hasClass('demo')) {
 			$(this).toggleClass('is-active');
@@ -12,10 +13,16 @@ $(document).ready(function(){
 	
 	$(document).on('submit', "form", function(e) {
 		$(this).find('.submit').prop('disabled', true).addClass('disabled');
+		$('.lds-css').addClass('display-block');
 	});
+	
 
 	$('.btn-acount').click(function() {
 		$('.modal').addClass('active');
+	});
+
+	$('.btn-close').click(function() {
+		$('.modal').removeClass('active');
 	});
 
 	$('#create-login').validate({
@@ -51,6 +58,26 @@ $(document).ready(function(){
 	    	required: 'Digite sua senha',
 	    	minlength: 'Digite uma senha com no mínimo 6 caracteres.',
 			equalTo: 'Por favor, confirma sua senha.'
+	    }
+	  }
+	});
+
+
+
+
+	$('#create_model').validate({
+	  rules: {
+	    noiva: {
+	    	required: true
+		},
+		noivo: {
+			required: true
+		}
+	  },
+	  messages: {
+	    noiva: "Digite o nome da noiva.",
+	    noivo: {
+			required: 'Digite o nome do noivo'
 	    }
 	  }
 	});
@@ -188,7 +215,6 @@ var x = setInterval(function() {
 
 	 $('.color').click(function(e){
 		var color = $(this).data().color;
-		// console.log(document.documentElement.style);
 		document.documentElement.style.setProperty('--color_demo_theme', color);  
 		document.getElementById('color').value = color;
 		e.preventDefault();
