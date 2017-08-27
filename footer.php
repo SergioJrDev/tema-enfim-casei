@@ -4,17 +4,15 @@
 					<div class="sm-3-12">
 						<div class="footer-social footer-item">
 							<h3 class="footer-title">Sobre o Meu Casamento Ideal</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsa doloremque dolores harum, numquam sed facere! Nisi molestiae ex animi delectus harum numquam deserunt atque! Distinctio maiores architecto minus, eos!</p>
+							<p>O Meu Casamento Ideal foi criado e é mantido apenas por uma pessoa, para oferecer sites de casamento elegantes, modernos e com o preço justo, para um dos momentos mais importantes da sua vida.</p>
 						</div>
 					</div>
 					<div class="sm-3-12">
 						<div class="footer-social footer-item">
-							<h3 class="footer-title">Dúvidas frequentes</h3>
+							<h3 class="footer-title">Dúvidas e Suporte</h3>
 							<div class="icon">
-								<a href="#">
-									<i class="fa fa-github" aria-hidden="true"></i>
-									/Sergioamjr
-								</a>
+								<a href="<?php echo home_url('/duvidas-frequentes') ?>">Fale Conosco</a>
+								<a href="<?php echo home_url('/duvidas-frequentes') ?>">Dúvidas Frequentes</a>
 							</div>
 						</div>
 					</div>
@@ -45,8 +43,7 @@
 						<div class="footer-social footer-item">
 							<h3 class="footer-title">Entre em contato</h3>
 							<div class="icon">
-								<p>Mande um email para oi@meucasamentoideal.com.br</p>
-								<p>Ou pelo whatsapp 11 94927-8243</p>
+								<p>Mande um email para oi@meucasamentoideal.com.br Ou pelo whatsapp 11 94927-8243</p>
 							</div>
 						</div>
 					</div>

@@ -73,6 +73,12 @@ function custom_post_type() {
 	);
 	register_posttype($options);
 
+	$options = array(
+		'name' => 'Depoimentos',
+		'support' => ['title', 'author', 'editor', 'thumbnail']
+	);
+	register_posttype($options);
+
 }
 add_action( 'init', 'custom_post_type', 0 );
 

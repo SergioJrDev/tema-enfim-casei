@@ -15,60 +15,17 @@
 							 Seu site está sendo criado. Em breve você receberá todos os dados de acesso.<br/>Se tiver alguma dúvida, por favor, entre em contato conosco pelo telefone ou email no rodapé do site.</p>
 					<?php } ?>
 
-	 				<?php if($progress == 2) { ?>
+					<?php
+						$paymentok = get_user_meta(get_current_user_id(), 'payment_success');
+					?>
+
+	 				<?php if($progress == 2 && !$paymentok) { ?>
 	 					<p class="alert alert-success a-center mg-boottom">
 						 	<!--<i class="fa fa-smile-o" aria-hidden="true"></i>-->
 							 Seu site está pronto! Use as informações a baixo para acessa-lo.</p>
 					<?php } ?>
 
-	 				<?php if($progress == 2 AND get_user_meta( get_current_user_id(), 'payment_uccess')) { ?>
-							<div data-show='1' class="dashboard-view active">
-								<h2 class="font-poppins">Pagamento</h2>
-								<div class="alert a-center alert-danger">
-									<p>Atenção, faltam 5 dias para expirar seu período de teste.</p>
-								</div>
-								<div class="column">
-									<div class="sm-12-12">
-										<div class="view-info mg-bottom model-group">
-											<div class="payment-box column">
-												<?php
-													$plan_user = get_user_meta(get_current_user_id(), 'plan')[0];
-													$args = array(
-														'post_type' => 'product',
-														'posts_per_page' => 1,
-														'meta_query' => array(
-															array(
-																'key' => 'planos',
-																'value' => $plan_user,
-																'compare' => '='
-															)
-														)
-													);
-													$query = new WP_Query($args);
-													$i = 1;
-													if($query->have_posts()) {
-														while($query->have_posts()): $query->the_post();  ?>
-															<div class="sm-4-12">
-																<h3><?php the_title(); ?></h3>
-																<p>Online por: 1 ano</p>
-																<p>Valor: <?php echo get_post_meta( get_the_ID(), '_regular_price', true); ?></p>
-																<a rel="nofollow" href="<?php echo home_url('carrinho') ?>?add-to-cart=<?php echo get_the_ID(); ?>" data-quantity="1" data-product_id="<?php echo get_the_ID(); ?>" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Fazer pagamento</a>
-
-															</div>
-															<div class="sm-8-12">
-																<?php the_content(); ?>
-															</div>
-														<?php $i = $i + 1; endwhile;
-													};
-												?>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>	
-					<?php } ?>
-					<?php
+					<?php 
 						$args = array(
 							'post_type' => 'shop_order',
 							'post_status' => 'wc-completed',
@@ -90,21 +47,18 @@
 									// Produto Id
 									$product_id = $item['product_id'];
 								}
-								// Metadata
-								$meta = get_field('planos', $product_id);
 
 								$data = array(
 									'user' => $user_id,
 									'order_id' => $order_id,
 									'time' => $created,
 									'product_id' => $product_id,
-									'meta' => $meta,
 									'now' => date('d-m-Y', time())
 								);
 
 								if(!get_user_meta($user_id, 'payment_success')) {
-									update_user_meta( $user_id, 'payment_success', implode(',',$data) );
 									echo 'Gravado';
+									update_user_meta( $user_id, 'payment_success', implode(',',$data) );
 								};
 								
 								?>
@@ -113,7 +67,7 @@
 					<div class="column">
 				 		<div class="sm-12-12">
 							<?php if($progress !== '1') { ?>
-				 				<div data-show='1' class="dashboard-view active">
+				 			<div data-show='1' class="dashboard-view active">
 								<h2 class="font-poppins">Dados do meu site</h2>
 								<div class="column">
 									<div class="sm-12-12">
@@ -185,20 +139,55 @@
 									</div>
 									<?php }	?>
 
-									<?php $plano = get_field('plano', 'user_'.get_current_user_id());
-									if($plano) { ?>
-									<div class="sm-6-12">
-										<div class="view-info">
-											<span class="title">Plano</span>
-											<p><?php echo $plano ?> <a href="#" class="btn btn-gray float-right"><i class="fa fa-pencil" aria-hidden="true"></i></a></p>
-											<div class="clear-fix"></div>
-										</div>
-									</div>
-									<?php }	?>
-
 									<?php $modelo = get_field('modelo', 'user_'.get_current_user_id()); ?>
 								</div>
 							</div>	
+							<?php } ?>
+							<?php if($progress == 2 AND !$paymentok) { ?>
+									<div class="alert a-center alert-danger">
+										<p>Atenção, faltam 5 dias para expirar seu período de teste.</p>
+									</div>
+									<div data-show='1' class="dashboard-payment active">
+										<h3 class="font-poppins">Pagamento</h3>
+										<div class="column">
+											<div class="sm-12-12">
+												<div class="view-info payment mg-bottom model-group">
+													<div class="payment-box column">
+													<?php 
+															$args = array(
+																'post_type' => 'product',
+																'posts_per_page' => 1,
+															);
+															$query = new WP_Query($args);
+															$i = 1;
+															if($query->have_posts()) {
+																while($query->have_posts()): $query->the_post();  ?>
+																	<div class="sm-6-12">
+																		<img src="<?php the_post_thumbnail_url() ?>" alt="">
+																	</div>	
+																	<div class="sm-6-12">
+																		<h2 class="font-poppins"><?php the_title() ?></h2>
+																		<div class="payment-pricing pricing-details a-center">
+																			<p class="old_price">de R$<?php echo get_field('_regular_price') ?></p>
+																			<h2><span>Por</span>R$<?php echo get_field('_sale_price') ?><span>,00</span></h2>
+																			<p class="strong"><span>em até 6x sem juros</span></p>
+																			<?php $cart = WC()->cart->get_cart_contents_count(); ?>
+																			<?php if($cart > 0 ) { ?>
+																				<a href="http://localhost/caramelo/carrinho/" class="btn btn-theme">Fazer pagamento</a>
+																			<?php } else { ?>
+																				<a href="<?php echo home_url('/carrinho') ?>?add-to-cart=<?php echo get_the_ID(); ?>" class="btn btn-theme">Fazer pagamento</a>
+																			<?php } ?>
+																		</div>
+																	</div>
+																<?php $i = $i + 1; endwhile;
+															};
+														?>	
+													</div>
+												</div>
+											</div>
+		
+										</div>
+									</div>	
 							<?php } ?>
 				 			<div data-show='1' class="dashboard-view active">
 								<h2 class="font-poppins">Meus dados pessoais</h2>

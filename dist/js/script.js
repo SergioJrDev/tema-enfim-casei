@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	console.log('ready');
 	$('.hamburger').click(function() {
 		if(!$(this).hasClass('demo')) {
 			$(this).toggleClass('is-active');
@@ -126,92 +125,92 @@ var x = setInterval(function() {
  		setRadio();
  	});
 
- 	$('.change-dashboard').click(function(e){
- 		$('.change-dashboard').removeClass('active');
- 		$('.dashboard-view').removeClass('active');
- 		$(this).addClass('active');
- 		$('.dashboard').find("[data-show='" + $(this).data().menu + "']").addClass('active');
- 		// console.log($(this).data().menu);
- 		e.preventDefault();
- 	});
+ 	// $('.change-dashboard').click(function(e){
+ 	// 	$('.change-dashboard').removeClass('active');
+ 	// 	$('.dashboard-view').removeClass('active');
+ 	// 	$(this).addClass('active');
+ 	// 	$('.dashboard').find("[data-show='" + $(this).data().menu + "']").addClass('active');
+ 	// 	// console.log($(this).data().menu);
+ 	// 	e.preventDefault();
+ 	// });
 
- 	function setValue() {
- 		var radio = $('.radio-plan:checked').val(),
- 			preview = document.querySelector('.span-value')
- 			select = $('#periodo').val();
- 			preview.innerHTML = 'das'; 
- 		if(radio == 1 && select == 3) {
- 			preview.innerHTML = '49'; 
- 		};
+ 	// function setValue() {
+ 	// 	var radio = $('.radio-plan:checked').val(),
+ 	// 		preview = document.querySelector('.span-value')
+ 	// 		select = $('#periodo').val();
+ 	// 		preview.innerHTML = 'das'; 
+ 	// 	if(radio == 1 && select == 3) {
+ 	// 		preview.innerHTML = '49'; 
+ 	// 	};
 
- 		if(radio == 1 && select == 6) {
- 			preview.innerHTML = '79'; 
- 		};
+ 	// 	if(radio == 1 && select == 6) {
+ 	// 		preview.innerHTML = '79'; 
+ 	// 	};
 
- 		if(radio == 1 && select == 1) {
- 			preview.innerHTML = '149'; 
- 		};
+ 	// 	if(radio == 1 && select == 1) {
+ 	// 		preview.innerHTML = '149'; 
+ 	// 	};
 
- 		if(radio == 2 && select == 3) {
- 			preview.innerHTML = '79'; 
- 		};
+ 	// 	if(radio == 2 && select == 3) {
+ 	// 		preview.innerHTML = '79'; 
+ 	// 	};
 
- 		if(radio == 2 && select == 6) {
- 			preview.innerHTML = '149'; 
- 		};
+ 	// 	if(radio == 2 && select == 6) {
+ 	// 		preview.innerHTML = '149'; 
+ 	// 	};
 
- 		if(radio == 2 && select == 1) {
- 			preview.innerHTML = '199'; 
- 		};
+ 	// 	if(radio == 2 && select == 1) {
+ 	// 		preview.innerHTML = '199'; 
+ 	// 	};
 
- 	} 
+ 	// } 
 
- 	$('#periodo').change(function() {
- 		setValue();
- 	});	
+ 	// $('#periodo').change(function() {
+ 	// 	setValue();
+ 	// });	
 
- 	$('.radio-plan').change(function() {
- 		setValue();
- 	});	
+ 	// $('.radio-plan').change(function() {
+ 	// 	setValue();
+ 	// });	
 
  	// setValue();
 
-	 $('.select_simples').change(function() {
-		 var option = $(this).val(),
-		 	preview_value_s = document.querySelector('.value_total_simples');
-			 preview_parceled_s = document.querySelector('.value_parceled_simples');
-		if(option == 1) {
-			preview_value_s.innerHTML = '197,40';
-			preview_parceled_s.innerHTML = '32';
-		}
-		if(option == 6) {
-			preview_value_s.innerHTML = '89,40';
-			preview_parceled_s.innerHTML = '14';
-		}
-		if(option == 3) {
-			preview_value_s.innerHTML = '41,40';
-			preview_parceled_s.innerHTML = '6';
-		} 
-	 });
+	//  $('.select_simples').change(function() {
+	// 	 var option = $(this).val(),
+	// 	 	preview_value_s = document.querySelector('.value_total_simples');
+	// 		 preview_parceled_s = document.querySelector('.value_parceled_simples');
+	// 	if(option == 1) {
+	// 		preview_value_s.innerHTML = '197,40';
+	// 		preview_parceled_s.innerHTML = '32';
+	// 	}
+	// 	if(option == 6) {
+	// 		preview_value_s.innerHTML = '89,40';
+	// 		preview_parceled_s.innerHTML = '14';
+	// 	}
+	// 	if(option == 3) {
+	// 		preview_value_s.innerHTML = '41,40';
+	// 		preview_parceled_s.innerHTML = '6';
+	// 	} 
+	//  });
 
 
-	 $('.select_advanced').change(function() {
-		 var option = $(this).val(),
-		 	preview_value = document.querySelector('.value_total_advanced');
-			 preview_parceled = document.querySelector('.value_parceled_advanced');
-		if(option == 1) {
-			preview_value.innerHTML = '257,40';
-			preview_parceled.innerHTML = '42';
-		}
-		if(option == 6) {
-			preview_value.innerHTML = '137,40';
-			preview_parceled.innerHTML = '22';
-		}
-		if(option == 3) {
-			preview_value.innerHTML = '59,40';
-			preview_parceled.innerHTML = '9';
-		}
-	 });
+	//  $('.select_advanced').change(function() {
+	// 	 var option = $(this).val(),
+	// 	 	preview_value = document.querySelector('.value_total_advanced');
+	// 		 preview_parceled = document.querySelector('.value_parceled_advanced');
+	// 	if(option == 1) {
+	// 		preview_value.innerHTML = '257,40';
+	// 		preview_parceled.innerHTML = '42';
+	// 	}
+	// 	if(option == 6) {
+	// 		preview_value.innerHTML = '137,40';
+	// 		preview_parceled.innerHTML = '22';
+	// 	}
+	// 	if(option == 3) {
+	// 		preview_value.innerHTML = '59,40';
+	// 		preview_parceled.innerHTML = '9';
+	// 	}
+	//  });
 
 	 $('.color').click(function(e){
 		var color = $(this).data().color;
@@ -219,6 +218,19 @@ var x = setInterval(function() {
 		document.getElementById('color').value = color;
 		e.preventDefault();
 	 });  
+
+	$('.question-title').click(function(e) {
+		const next = $(this).next();
+		if(next.hasClass('active')) {
+			next.slideUp().removeClass('active');
+			$(this).removeClass('changeIcon');
+		} else {
+			$('.question-p').slideUp().removeClass('active');
+			$(this).addClass('changeIcon');
+			next.addClass('active').slideDown();
+		}
+		e.preventDefault();
+	});
 });
 
 $(window).on('load', function() {

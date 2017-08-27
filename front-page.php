@@ -277,13 +277,25 @@
  					</div>
  				</div>
  			</div>
- 		</section>
-  		<section class="space-default ">
+ 		</section> -->
+  		<section class="space-default testimonial ">
  			<div class="container">
  				<h2 class="title-descr a-center animate delay to-top font-poppins">Depoimentos</h2>
-
+				<div class="column">
+				<?php
+					$args = array(
+						'posts_per_page' => 6,
+						'post_type' => 'depoimentos'
+					);
+					
+					$query = new WP_Query($args);
+					while($query->have_posts()) { $query->the_post();
+						get_template_part('parts/part', 'depoimentos');
+					}
+				?>
+				</div>
  			</div>
- 		</section>  -->
+ 		</section>
 
 		<?php
 			// $args = array(

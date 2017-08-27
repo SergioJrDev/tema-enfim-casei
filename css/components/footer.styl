@@ -3,7 +3,7 @@
 	&-title {
 		color: var(--color_theme);
 		margin-bottom: 10px;
-		font-weight: bold;
+		font-weight: 600;
 		text-transform: uppercase;
 		font-size: 18px;
 	}
@@ -16,14 +16,15 @@
 			left: 0;
 			position: relative;
 			transition: all 0.2s ease;
+			&:hover {
+				background: #333;
+				padding-left: 10px;
+			}
 		}
 		nav {
 			li {
 				&:hover {
-					background: #333;
-					a {
-						left: 10px;
-					}
+				
 				}
 			}
 		}
