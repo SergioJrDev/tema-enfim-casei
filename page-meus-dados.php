@@ -19,54 +19,13 @@
 						$paymentok = get_user_meta(get_current_user_id(), 'payment_success');
 					?>
 
-	 				<?php if($progress == 2 && !$paymentok) { ?>
+	 				<?php if($progress == 2) { ?>
 	 					<p class="alert alert-success a-center mg-boottom">
 						 	<!--<i class="fa fa-smile-o" aria-hidden="true"></i>-->
 							 Seu site está pronto! Use as informações a baixo para acessa-lo.</p>
 					<?php } ?>
 
-					<?php 
-						$args = array(
-							'post_type' => 'shop_order',
-							'post_status' => 'wc-completed',
-							'posts_per_page' => '-1'
-						);
-						$query = new WP_Query($args);
-						if($query->have_posts()) {
-							while($query->have_posts()): $query->the_post();  ?>
-								<?php $order = new WC_Order( get_the_ID() );
-
-								// Usuário
-								$user_id = $order->customer_id;
-								// Order Id
-								$order_id = $order->id;
-								// Data da criação
-								$created = $order->date_modified->__toString();
-								$itens = $order->get_items();
-								foreach($itens as $item) {
-									// Produto Id
-									$product_id = $item['product_id'];
-								}
-
-								$data = array(
-									'user' => $user_id,
-									'order_id' => $order_id,
-									'time' => $created,
-									'product_id' => $product_id,
-									'now' => date('d-m-Y', time())
-								);
-
-								if(!get_user_meta($user_id, 'payment_success')) {
-									echo 'Gravado';
-									update_user_meta( $user_id, 'payment_success', implode(',',$data) );
-								};
-								
-								?>
-							<?php endwhile;	
-						}; ?>
-					<div class="column">
-				 		<div class="sm-12-12">
-							<?php if($progress !== '1') { ?>
+					<?php if($progress !== '1') { ?>
 				 			<div data-show='1' class="dashboard-view active">
 								<h2 class="font-poppins">Dados do meu site</h2>
 								<div class="column">
@@ -142,11 +101,87 @@
 									<?php $modelo = get_field('modelo', 'user_'.get_current_user_id()); ?>
 								</div>
 							</div>	
-							<?php } ?>
-							<?php if($progress == 2 AND !$paymentok) { ?>
-									<div class="alert a-center alert-danger">
-										<p>Atenção, faltam 5 dias para expirar seu período de teste.</p>
+						<?php } ?>
+
+					<div class="column">
+				 		<div class="sm-12-12">
+						 <?php
+							$customer_orders = get_posts( array(
+								'numberposts' => -1,
+								'meta_key'    => '_customer_user',
+								'meta_value'  => get_current_user_id(),
+								'post_type'   => wc_get_order_types(),
+								'post_status' => array_keys( wc_get_order_statuses() ),
+							) );
+							
+							if(count($customer_orders) > 0) { ?>
+								<div data-show='1' class="dashboard-view active">
+										<h2 class="font-poppins">Meu pedido</h2>
+										<div class="column">
+											<div class="sm-12-12">
+												<table cellpadding="0" class="table table-stripped table-bordered">
+													<thead>
+														<tr>
+															<td>Número do pedido</td>
+															<td>Data</td>
+															<td>Status</td>
+														</tr>
+													</thead>
+													<tbody>
+													<?php
+		
+														foreach ($customer_orders as $order) { ?>
+															<tr>
+																<th>#<?php echo $order->ID ?></th>
+																<th><?php echo $order->post_date ?></th>
+																<th>
+																	<?php switch ($order->post_status) {
+																	case 'wc-cancelled':
+																		echo 'Cancelado';
+																		$showAgain = true;
+																		break;
+																	case 'wc-on-hold':
+																		echo 'Aguardando';
+																		$showAgain = false;
+																		break;
+																	case 'wc-processing':
+																		echo 'Processando';
+																		$showAgain = false;
+																		break;
+																	case 'wc-pending':
+																		$showAgain = true;
+																		echo 'Pendente';
+																		break;
+																	case 'wc-refunded':
+																		echo 'Falhou';
+																		$showAgain = true;
+																		break;
+																	case 'wc-completed':
+																		$data = array(
+																			'user' => get_current_user_id(),
+																			'order_id' => $order->ID,
+																			'time' => $order->post_date
+																		);
+																		if(!get_user_meta(get_current_user_id(), 'payment_success')) {
+																			update_user_meta( get_current_user_id(), 'payment_success', implode(',',$data) );
+																		};
+																		echo 'Concluido';
+																		$showAgain = false;
+																		break;
+																	} ?>
+																</th>
+															</tr>
+														<?php }
+													?>
+													</tbody>
+												</table>
+											</div>
+										</div>
 									</div>
+							<?php } ?>
+							<?php // if($progress == 2 AND !$paymentok)
+							if(!get_user_meta(get_current_user_id(), 'payment_success')) {
+							 if($progress == 2 OR $showAgain == true )  { ?>
 									<div data-show='1' class="dashboard-payment active">
 										<h3 class="font-poppins">Pagamento</h3>
 										<div class="column">
@@ -188,7 +223,7 @@
 		
 										</div>
 									</div>	
-							<?php } ?>
+							<?php } } ?>
 				 			<div data-show='1' class="dashboard-view active">
 								<h2 class="font-poppins">Meus dados pessoais</h2>
 								<div class="column">

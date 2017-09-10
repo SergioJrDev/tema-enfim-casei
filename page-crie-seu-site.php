@@ -1089,7 +1089,7 @@
 						<div class="blog blog-default column hidden-mobile">
 							<div class="sm-4-12">
 								<div class="blog_item">
-									<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/blog.jpg')">
+									<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/blog.jpg')">
 										<figure>
 											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg" alt="">
 										</figure>
@@ -1107,7 +1107,7 @@
 
 							<div class="sm-4-12">
 								<div class="blog_item">
-									<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/couple.jpg')">
+									<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/couple.jpg')">
 										<figure>
 											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/festa.jpg" alt="">
 										</figure>
@@ -1124,7 +1124,7 @@
 
 							<div class="sm-4-12">
 								<div class="blog_item">
-									<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/dog.jpg')">
+									<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/dog.jpg')">
 										<figure>
 											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/madrinhas.jpg" alt="">
 										</figure>

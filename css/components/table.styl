@@ -3,6 +3,7 @@
     border-collapse: separate;
     border-spacing: 2px 0px;
     overflow: scroll;
+	border-collapse: collapse;
     width: 100%;
     display: block;
     @media screen and (min-width: 500px) {
@@ -12,10 +13,26 @@
     }
 	thead {
 		tr {
-			background: #6b6b6b;
+			background: #505050;
+			color: #fff;
 			th {
 				color: #fff;
 				padding: 10px 0;
+				text-align: center;
+			}
+		}
+	}
+	td {
+		border: 1px solid #6c6c6c;
+		text-align: center;
+	}
+	tbody {
+		tr {
+			th {
+			    padding: 10px 5px;
+				text-align: left;
+    			border: 1px solid #c4c4c4;
+				text-align: center;
 			}
 		}
 	}

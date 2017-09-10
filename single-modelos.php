@@ -1101,7 +1101,7 @@
 							<div class="blog blog-default column">
 								<div class="sm-4-12">
 									<div class="blog_item">
-										<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/blog.jpg')">
+										<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/blog.jpg')">
 											<figure>
 												<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/noiva.jpeg" alt="">
 											</figure>
@@ -1119,7 +1119,7 @@
 
 								<div class="sm-4-12">
 									<div class="blog_item">
-										<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/couple.jpg')">
+										<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/couple.jpg')">
 											<figure>
 												<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/festa.jpg" alt="">
 											</figure>
@@ -1136,7 +1136,7 @@
 
 								<div class="sm-4-12">
 									<div class="blog_item">
-										<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/dog.jpg')">
+										<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/dog.jpg')">
 											<figure>
 												<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/madrinhas.jpg" alt="">
 											</figure>
@@ -1160,9 +1160,9 @@
 							<h2 class="a-center font-dancing section-title color_demo">Blog</h2>
 							<div class="blog bg-overlay column">
 								<div class="sm-4-12">
-									<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/bride.jpg')">
+									<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/bride.jpg')">
 										<figure>
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/Blog/bride.jpg" alt="">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/bride.jpg" alt="">
 										</figure>
 										<div>
 											<h2>Saiba como foi meu dia de noiva</h2>
@@ -1190,9 +1190,9 @@
 								</div>
 
 								<div class="sm-4-12 ">
-									<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/hotel.jpg')">
+									<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/hotel.jpg')">
 										<figure>
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/Blog/hotel.jpg" alt="">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/hotel.jpg" alt="">
 										</figure>
 										<div>
 											<h2>Onde se hospedar próximo a cerimônia?</h2>
@@ -1220,9 +1220,9 @@
 								</div>
 
 								<div class="sm-4-12 ">
-									<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Blog/music.jpg')">
+									<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/music.jpg')">
 										<figure>
-											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/Blog/music.jpg" alt="">
+											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/music.jpg" alt="">
 										</figure>
 										<div>
 											<h2>Como será a playlist?</h2>
