@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	document.cookie = "screenwidth="+window.innerWidth;
 	$('.hamburger').click(function() {
 		if(!$(this).hasClass('demo')) {
 			$(this).toggleClass('is-active');

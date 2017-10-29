@@ -159,9 +159,7 @@
 							<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Contagem Regressiva/Progressiva</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Mural de recados</li>
-							<li><i class="fa fa-check" aria-hidden="true"></i> Banner com multiplas fotos</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Suporte e manutenção</li>
-							<li><i class="fa fa-check" aria-hidden="true"></i> História do Casal</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Proteção do site com senha</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Confirmação de presença/RSVP</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Compartilhamento em redes sociais</li>
