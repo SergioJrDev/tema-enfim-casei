@@ -1102,7 +1102,8 @@
 
 							<section class="element-desk space-default testimonial">
 								<div class="containr max-width-content ">
-									<div class=" ">
+									<div class="column
+									 ">
 										<div class="sm-6-12">
 											<div class="holder">
 												<p class="font-playfair messages">Que esta união tão bonita seja repleta de amor e perdure para sempre. Sejam muito felizes!</p>
@@ -1114,19 +1115,6 @@
 											<div class="holder">
 												<p class="font-playfair messages">As boas energias que prevalecem em cada momento da vida vêm do amor mais sincero. Felicidades nessa união!</p>
 												<p class="author">Pedro, <span style="font-size: 14px;">irmão do noivo</span></p>
-											</div>
-										</div>
-										<div class="sm-6-12">
-											<div class="holder">
-												<p class="font-playfair messages">Parabéns por este momento tão sublime da união entre duas pessoas que se amam. Toda a felicidade do mundo à vocês!</p>
-												<p class="author">Jaqueline, <span style="font-size: 14px;">mãe do noivo</span></p>
-											</div>
-										</div>
-								
-										<div class="sm-6-12">
-											<div class="holder">
-												<p class="font-playfair messages">No momento em que vocês assumem o compromisso de serem felizes juntos, só posso desejar que tal felicidade se realize plenamente, e que o passar dos anos só venha a confirmar e reforçar o amor que os une.</p>
-												<p class="author">Bruno, <span style="font-size: 14px;">Irmão da noiva</span></p>
 											</div>
 										</div>
 										
