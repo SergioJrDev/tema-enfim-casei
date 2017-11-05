@@ -1,3 +1,7 @@
+<?php echo '<script>
+	if(window.screen.width < 768) {
+		window.location.href = "'.home_url().'/m-crie-seu-site/";
+	}</script>'; ?>
 <?php get_header(); ?>
 <section class="space-default no-pad-top featured">
 	<div class="container">
@@ -26,11 +30,9 @@
 					</div>
 					<div data-order="1" class="pos-right header_s_item header_s_1 actived">
 						<input type="radio" class="hidden" name="header" value="1">
-					
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header1.jpg">
-						
-							<section class="main element-desk auto-h apresentation overlay no-bg-mobile">
-								<header class="default transparent hidden-mobile">
+				
+							<section class="main element-desk auto-h apresentation overlay ">
+								<header class="default transparent ">
 									<div class="container">
 										<h1 class="logo"></h1>
 										<div class="nav">
@@ -51,9 +53,9 @@
 										</div>
 									</div>
 								</header>
-								<div class="container hidden-mobile">
+								<div class="container ">
 									<div class="descr">
-										<h2 class="font-petit a-center lines names"><?php echo $noiva ? $noiva : 'Natália' ?> <span class="break font-petit">&</span> <?php echo $noivo ? $noivo : "Sérgio" ?></h2>
+										<h2 class="font-petit a-center lines names"><?php echo $noiva ? $noiva : 'Fernanda' ?> <span class="break font-petit">&</span> <?php echo $noivo ? $noivo : "Júlio" ?></h2>
 										<h3 class="font-petit date a-center">06 de Janeiro de 2018, São Paulo</h3>
 									</div>
 									<div class="down a-center">
@@ -62,13 +64,13 @@
 								</div>
 								
 							</section>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="2" class="absolute pos-right header_s_item header_s_2">
 						<input type="radio" class="hidden" name="header" value="2">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header2.jpg">
-							<section class="main element-desk auto-h apresentation overlay no-bg-mobile bg-number-2">
-								<header class="default transparent centered bottom hidden-mobile">
+							
+							<section class="main element-desk auto-h apresentation overlay  bg-number-2">
+								<header class="default transparent centered bottom ">
 									<div class="container ">
 										<h1 class="logo"></h1>
 										<div class="nav">
@@ -89,21 +91,21 @@
 										</div>
 									</div>
 								</header>
-								<div class="container hidden-mobile">
+								<div class="container ">
 									<div class="descr">
 										<p class="style_font top-title a-center">Bem vindo a celebração do casamento de...</p>
-										<h2 class="names a-center"><?php echo $noiva ? $noiva : 'Natália' ?> <i class="break fa fa-heart-o" aria-hidden="true"></i> <?php echo $noivo ? $noivo : "Sérgio" ?></h2>
+										<h2 class="names a-center"><?php echo $noiva ? $noiva : 'Fernanda' ?> <i class="break fa fa-heart-o" aria-hidden="true"></i> <?php echo $noivo ? $noivo : "Júlio" ?></h2>
 									</div>
 								</div>
 								
 							</section>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="3" class="absolute pos-right header_s_item header_s_3">
 						<input type="radio" class="hidden" name="header" value="3">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header3.jpg">
-							<section class="main element-desk auto-h apresentation overlay no-bg-mobile bg-number-3">
-								<header class="default transparent hidden-mobile">
+							
+							<section class="main element-desk auto-h apresentation overlay  bg-number-3">
+								<header class="default transparent ">
 									<div class="container">
 										<h1 class="logo"></h1>
 										<div class="nav">
@@ -124,11 +126,11 @@
 										</div>
 									</div>
 								</header>
-								<div class="container hidden-mobile">
+								<div class="container ">
 									<div class="descr">
-										<h2 class="a-center names style_font"><?php echo $noiva ? $noiva : 'Natália' ?></h2>
+										<h2 class="a-center names style_font"><?php echo $noiva ? $noiva : 'Fernanda' ?></h2>
 										<h2 class="a-center names style_font">&</h2>
-										<h2 class="a-center names style_font"><?php echo $noivo ? $noivo : "Sérgio" ?></h2>
+										<h2 class="a-center names style_font"><?php echo $noivo ? $noivo : "Júlio" ?></h2>
 									</div>
 									<div class="down a-center">
 										<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -136,13 +138,13 @@
 								</div>
 								
 							</section>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="4" class="absolute pos-right header_s_item header_s_4">
 						<input type="radio" class="hidden" name="header" value="4">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header4.jpg">
-							<section class="main element-desk auto-h apresentation overlay no-bg-mobile bg-number-4">
-								<header class="default transparent vertical  hidden-mobile">
+							
+							<section class="main element-desk auto-h apresentation overlay  bg-number-4">
+								<header class="default transparent vertical  ">
 									<div class="container">
 										<div class="nav">
 											<button class="hamburger hamburger--collapse" type="button">
@@ -162,7 +164,7 @@
 										</div>
 									</div>
 								</header>
-								<div class="container hidden-mobile">
+								<div class="container ">
 									<div class="descr">
 										<p class=" rotate a-left style_font">Bem vindo ao melhor dia de nossas vidas...</p>
 										<h2 class="names rotate a-left style_font">Nosso casamento!</h2>
@@ -173,7 +175,7 @@
 								</div>
 
 							</section>
-						<?php // } ?>
+						
 					</div>
 					
 				</div>
@@ -185,28 +187,28 @@
 					</div>
 					<div data-order="1" class="pos-right noivos_s_item actived">
 						<input type="radio" class="hidden" name="casal" value="1">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos1.jpg">
+						
 						<div class="element-desk space-default">
 							<div class="column">
-								<div class="sm-12-12 hidden-mobile">
+								<div class="sm-12-12 ">
 									<!-- <h2 class="a-center font-dancing section-title">Os Noivos</h2> -->
 									<div class="couple-item">
 										<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/2.jpg')">
 											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/2.jpg" alt="">
 										</div>
 										<div class="a-center space-title">
-											<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Natália' ?> & <?php echo $noivo ? $noivo : "Sérgio" ?></p>
+											<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Fernanda' ?> & <?php echo $noivo ? $noivo : "Júlio" ?></p>
 										</div>
 									</div>
 								</div>
-								<div class="sm-6-12  hidden-mobile">
+								<div class="sm-6-12  ">
 									<div class="couple-item">
 										<h2>Nossa História</h2>
 										<p class="font-montserrrat">Eu conheci meu namorado quando tinha seis anos. Ele era colega da minha irmã. Fomos em aniversários um do outro, nossas mães conversavam e etc, mas depois ele pulou uma série e mais tarde trocou de colégio.</p>
 										<p class="font-montserrrat">Um belo dia estava almoçando com conhecidos na rua da minha universidade, eis que um moço senta na nossa mesa e de repente começa a falar: "Elisa, eu não sei se tu lembra de mim, era colega da tua irmã" e blábláblá. Foi uma surpresa! Depois disso começamos a conversar. Nunca imaginei que fosse namorar uma pessoa que conheci quinze anos atrás.</p>
 									</div>
 								</div>
-								<div class="sm-6-12 hidden-mobile ">
+								<div class="sm-6-12  ">
 									<div class="couple-item">
 										<h2>O pedido</h2>
 										<p class="font-montserrrat">Meu então namorado tinha combinado para que uma amiga artista estivesse na feira de agricultores que sempre visitamos. Então, para darmos uma força a ela (eu pensei), pedimos que ela fizesse um desenho nosso. Quando ela se virou para me mostrar o desenho pronto, ele estava desenhado de joelhos! Eu fiquei muito surpresa!</p>
@@ -215,22 +217,22 @@
 								</div>
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="2" class="absolute pos-right noivos_s_item">
 						<input type="radio" class="hidden" name="casal" value="2">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos2.jpg">
+						
 						<div class="element-desk space-default">
-							<!-- <h2 class="a-center  hidden-mobile font-dancing section-title">Os Noivos</h2> -->
-							<div class="column hidden-mobile">
+							<!-- <h2 class="a-center   font-dancing section-title">Os Noivos</h2> -->
+							<div class="column ">
 								<div class="sm-6-12 ">
 									<div class="couple-item">
 										<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg')">
 											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
 										</div>
-										<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noiva ? $noiva : 'Natália' ?></p>
+										<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noiva ? $noiva : 'Fernanda' ?></p>
 										<span class="write-by font-dancing a-center">Escrito pelo noivo</span>
-										<p class="font-montserrrat a-center max-width">Desde quando conheci a Natália, eu soube que ela era a pessoa certa para mim, que eu gostaria de passar o resto de nossas vidas juntos. Estar com ela foi a melhor coisa que me aconteceu e hoje sou a pessoa mais feliz do mundo por casar com ela.</p>
+										<p class="font-montserrrat a-center max-width">Desde quando conheci a Fernanda, eu soube que ela era a pessoa certa para mim, que eu gostaria de passar o resto de nossas vidas juntos. Estar com ela foi a melhor coisa que me aconteceu e hoje sou a pessoa mais feliz do mundo por casar com ela.</p>
 									</div>
 								</div>
 								<div class="sm-6-12 ">
@@ -238,39 +240,39 @@
 										<div class="couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg')">
 											<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg" alt="">
 										</div>
-										<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noivo ? $noivo : "Sérgio" ?></p>
+										<p class="font-montserrrat font-dancing no-mg-bottom couple-name a-center space-title"><?php echo $noivo ? $noivo : "Júlio" ?></p>
 										<span class="write-by font-dancing a-center">Escrito pela noiva</span>
-										<p class="font-montserrrat a-center max-width">Me faltam palavras pra descrever o Sérgio, ele é carinhoso, romântico, dedicado, meu melhor amigo e o amor da minha vida. Não consigo imaginar um dia longe dele e quero fazê-lo muito feliz, assim como ele me faz, pelo resto da minha vida.</p>
+										<p class="font-montserrrat a-center max-width">Me faltam palavras pra descrever o Júlio, ele é carinhoso, romântico, dedicado, meu melhor amigo e o amor da minha vida. Não consigo imaginar um dia longe dele e quero fazê-lo muito feliz, assim como ele me faz, pelo resto da minha vida.</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="3" class="absolute pos-right noivos_s_item">
 						<input type="radio" class="hidden" name="casal" value="3">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos3.jpg">
+						
 						<div class=" element-desk couple-item space-default single-col">
-							<!-- <h2 class="a-center hidden-mobile font-dancing section-title">Os Noivos</h2> -->
-							<div class="couple-img circle-img  hidden-mobile  " style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/1.jpg')">
+							<!-- <h2 class="a-center  font-dancing section-title">Os Noivos</h2> -->
+							<div class="couple-img circle-img    " style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/1.jpg')">
 								<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
 							</div>
-							<div class="hidden-mobile">
-								<p class="font-dancing couple-name a-center space-title"><?php echo $noiva ? $noiva : 'Natália' ?> & <?php echo $noivo ? $noivo : "Sérgio" ?></p>
+							<div class="">
+								<p class="font-dancing couple-name a-center space-title"><?php echo $noiva ? $noiva : 'Fernanda' ?> & <?php echo $noivo ? $noivo : "Júlio" ?></p>
 								<div class="a-center">
 										<p class="font-montserrrat center">Eu conheci meu namorado quando tinha seis anos. Ele era colega da minha irmã. Fomos em aniversários um do outro, nossas mães conversavam e etc, mas depois ele pulou uma série e mais tarde trocou de colégio.</p>
 										<p class="font-montserrrat center">Um belo dia estava almoçando com conhecidos na rua da minha universidade, eis que um moço senta na nossa mesa e de repente começa a falar: "Elisa, eu não sei se tu lembra de mim, era colega da tua irmã" e blábláblá. Foi uma surpresa! Depois disso começamos a conversar. Nunca imaginei que fosse namorar uma pessoa que conheci quinze anos atrás.</p>
 								</div>
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="4" class="absolute pos-right noivos_s_item">
 						<input type="radio" class="hidden" name="casal" value="4">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos4.jpg">
+						
 						<div class="element-desk couple space-default under-other single-col">
-							<!-- <h2 class="a-center hidden-mobile font-dancing section-title">Os Noivos</h2> -->
-							<div class="couple-item img-holder hidden-mobile">
+							<!-- <h2 class="a-center  font-dancing section-title">Os Noivos</h2> -->
+							<div class="couple-item img-holder ">
 								<div class="   couple-img circle-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/bride_1.jpg')">
 									<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/bride.jpg" alt="">
 								</div>
@@ -278,21 +280,21 @@
 									<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/couple/groom.jpg" alt="">
 								</div>
 							</div>
-							<div class="a-center hidden-mobile  space-title">
-								<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Natália' ?> & <?php echo $noivo ? $noivo : "Sérgio" ?></p>
+							<div class="a-center   space-title">
+								<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Fernanda' ?> & <?php echo $noivo ? $noivo : "Júlio" ?></p>
 							</div>
-							<div class="couple-item a-center hidden-mobile ">
+							<div class="couple-item a-center  ">
 								<p class="font-montserrrat">Eu conheci meu namorado quando tinha seis anos. Ele era colega da minha irmã. Fomos em aniversários um do outro, nossas mães conversavam e etc, mas depois ele pulou uma série e mais tarde trocou de colégio.</p>
 								<p class="font-montserrrat">Um belo dia estava almoçando com conhecidos na rua da minha universidade, eis que um moço senta na nossa mesa e de repente começa a falar: "Elisa, eu não sei se tu lembra de mim, era colega da tua irmã" e blábláblá. Foi uma surpresa! Depois disso começamos a conversar. Nunca imaginei que fosse namorar uma pessoa que conheci quinze anos atrás.</p>
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="5" class="absolute pos-right noivos_s_item">
 						<input type="radio" class="hidden" name="casal" value="5">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos5.jpg">
+						
 						<div class="element-desk couple space-default block">
-							<div class="containe max-width-content hidden-mobile">
+							<div class="containe max-width-content ">
 								<h2 class="a-center font-dancing section-title ">Os Noivos</h2>
 								<div class="column">
 									<div class="sm-6-12 ">
@@ -304,18 +306,18 @@
 									</div>
 									<div class="sm-6-12 ">
 										<div class="couple-item a-ceter">
-											<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Natália' ?></p>
+											<p class="font-dancing couple-name"><?php echo $noiva ? $noiva : 'Fernanda' ?></p>
 											<span class="write-by font-dancing">Escrito pelo noivo</span>
-											<p class="h">Desde quando conheci a Natália, eu soube que ela era a pessoa certa para mim, que eu gostaria de passar o resto de nossas vidas juntos. Estar com ela foi a melhor coisa que me aconteceu e hoje sou a pessoa mais feliz do mundo por casar com ela.</p>
+											<p class="h">Desde quando conheci a Fernanda, eu soube que ela era a pessoa certa para mim, que eu gostaria de passar o resto de nossas vidas juntos. Estar com ela foi a melhor coisa que me aconteceu e hoje sou a pessoa mais feliz do mundo por casar com ela.</p>
 										</div>
 									</div>
 								</div>
 								<div class="column">
 									<div class="sm-6-12 ">
 										<div class="couple-item a-cener aright">
-											<p class="font-dancing couple-name "><?php echo $noivo ? $noivo : "Sérgio" ?></p>
+											<p class="font-dancing couple-name "><?php echo $noivo ? $noivo : "Júlio" ?></p>
 											<span class="write-by font-dancing">Escrito pela noiva</span>
-											<p class="h">Me faltam palavras pra descrever o Sérgio, ele é carinhoso, romântico, dedicado, meu melhor amigo e o amor da minha vida. Não consigo imaginar um dia longe dele e quero fazê-lo muito feliz, assim como ele me faz, pelo resto da minha vida.</p>
+											<p class="h">Me faltam palavras pra descrever o Júlio, ele é carinhoso, romântico, dedicado, meu melhor amigo e o amor da minha vida. Não consigo imaginar um dia longe dele e quero fazê-lo muito feliz, assim como ele me faz, pelo resto da minha vida.</p>
 										</div>
 									</div>
 									<div class="sm-6-12 ">
@@ -328,7 +330,7 @@
 								</div>
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 				</div>
 
@@ -341,9 +343,9 @@
 						</div>
 						<div data-order="1" class="pos-right local_s_item actived">
 							<input type="radio" class="hidden" name="local" value="1">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos1.jpg">
-							<section class="space-default element-desk local with-img no-bg-mobile">
-								<div class="container max-width-content hidden-mobile">
+							
+							<section class="space-default element-desk local with-img ">
+								<div class="container max-width-content ">
 									<div class="column">
 										<div class="sm-6-12">
 											<div class="local-item a-center">
@@ -374,13 +376,13 @@
 									</div>
 								</div>
 							</section>
-							<?php // } ?>
+							
 						</div>
 						<div data-order="2" class="absolute local_s_item pos-right">
 							<input type="radio" class="hidden" name="local" value="2">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos2.jpg">
+							
 							<section class="space-default element-desk local with-title">
-								<div class="container hidden-mobile max-widt-content">
+								<div class="container  max-widt-content">
 									<!-- <h2 class="font-dacing a-center mg-bottom">O Casamento</h2> -->
 									<div class="column">
 										<div class="sm-6-12 border-right">
@@ -402,13 +404,13 @@
 									</div>
 								</div>
 							</section>
-							<?php // } ?>
+							
 						</div>
 						<div data-order="3" class="absolute local_s_item pos-right">
 							<input type="radio" class="hidden" name="local" value="3">
-							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos3.jpg">
+							
 							<section class="space-defult element-desk local">
-								<div class="containe hidden-mobile max-width-content ">
+								<div class="containe  max-width-content ">
 									<!-- <h2 class="a-center section-title">Eventos</h2> -->
 									<div class="column">
 										<div class="sm-6-12">
@@ -524,9 +526,9 @@
 					</div>
 					<div data-order="1" class="timer_s_item pos-right actived">
 						<input type="radio" class="hidden" name="contagem" value="1">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem1.jpg">
-						<section class="element-desk space-default timer overlay no-bg-mobile">
-							<div class="cntainer max_width hidden-mobile">
+						
+						<section class="element-desk space-default timer overlay ">
+							<div class="cntainer max_width ">
 								<h2 class="a-center section-title font-montserrrat">Contagem regressiva para o grande dia...</h2>
 								<div class="column">
 									<div class="xs-6-12 sm-3-12">
@@ -564,13 +566,12 @@
 								</div>
 							</div>
 						</section>
-						<?php // } ?>
 					</div>
 					<div data-order="2" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="2">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem2.jpg">
-						<section class="element-desk space-default timer overlay simple no-bg-mobile">
-							<div class="cntainer max_width hidden-mobile">
+						
+						<section class="element-desk space-default timer overlay simple ">
+							<div class="cntainer max_width ">
 								<h2 class="a-center sans-serif section-title">Escolhemos o dia e estamos contando os segundos...</h2>
 								<div class="column">
 									<div class="xs-6-12 sm-3-12">
@@ -608,13 +609,13 @@
 								</div>
 							</div>
 						</section>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="3" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="3">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem3.jpg">
-						<section class="element-desk space-default timer simple triangle no-bg-mobile">
-							<div class="cntainer max_width hidden-mobile">
+						
+						<section class="element-desk space-default timer simple triangle ">
+							<div class="cntainer max_width ">
 								<h2 class="a-center sans-serif section-title no-mg">25 de Outubro de 2018, São Paulo/SP</h2>
 								<i class="fa a-center icon pulse fa-heart" aria-hidden="true"></i>
 								<div class="column">
@@ -653,13 +654,13 @@
 								</div>
 							</div>
 						</section>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="4" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="4">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem4.jpg">
-						<section class="element-desk space-default timer simple triangle overlay circle no-bg-mobile">
-							<div class="cntainer max_width hidden-mobile">
+						
+						<section class="element-desk space-default timer simple triangle overlay circle ">
+							<div class="cntainer max_width ">
 								<h2 class="a-center sans-serif section-title">Venha celebrar nosso amor com a gente em...</h2>
 								<div class="column">
 									<div class="xs-6-12 sm-3-12">
@@ -697,13 +698,13 @@
 								</div>
 							</div>
 						</section>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="5" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="5">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem5.jpg">
+						
 						<section class="timer one-color no-bg">
-							<div class="containr hidden-mobile">
+							<div class="containr ">
 								<div class="column">
 									<div class="md-4-12 first-color"><h2 class="section-title">Faça a contagem regressiva conosco</h2></div>
 									<div class="md-8-12 color_theme">
@@ -737,13 +738,13 @@
 								</div>
 							</div>
 						</section>
-						<?php // } ?>
+						
 					</div> 
 					<div data-order="6" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="6">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem6.jpg">
+						 -->
 						<section class="no-background space-defaul timer">
-							<div class="containe max_width hidden-mobile">
+							<div class="containe max_width ">
 								<h2 class="a-center section-title style_font">O Dia do casamento chega em...</h2>
 								<div class="column">
 									<div class="xs-6-12 sm-3-12">
@@ -781,7 +782,7 @@
 								</div>
 							</div>
 						</section>
-						<?php // } ?>
+						
 					</div>
 				</div>
 				
@@ -794,9 +795,9 @@
 						</div>
 						<div data-order="1" class="rsvp_s_item pos-right actived">
 							<input type="radio" class="hidden" name="rsvp" value="1">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp1.jpg">
-							<div class="rsvp rsvp-default element-desk space-default no-bg-mobile">
-								<div class="container hidden-mobile">
+
+							<div class="rsvp rsvp-default element-desk space-default ">
+								<div class="container ">
 									<h2 class="a-center">RSVP</h2>
 									<div class="form max-width">
 										<div class="input-group">
@@ -820,13 +821,13 @@
 									</div>
 								</div>
 							</div>
-							<?php // } ?>
+							
 						</div>
 						<div data-order="2" class="rsvp_s_item absolute pos-right">
 							<input type="radio" class="hidden" name="rsvp" value="2">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp2.jpg">
+	
 							<div class="rsvp element-desk space-default rsvp-pink">
-								<div class="container hidden-mobile">
+								<div class="container ">
 									<h2 class="a-center">RSVP</h2>
 									<p class="a-center">Sua presença é muito importante para nós!</p>
 									<div class="form max-width">
@@ -849,13 +850,13 @@
 									</div>
 								</div>
 							</div>
-							<?php // } ?>
+							
 						</div>
 						<div data-order="3" class="rsvp_s_item absolute pos-right">
 							<input type="radio" class="hidden" name="rsvp" value="3">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp3.jpg">
-							<div class="rsvp element-desk space-default rsvp-font no-bg-mobile">
-								<div class="container hidden-mobile">
+						
+							<div class="rsvp element-desk space-default rsvp-font ">
+								<div class="container ">
 									<h2 class="a-center font-dancing">Confirmação de presença</h2>
 									<div class="form max-width">
 										<div class="column">
@@ -885,7 +886,7 @@
 									</div>
 								</div>
 							</div>
-							<?php // } ?>
+							
 						</div>
 					</div>
 				</div>
@@ -899,8 +900,8 @@
 					</div>
 					<div data-order="1" class="fotos_s_item pos-right actived">
 						<input type="radio" class="hidden" name="fotos" value="1">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos1.jpg">
-						<div class="element-desk components-item gallery hidden-mobile column less-centered">
+					
+						<div class="element-desk components-item gallery  column less-centered">
 							<div class="sm-6-12 md-4-12">
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg" alt="">
@@ -932,13 +933,13 @@
 								</div>
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 
 					<div data-order="2" class="absolute fotos_s_item pos-right">
 						<input type="radio" class="hidden" name="fotos" value="2">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos2.jpg">
-						<div class="element-desk components-item gallery hidden-mobile gallery-tall less-centered">
+						
+						<div class="element-desk components-item gallery  gallery-tall less-centered">
 							<div class="sm-25">
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg" alt="">
@@ -960,13 +961,13 @@
 								</div>
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 
 					<div data-order="3" class="absolute fotos_s_item pos-right">
 						<input type="radio" class="hidden" name="fotos" value="3">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos3.jpg">
-						<div class="element-desk gallery hidden-mobile gallery-featured">
+						
+						<div class="element-desk gallery  gallery-featured">
 							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg" alt="">
 							</div>
@@ -987,15 +988,15 @@
 								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_4.jpg" alt="">
 							</div>
 						</div>
-						<?php // } ?>
+						
 						<!-- <h2 class=" component-title">Galeria de Fotos</h2> -->
 					</div>
 
 
 					<div data-order="4" class="absolute fotos_s_item pos-right">
 						<input type="radio" class="hidden" name="fotos" value="4">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos4.jpg">
-						<div class="element-desk gallery hidden-mobile gallery-five less-centered">				
+					
+						<div class="element-desk gallery  gallery-five less-centered">				
 							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg')">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg" alt="">
 							</div>
@@ -1012,7 +1013,7 @@
 								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_5.jpg" alt="">
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 					
 				</div>
@@ -1024,25 +1025,11 @@
 						</div>
 						<div data-order="1" class="recados_s_item pos-right actived">
 							<input type="radio" class="hidden" name="recados" value="1">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados1.jpg">
+						
 							<section class="element-desk space-defaul notes">
-								<div class="container hidden-mobile ">
+								<div class="container  ">
 									<div class="notes-group ">
-										<div class="  ">
-											<div class="sm-6-12">
-												<div class="notes-item">
-													<p class="notes-p first-letter">Que a felicidade a dois continue sendo o objetivo principal de suas vidas. Que a caminhada seja longa, repleta de amor e compreensão. Sinceros votos de felicidades.</p>
-													<p class="notes-author">Paloma, </p>
-													<p class="notes-connect">-Amiga do noivo</p>
-												</div>
-											</div>
-											<div class="sm-6-12">
-												<div class="notes-item">
-													<p class="notes-p first-letter">Que vocês estejam unidos para a nova vida que hora se inicia, e que ela seja de muito amor, paz e alegria.</p>
-													<p class="notes-author">Patrícia</p>
-													<p class="notes-connect">-Irmã da noiva</p>
-												</div>
-											</div>
+										<div class="column">
 											<div class="sm-6-12">
 												<div class="notes-item">
 													<p class="notes-p first-letter">Que a felicidade a dois continue sendo o objetivo principal de suas vidas. Que a caminhada seja longa, repleta de amor e compreensão. Sinceros votos de felicidades.</p>
@@ -1064,10 +1051,10 @@
 						</div>
 						<div data-order="2" class="absolute recados_s_item pos-right">
 							<input type="radio" class="hidden" name="recados" value="2">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados2.jpg">
-							<section class="element-desk space-default notes overlay box no-bg-mobile">
-								<div class="container hidden-mobile">
-									<div class="notes-group   ">
+						
+							<section class="element-desk space-default notes overlay box ">
+								<div class="container ">
+									<div class="notes-group column ">
 										<div class="sm-6-12">
 											<div class="notes-item">
 												<p class="notes-p">Que a caminhada que se inicia seja repleta de amor, felicidade, carinho e cumplicidade. Parabéns ao novo casal!</p>
@@ -1082,31 +1069,16 @@
 												<p class="notes-connect">-Tia da noiva</p>
 											</div>
 										</div>
-										<div class="sm-6-12">
-											<div class="notes-item">
-												<p class="notes-p">Que este amor que vos uniu se multiplique a cada dia desta nova vida que se inicia. Felicidades ao casal!</p>
-												<p class="notes-author">Aline</p>
-												<p class="notes-connect">-Prima do noivo</p>
-											</div>
-										</div>
-										<div class="sm-6-12">
-											<div class="notes-item">
-												<p class="notes-p">Até que enfim o casório saiu... Parabéns! Que vocês continuem unidos, companheiros e, acima de tudo, felizes.</p>
-												<p class="notes-author">Fábio</p>
-												<p class="notes-connect">-Amigo da noiva</p>
-											</div>
-										</div>
 									</div>
 								</div>
 							</section>
-							<?php // } ?>
 						</div>
 						<div data-order="3" class="absolute recados_s_item pos-right">
 							<input type="radio" class="hidden" name="recados" value="3">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados3.jpg">
+						
 							<section class="element-desk notes bordered-bottom">
-								<div class="container hidden-mobile">
-									<div class="notes-group   ">
+								<div class="container ">
+									<div class="notes-group column ">
 										<div class="sm-6-12">
 											<div class="notes-item">
 												<p class="notes-p ">Um casamento feliz se constrói com muito amor, carinho e compreensão. Que estes sentimentos estejam sempre presentes em suas vidas. Parabéns!</p>
@@ -1119,30 +1091,18 @@
 												<p class="notes-author">Júnior, <span>colega do noivo</span></p>
 											</div>
 										</div>
-										<div class="sm-6-12">
-											<div class="notes-item">
-												<p class="notes-p ">A vida é feita de momentos bons e ruins. Aproveitem intensamente os bons e estejam sempre unidos para superar os ruins. Assim se constrói um casamento duradouro e feliz! Felicidades!</p>
-												<p class="notes-author">Carla, <span>irmã do noivo</span></p>
-											</div>
-										</div>
-										<div class="sm-6-12">
-											<div class="notes-item">
-												<p class="notes-p ">Parabéns por esse passo tão importante em suas vidas. Que vocês sejam muito felizes!</p>
-												<p class="notes-author">Bruna, <span>amiga do casal</span></p>
-											</div>
-										</div>
 
 									</div>
 								</div>
 							</section>
-							<?php // } ?>
 						</div>
 						<div data-order="4" class="absolute recados_s_item pos-right">
 							<input type="radio" class="hidden" name="recados" value="4">
-							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados4.jpg">
+						
+
 							<section class="element-desk space-default testimonial">
-								<div class="containr max-width-content hidden-mobile">
-									<div class="  ">
+								<div class="containr max-width-content ">
+									<div class=" ">
 										<div class="sm-6-12">
 											<div class="holder">
 												<p class="font-playfair messages">Que esta união tão bonita seja repleta de amor e perdure para sempre. Sejam muito felizes!</p>
@@ -1173,7 +1133,7 @@
 									</div>
 								</div>
 							</section>
-							<?php // } ?>
+							
 						</div>
 					</div>
 				</div>
@@ -1186,9 +1146,9 @@
 					</div>
 					<div data-order="1" class="blog_s_item pos-right actived">
 						<input type="radio" class="hidden" name="blog" value="1">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog1.jpg">
+				
 						<div class="containr element-desk space-default">
-							<div class="blog blog-default column hidden-mobile">
+							<div class="blog blog-default column ">
 								<div class="sm-4-12">
 									<div class="blog_item">
 										<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/blog.jpg')">
@@ -1211,7 +1171,7 @@
 									<div class="blog_item">
 										<div class="blog_img bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/couple.jpg')">
 											<figure>
-												<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/festa.jpg" alt="">
+												<img class="hidden" src="<?php echo get_template_directory_uri(); ?>/img/blog/hotel.jpg" alt="">
 											</figure>
 										</div>
 										<div class="blog_content">
@@ -1242,13 +1202,13 @@
 								</div>
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="2" class="blog_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="blog" value="2">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog2.jpg">
+				
 						<div class="containr element-desk space-default">
-							<div class="blog bg-overlay hidden-mobile column">
+							<div class="blog bg-overlay  column">
 								<div class="sm-4-12">
 									<div class="blog_item overlay bg-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog/bride.jpg')">
 										<figure>
@@ -1340,13 +1300,13 @@
 								</div>
 							</div>
 						</div>
-						<?php // } ?>
+						
 					</div>
 					<div data-order="3" class="blog_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="blog" value="3">
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog4.jpg">
+					
 						<section class="element-desk space-default services new-blog">
-							<div class="containe hidden-mobile">
+							<div class="containe ">
 								<div class="column">
 									<div class="sm-4-12">
 										<div class="new-blog-item">
@@ -1390,7 +1350,7 @@
 								</div>
 							</div>
 						</section>
-						<?php // } ?>
+						
 					</div>
 				</div>
 				<input type="hidden" value="1" name="createPage">

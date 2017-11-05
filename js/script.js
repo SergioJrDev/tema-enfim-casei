@@ -185,24 +185,24 @@ $(window).on('load', function() {
 	//     navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
  	// });
 
- 	// $(".slidertestimonial").owlCarousel({
-	//     autoHeight: true,
-	// 	responsive : {
-	// 	    0 : {
-	// 	        items:1,
-	// 	    },
-	// 	    768 : {
-	// 	       items:2, 
-	// 	    }
-	// 	},
-	//     loop:true,
-	//     nav: false,
-	// 	autoplay:true,
-	// 	autoplayTimeout:3000,
-	// 	autoplayHoverPause:false, 
-	//     // nav: true,
-	//     // navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
- 	// });
+ 	$(".slidertestimonial").owlCarousel({
+	    autoHeight: true,
+		responsive : {
+		    0 : {
+		        items:1,
+		    },
+		    768 : {
+		       items:2, 
+		    }
+		},
+	    loop:true,
+	    nav: false,
+		autoplay:true,
+		autoplayTimeout:3000,
+		autoplayHoverPause:false, 
+	    // nav: true,
+	    // navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
+ 	});
 
  	$("#sliderhome").owlCarousel({
 	    items:1,
