@@ -19,13 +19,15 @@
 				?>
 
 				<p>Escolha o modelo do seu site. As imagens e textos você poderá trocar depois quando ele estiver pronto.</p>
-				<div class="owl-carousel slidersingle components mg-bottom">
-					<div>
+				<div class=" main_slider components mg-bottom header_s">
+					<div class="controlls">
+						<a href="#" data-group="header_s" class="a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#" data-group="header_s" class="a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<div data-order="1" class="pos-right header_s_item header_s_1 actived">
 						<input type="radio" class="hidden" name="header" value="1">
-						<?php // if($widthSize < 768) {?>
 					
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header1.jpg">
-						<?php // } else { ?>
 						
 							<section class="main element-desk auto-h apresentation overlay no-bg-mobile">
 								<header class="default transparent hidden-mobile">
@@ -62,11 +64,9 @@
 							</section>
 						<?php // } ?>
 					</div>
-					<div>
+					<div data-order="2" class="absolute pos-right header_s_item header_s_2">
 						<input type="radio" class="hidden" name="header" value="2">
-						<?php // if($widthSize < 768) {?>
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header2.jpg">
-						<?php // } else { ?>
 							<section class="main element-desk auto-h apresentation overlay no-bg-mobile bg-number-2">
 								<header class="default transparent centered bottom hidden-mobile">
 									<div class="container ">
@@ -99,11 +99,9 @@
 							</section>
 						<?php // } ?>
 					</div>
-					<div>
+					<div data-order="3" class="absolute pos-right header_s_item header_s_3">
 						<input type="radio" class="hidden" name="header" value="3">
-						<?php // if($widthSize < 768) {?>
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header3.jpg">
-						<?php // } else { ?>
 							<section class="main element-desk auto-h apresentation overlay no-bg-mobile bg-number-3">
 								<header class="default transparent hidden-mobile">
 									<div class="container">
@@ -140,11 +138,9 @@
 							</section>
 						<?php // } ?>
 					</div>
-					<div>
+					<div data-order="4" class="absolute pos-right header_s_item header_s_4">
 						<input type="radio" class="hidden" name="header" value="4">
-						<?php // if($widthSize < 768) {?>
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/header4.jpg">
-						<?php // } else { ?>
 							<section class="main element-desk auto-h apresentation overlay no-bg-mobile bg-number-4">
 								<header class="default transparent vertical  hidden-mobile">
 									<div class="container">
@@ -179,14 +175,17 @@
 							</section>
 						<?php // } ?>
 					</div>
+					
 				</div>
 				<h2 class="component-title">Os noivos</h2>
-				<div class="owl-carousel slidersingle components couple">	
-					<div>
+				<div class=" main_slider components couple">	
+					<!-- <div class="controlls">
+						<a href="#" class="a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#" class="a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div> -->
+					<div class="pos-right actived">
 						<input type="radio" class="hidden" name="casal" value="1">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos1.jpg">
-						<?php // } else { ?>
 						<div class="element-desk space-default">
 							<div class="column">
 								<div class="sm-12-12 hidden-mobile">
@@ -218,11 +217,9 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div>
+					<div class="pos-right">
 						<input type="radio" class="hidden" name="casal" value="2">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos2.jpg">
-						<?php // } else { ?>
 						<div class="element-desk space-default">
 							<!-- <h2 class="a-center  hidden-mobile font-dancing section-title">Os Noivos</h2> -->
 							<div class="column hidden-mobile">
@@ -250,11 +247,9 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div>
+					<div class="pos-right">
 						<input type="radio" class="hidden" name="casal" value="3">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos3.jpg">
-						<?php // } else { ?>
 						<div class=" element-desk couple-item space-default single-col">
 							<!-- <h2 class="a-center hidden-mobile font-dancing section-title">Os Noivos</h2> -->
 							<div class="couple-img circle-img  hidden-mobile  " style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/couple/1.jpg')">
@@ -270,11 +265,9 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div>
+					<div class="pos-right">
 						<input type="radio" class="hidden" name="casal" value="4">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos4.jpg">
-						<?php // } else { ?>
 						<div class="element-desk couple space-default under-other single-col">
 							<!-- <h2 class="a-center hidden-mobile font-dancing section-title">Os Noivos</h2> -->
 							<div class="couple-item img-holder hidden-mobile">
@@ -295,11 +288,9 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div>
+					<div class="pos-right">
 						<input type="radio" class="hidden" name="casal" value="5">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos5.jpg">
-						<?php // } else { ?>
 						<div class="element-desk couple space-default block">
 							<div class="containe max-width-content hidden-mobile">
 								<h2 class="a-center font-dancing section-title ">Os Noivos</h2>
@@ -343,12 +334,10 @@
 
 				<h2 class="component-title">Locais</h2>
 				<div class="space-bottom">
-					<div class="owl-carousel slidersingle components">
-						<div>
+					<div class=" main_slider components">
+						<div class="pos-right actived">
 							<input type="radio" class="hidden" name="local" value="1">
-							<?php // if($widthSize < 768) {?>
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos1.jpg">
-							<?php // } else { ?>
 							<section class="space-default element-desk local with-img no-bg-mobile">
 								<div class="container max-width-content hidden-mobile">
 									<div class="column">
@@ -383,11 +372,9 @@
 							</section>
 							<?php // } ?>
 						</div>
-						<div>
+						<div class="pos-right">
 							<input type="radio" class="hidden" name="local" value="2">
-							<?php // if($widthSize < 768) {?>
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos2.jpg">
-							<?php // } else { ?>
 							<section class="space-default element-desk local with-title">
 								<div class="container hidden-mobile max-widt-content">
 									<!-- <h2 class="font-dacing a-center mg-bottom">O Casamento</h2> -->
@@ -413,7 +400,7 @@
 							</section>
 							<?php // } ?>
 						</div>
-						<div> lazy
+						<div class="pos-right">
 							<input type="radio" class="hidden" name="local" value="3">
 							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos3.jpg">
 							<section class="space-defult element-desk local">
@@ -526,397 +513,377 @@
 				</div>
 
 				<h2 class="component-title">Contagem regressiva</h2>
-				<div class="owl-carousel slidersingle components space-bottom">	
-				<div>
-					<input type="radio" class="hidden" name="contagem" value="1">
-					<?php // if($widthSize < 768) {?>
-					<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem1.jpg">
-					<?php // } else { ?>
-					<section class="element-desk space-default timer overlay no-bg-mobile">
-						<div class="cntainer max_width hidden-mobile">
-							<h2 class="a-center section-title font-montserrrat">Contagem regressiva para o grande dia...</h2>
-							<div class="column">
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-days">
-										02
+				<div class=" main_slider components space-bottom">	
+					<div class="pos-right actived">
+						<input type="radio" class="hidden" name="contagem" value="1">
+						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem1.jpg">
+						<section class="element-desk space-default timer overlay no-bg-mobile">
+							<div class="cntainer max_width hidden-mobile">
+								<h2 class="a-center section-title font-montserrrat">Contagem regressiva para o grande dia...</h2>
+								<div class="column">
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-days">
+											02
+											</div>
+											<div class="time">Dia(s)</div>
 										</div>
-										<div class="time">Dia(s)</div>
 									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-hours">
-										03
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-hours">
+											03
+											</div>
+											<div class="time">Hora(s)</div>
 										</div>
-										<div class="time">Hora(s)</div>
 									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-minutes">
-										23
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-minutes">
+											23
+											</div>
+											<div class="time">Minuto(s)</div>
 										</div>
-										<div class="time">Minuto(s)</div>
 									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-seconds">
-										54
-										</div>
-										<div class="time">Segundo(s)</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<?php // } ?>
-				</div>
-				<div>
-					<input type="radio" class="hidden" name="contagem" value="2">
-					<?php // if($widthSize < 768) {?>
-					<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem2.jpg">
-					<?php // } else { ?>
-					<section class="element-desk space-default timer overlay simple no-bg-mobile">
-						<div class="cntainer max_width hidden-mobile">
-							<h2 class="a-center sans-serif section-title">Escolhemos o dia e estamos contando os segundos...</h2>
-							<div class="column">
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-days">
-										02
-										</div>
-										<div class="time">Dia(s)</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-hours">
-										03
-										</div>
-										<div class="time">Hora(s)</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-minutes">
-										23
-										</div>
-										<div class="time">Minuto(s)</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-seconds">
-										54
-										</div>
-										<div class="time">Segundo(s)</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<?php // } ?>
-				</div>
-				<div>
-					<input type="radio" class="hidden" name="contagem" value="3">
-					<?php // if($widthSize < 768) {?>
-					<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem3.jpg">
-					<?php // } else { ?>
-					<section class="element-desk space-default timer simple triangle no-bg-mobile">
-						<div class="cntainer max_width hidden-mobile">
-							<h2 class="a-center sans-serif section-title no-mg">25 de Outubro de 2018, São Paulo/SP</h2>
-							<i class="fa a-center icon pulse fa-heart" aria-hidden="true"></i>
-							<div class="column">
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-days">
-										02
-										</div>
-										<div class="time">Dia(s)</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-hours">
-										03
-										</div>
-										<div class="time">Hora(s)</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-minutes">
-										23
-										</div>
-										<div class="time">Minuto(s)</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-seconds">
-										54
-										</div>
-										<div class="time">Segundo(s)</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<?php // } ?>
-				</div>
-				<div>
-					<input type="radio" class="hidden" name="contagem" value="4">
-					<?php // if($widthSize < 768) {?>
-					<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem4.jpg">
-					<?php // } else { ?>
-					<section class="element-desk space-default timer simple triangle overlay circle no-bg-mobile">
-						<div class="cntainer max_width hidden-mobile">
-							<h2 class="a-center sans-serif section-title">Venha celebrar nosso amor com a gente em...</h2>
-							<div class="column">
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-days">
-										02
-										</div>
-										<div class="time">Dia(s)</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-hours">
-										03
-										</div>
-										<div class="time">Hora(s)</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-minutes">
-										23
-										</div>
-										<div class="time">Minuto(s)</div>
-									</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-seconds">
-										54
-										</div>
-										<div class="time">Segundo(s)</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<?php // } ?>
-				</div>
-				<div>
-					<input type="radio" class="hidden" name="contagem" value="5">
-					<?php // if($widthSize < 768) {?>
-					<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem5.jpg">
-					<?php // } else { ?>
-					<section class="timer one-color no-bg">
-						<div class="containr hidden-mobile">
-							<div class="column">
-								<div class="md-4-12 first-color"><h2 class="section-title">Faça a contagem regressiva conosco</h2></div>
-								<div class="md-8-12 color_theme">
-									<div class="column">
-										<div class="sm-3-12 a-center">
-												<div class="number number-days">
-												02
-												</div>
-												<div class="time">Dia(s)</div>
-										</div>
-										<div class="sm-3-12 a-center">
-												<div class="number number-hours">
-												03
-												</div>
-												<div class="time">Hora(s)</div>
-										</div>
-										<div class="sm-3-12 a-center">
-												<div class="number number-minutes">
-												23
-												</div>
-												<div class="time">Minuto(s)</div>
-										</div>
-										<div class="sm-3-12 a-center">
-												<div class="number number-seconds">
-												54
-												</div>
-												<div class="time">Segundo(s)</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-seconds">
+											54
+											</div>
+											<div class="time">Segundo(s)</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
-					<?php // } ?>
-				</div> 
-				<div>
-					<input type="radio" class="hidden" name="contagem" value="6">
-					<?php // if($widthSize < 768) {?>
-					<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem6.jpg">
-					<?php // } else { ?>
-					<section class="no-background space-defaul timer">
-						<div class="containe max_width hidden-mobile">
-							<h2 class="a-center section-title style_font">O Dia do casamento chega em...</h2>
-							<div class="column">
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-days">
-										02
+						</section>
+						<?php // } ?>
+					</div>
+					<div class="pos-right">
+						<input type="radio" class="hidden" name="contagem" value="2">
+						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem2.jpg">
+						<section class="element-desk space-default timer overlay simple no-bg-mobile">
+							<div class="cntainer max_width hidden-mobile">
+								<h2 class="a-center sans-serif section-title">Escolhemos o dia e estamos contando os segundos...</h2>
+								<div class="column">
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-days">
+											02
+											</div>
+											<div class="time">Dia(s)</div>
 										</div>
 									</div>
-									<div class="a-center time">Dia(s)</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-hours">
-										03
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-hours">
+											03
+											</div>
+											<div class="time">Hora(s)</div>
 										</div>
 									</div>
-									<div class="a-center time">Hora(s)</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-minutes">
-										23
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-minutes">
+											23
+											</div>
+											<div class="time">Minuto(s)</div>
 										</div>
 									</div>
-									<div class="a-center time">Minuto(s)</div>
-								</div>
-								<div class="xs-6-12 sm-3-12">
-									<div class="timer-box a-center">
-										<div class="number number-seconds">
-										54
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-seconds">
+											54
+											</div>
+											<div class="time">Segundo(s)</div>
 										</div>
 									</div>
-									<div class="a-center time">Segundo(s)</div>
 								</div>
 							</div>
-						</div>
-					</section>
-					<?php // } ?>
-				</div>
-
+						</section>
+						<?php // } ?>
+					</div>
+					<div class="pos-right">
+						<input type="radio" class="hidden" name="contagem" value="3">
+						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem3.jpg">
+						<section class="element-desk space-default timer simple triangle no-bg-mobile">
+							<div class="cntainer max_width hidden-mobile">
+								<h2 class="a-center sans-serif section-title no-mg">25 de Outubro de 2018, São Paulo/SP</h2>
+								<i class="fa a-center icon pulse fa-heart" aria-hidden="true"></i>
+								<div class="column">
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-days">
+											02
+											</div>
+											<div class="time">Dia(s)</div>
+										</div>
+									</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-hours">
+											03
+											</div>
+											<div class="time">Hora(s)</div>
+										</div>
+									</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-minutes">
+											23
+											</div>
+											<div class="time">Minuto(s)</div>
+										</div>
+									</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-seconds">
+											54
+											</div>
+											<div class="time">Segundo(s)</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<?php // } ?>
+					</div>
+					<div class="pos-right">
+						<input type="radio" class="hidden" name="contagem" value="4">
+						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem4.jpg">
+						<section class="element-desk space-default timer simple triangle overlay circle no-bg-mobile">
+							<div class="cntainer max_width hidden-mobile">
+								<h2 class="a-center sans-serif section-title">Venha celebrar nosso amor com a gente em...</h2>
+								<div class="column">
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-days">
+											02
+											</div>
+											<div class="time">Dia(s)</div>
+										</div>
+									</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-hours">
+											03
+											</div>
+											<div class="time">Hora(s)</div>
+										</div>
+									</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-minutes">
+											23
+											</div>
+											<div class="time">Minuto(s)</div>
+										</div>
+									</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-seconds">
+											54
+											</div>
+											<div class="time">Segundo(s)</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<?php // } ?>
+					</div>
+					<div class="pos-right">
+						<input type="radio" class="hidden" name="contagem" value="5">
+						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem5.jpg">
+						<section class="timer one-color no-bg">
+							<div class="containr hidden-mobile">
+								<div class="column">
+									<div class="md-4-12 first-color"><h2 class="section-title">Faça a contagem regressiva conosco</h2></div>
+									<div class="md-8-12 color_theme">
+										<div class="column">
+											<div class="sm-3-12 a-center">
+													<div class="number number-days">
+													02
+													</div>
+													<div class="time">Dia(s)</div>
+											</div>
+											<div class="sm-3-12 a-center">
+													<div class="number number-hours">
+													03
+													</div>
+													<div class="time">Hora(s)</div>
+											</div>
+											<div class="sm-3-12 a-center">
+													<div class="number number-minutes">
+													23
+													</div>
+													<div class="time">Minuto(s)</div>
+											</div>
+											<div class="sm-3-12 a-center">
+													<div class="number number-seconds">
+													54
+													</div>
+													<div class="time">Segundo(s)</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<?php // } ?>
+					</div> 
+					<div class="pos-right">
+						<input type="radio" class="hidden" name="contagem" value="6">
+						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem6.jpg">
+						<section class="no-background space-defaul timer">
+							<div class="containe max_width hidden-mobile">
+								<h2 class="a-center section-title style_font">O Dia do casamento chega em...</h2>
+								<div class="column">
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-days">
+											02
+											</div>
+										</div>
+										<div class="a-center time">Dia(s)</div>
+									</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-hours">
+											03
+											</div>
+										</div>
+										<div class="a-center time">Hora(s)</div>
+									</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-minutes">
+											23
+											</div>
+										</div>
+										<div class="a-center time">Minuto(s)</div>
+									</div>
+									<div class="xs-6-12 sm-3-12">
+										<div class="timer-box a-center">
+											<div class="number number-seconds">
+											54
+											</div>
+										</div>
+										<div class="a-center time">Segundo(s)</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<?php // } ?>
+					</div>
 				</div>
 				
 				<h2 class="component-title">Confirmação de presença</h2>
 				<div class="space-bottom">
-					<div class="owl-carousel slidersingle components ">
-					<div>
-						<input type="radio" class="hidden" name="rsvp" value="1">
-						<?php // if($widthSize < 768) {?>
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp1.jpg">
-						<?php // } else { ?>
-						<div class="rsvp rsvp-default element-desk space-default no-bg-mobile">
-							<div class="container hidden-mobile">
-								<h2 class="a-center">RSVP</h2>
-								<div class="form max-width">
-									<div class="input-group">
-										<label for="name" class="label">Digite seu nome</label>
-										<input type="text" class="input" id="name" name="name">
-									</div>
-									<div class="input-group">
-										<label for="email" class="label">Quantos convidados irá levar?</label>
-										<select class="input">
-											<option>0</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</div>
-									<div class="a-center">
-										<button disabled class="btn btn-theme btn-pink btn-uppercase" type="submit">Confirmar Presença</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<?php // } ?>
-					</div>
-					<div>
-						<input type="radio" class="hidden" name="rsvp" value="2">
-						<?php // if($widthSize < 768) {?>
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp2.jpg">
-						<?php // } else { ?>
-						<div class="rsvp element-desk space-default rsvp-pink">
-							<div class="container hidden-mobile">
-								<h2 class="a-center">RSVP</h2>
-								<p class="a-center">Sua presença é muito importante para nós!</p>
-								<div class="form max-width">
-									<div class="input-group">
-										<label for="name" class="label">Digite seu nome</label>
-										<input type="text" class="input" id="name" name="name">
-									</div>
-									<div class="input-group">
-										<label for="email" class="label">Quantos convidados irá levar?</label>
-										<select class="input">
-											<option>0</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</div>
-									<button disabled class="btn btn-theme btn-dark btn-block btn-uppercase" type="submit">Confirmar Presença</button>
-								</div>
-							</div>
-						</div>
-						<?php // } ?>
-					</div>
-					<div>
-						<input type="radio" class="hidden" name="rsvp" value="3">
-						<?php // if($widthSize < 768) {?>
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp3.jpg">
-						<?php // } else { ?>
-						<div class="rsvp element-desk space-default rsvp-font no-bg-mobile">
-							<div class="container hidden-mobile">
-								<h2 class="a-center font-dancing">Confirmação de presença</h2>
-								<div class="form max-width">
-									<div class="column">
-										<div class="sm-8-12">
-											<div class="input-group">
-												<label for="name" class="label font-dancing">Digite seu nome</label>
-												<input type="text" class="input" id="name" name="name">
-											</div>
+					<div class=" main_slider components ">
+						<div class="pos-right actived">
+							<input type="radio" class="hidden" name="rsvp" value="1">
+							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp1.jpg">
+							<div class="rsvp rsvp-default element-desk space-default no-bg-mobile">
+								<div class="container hidden-mobile">
+									<h2 class="a-center">RSVP</h2>
+									<div class="form max-width">
+										<div class="input-group">
+											<label for="name" class="label">Digite seu nome</label>
+											<input type="text" class="input" id="name" name="name">
 										</div>
-										<div class="sm-4-12">
-											<div class="input-group">
-												<label for="email" class="label font-dancing"># Convidados</label>
-												<select class="input">
-													<option>0</option>
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
+										<div class="input-group">
+											<label for="email" class="label">Quantos convidados irá levar?</label>
+											<select class="input">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+										<div class="a-center">
+											<button disabled class="btn btn-theme btn-pink btn-uppercase" type="submit">Confirmar Presença</button>
 										</div>
 									</div>
-									<div class="a-rigt">
-									<button disabled class="btn btn-theme btn-dark btn-uppercase" type="submit">Confirmar Presença</button>
+								</div>
+							</div>
+							<?php // } ?>
+						</div>
+						<div class="pos-right">
+							<input type="radio" class="hidden" name="rsvp" value="2">
+							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp2.jpg">
+							<div class="rsvp element-desk space-default rsvp-pink">
+								<div class="container hidden-mobile">
+									<h2 class="a-center">RSVP</h2>
+									<p class="a-center">Sua presença é muito importante para nós!</p>
+									<div class="form max-width">
+										<div class="input-group">
+											<label for="name" class="label">Digite seu nome</label>
+											<input type="text" class="input" id="name" name="name">
+										</div>
+										<div class="input-group">
+											<label for="email" class="label">Quantos convidados irá levar?</label>
+											<select class="input">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+										<button disabled class="btn btn-theme btn-dark btn-block btn-uppercase" type="submit">Confirmar Presença</button>
 									</div>
 								</div>
 							</div>
+							<?php // } ?>
 						</div>
-						<?php // } ?>
+						<div class="pos-right">
+							<input type="radio" class="hidden" name="rsvp" value="3">
+							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp3.jpg">
+							<div class="rsvp element-desk space-default rsvp-font no-bg-mobile">
+								<div class="container hidden-mobile">
+									<h2 class="a-center font-dancing">Confirmação de presença</h2>
+									<div class="form max-width">
+										<div class="column">
+											<div class="sm-8-12">
+												<div class="input-group">
+													<label for="name" class="label font-dancing">Digite seu nome</label>
+													<input type="text" class="input" id="name" name="name">
+												</div>
+											</div>
+											<div class="sm-4-12">
+												<div class="input-group">
+													<label for="email" class="label font-dancing"># Convidados</label>
+													<select class="input">
+														<option>0</option>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="a-rigt">
+										<button disabled class="btn btn-theme btn-dark btn-uppercase" type="submit">Confirmar Presença</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<?php // } ?>
+						</div>
 					</div>
 				</div>
 
 				<!-- <h3 class="components-title">Galeria de Foto</h3> -->
 				<h2 class=" component-title">Galeria de Fotos</h2>
-				<div class="owl-carousel slidersingle components mg-bottom">
-					<div>
+				<div class=" main_slider components mg-bottom">
+					<div class="pos-right actived">
 						<input type="radio" class="hidden" name="fotos" value="1">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos1.jpg">
-						<?php // } else { ?>
 						<div class="element-desk components-item gallery hidden-mobile column less-centered">
 							<div class="sm-6-12 md-4-12">
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
@@ -952,11 +919,9 @@
 						<?php // } ?>
 					</div>
 
-					<div>
+					<div class="pos-right">
 						<input type="radio" class="hidden" name="fotos" value="2">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos2.jpg">
-						<?php // } else { ?>
 						<div class="element-desk components-item gallery hidden-mobile gallery-tall less-centered">
 							<div class="sm-25">
 								<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
@@ -982,11 +947,9 @@
 						<?php // } ?>
 					</div>
 
-					<div>
+					<div class="pos-right">
 						<input type="radio" class="hidden" name="fotos" value="3">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos3.jpg">
-						<?php // } else { ?>
 						<div class="element-desk gallery hidden-mobile gallery-featured">
 							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg')">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party.jpg" alt="">
@@ -1013,11 +976,9 @@
 					</div>
 
 
-					<div>
+					<div class="pos-right">
 						<input type="radio" class="hidden" name="fotos" value="4">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos4.jpg">
-						<?php // } else { ?>
 						<div class="element-desk gallery hidden-mobile gallery-five less-centered">				
 							<div class="gallery-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg')">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/gallery/party_1.jpg" alt="">
@@ -1040,178 +1001,168 @@
 					
 				</div>
 					<h2 class="component-title">Página de Recados</h2>
-					<div class="owl-carousel slidersingle components mg-bottom">
-					<div>
-						<input type="radio" class="hidden" name="recados" value="1">
-						<?php // if($widthSize < 768) {?>
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados1.jpg">
-						<?php // } else { ?>
-						<section class="element-desk space-defaul notes">
-							<div class="container hidden-mobile ">
-								<div class="notes-group ">
-									<div class="owl-carousel slidertestimonial owl-theme">
+					<div class=" main_slider components mg-bottom">
+						<div class="pos-right actived">
+							<input type="radio" class="hidden" name="recados" value="1">
+							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados1.jpg">
+							<section class="element-desk space-defaul notes">
+								<div class="container hidden-mobile ">
+									<div class="notes-group ">
+										<div class="  ">
+											<div class="sm-6-12">
+												<div class="notes-item">
+													<p class="notes-p first-letter">Que a felicidade a dois continue sendo o objetivo principal de suas vidas. Que a caminhada seja longa, repleta de amor e compreensão. Sinceros votos de felicidades.</p>
+													<p class="notes-author">Paloma, </p>
+													<p class="notes-connect">-Amiga do noivo</p>
+												</div>
+											</div>
+											<div class="sm-6-12">
+												<div class="notes-item">
+													<p class="notes-p first-letter">Que vocês estejam unidos para a nova vida que hora se inicia, e que ela seja de muito amor, paz e alegria.</p>
+													<p class="notes-author">Patrícia</p>
+													<p class="notes-connect">-Irmã da noiva</p>
+												</div>
+											</div>
+											<div class="sm-6-12">
+												<div class="notes-item">
+													<p class="notes-p first-letter">Que a felicidade a dois continue sendo o objetivo principal de suas vidas. Que a caminhada seja longa, repleta de amor e compreensão. Sinceros votos de felicidades.</p>
+													<p class="notes-author">Gabriela, </p>
+													<p class="notes-connect">-Prima do noivo</p>
+												</div>
+											</div>
+											<div class="sm-6-12">
+												<div class="notes-item">
+													<p class="notes-p first-letter">Um casamento feliz se constrói com muito amor, carinho e compreensão. Que estes sentimentos estejam sempre presentes na vida de vocês!</p>
+													<p class="notes-author">Fábio</p>
+													<p class="notes-connect">-Irmão da noiva</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="pos-right">
+							<input type="radio" class="hidden" name="recados" value="2">
+							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados2.jpg">
+							<section class="element-desk space-default notes overlay box no-bg-mobile">
+								<div class="container hidden-mobile">
+									<div class="notes-group   ">
 										<div class="sm-6-12">
 											<div class="notes-item">
-												<p class="notes-p first-letter">Que a felicidade a dois continue sendo o objetivo principal de suas vidas. Que a caminhada seja longa, repleta de amor e compreensão. Sinceros votos de felicidades.</p>
-												<p class="notes-author">Paloma, </p>
-												<p class="notes-connect">-Amiga do noivo</p>
+												<p class="notes-p">Que a caminhada que se inicia seja repleta de amor, felicidade, carinho e cumplicidade. Parabéns ao novo casal!</p>
+												<p class="notes-author">Antonio Carlos</p>
+												<p class="notes-connect">-Avô do noivo</p>
 											</div>
 										</div>
 										<div class="sm-6-12">
 											<div class="notes-item">
-												<p class="notes-p first-letter">Que vocês estejam unidos para a nova vida que hora se inicia, e que ela seja de muito amor, paz e alegria.</p>
-												<p class="notes-author">Patrícia</p>
-												<p class="notes-connect">-Irmã da noiva</p>
+												<p class="notes-p">Que esta nova etapa de suas vidas seja coberta de bênçãos, recheada de felicidade e repleta de harmonia. Parabéns!</p>
+												<p class="notes-author">Fernanda</p>
+												<p class="notes-connect">-Tia da noiva</p>
 											</div>
 										</div>
 										<div class="sm-6-12">
 											<div class="notes-item">
-												<p class="notes-p first-letter">Que a felicidade a dois continue sendo o objetivo principal de suas vidas. Que a caminhada seja longa, repleta de amor e compreensão. Sinceros votos de felicidades.</p>
-												<p class="notes-author">Gabriela, </p>
+												<p class="notes-p">Que este amor que vos uniu se multiplique a cada dia desta nova vida que se inicia. Felicidades ao casal!</p>
+												<p class="notes-author">Aline</p>
 												<p class="notes-connect">-Prima do noivo</p>
 											</div>
 										</div>
 										<div class="sm-6-12">
 											<div class="notes-item">
-												<p class="notes-p first-letter">Um casamento feliz se constrói com muito amor, carinho e compreensão. Que estes sentimentos estejam sempre presentes na vida de vocês!</p>
+												<p class="notes-p">Até que enfim o casório saiu... Parabéns! Que vocês continuem unidos, companheiros e, acima de tudo, felizes.</p>
 												<p class="notes-author">Fábio</p>
-												<p class="notes-connect">-Irmão da noiva</p>
+												<p class="notes-connect">-Amigo da noiva</p>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</section>
-						<?php // } ?>
-					</div>
-					<div>
-						<input type="radio" class="hidden" name="recados" value="2">
-						<?php // if($widthSize < 768) {?>
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados2.jpg">
-						<?php // } else { ?>
-						<section class="element-desk space-default notes overlay box no-bg-mobile">
-							<div class="container hidden-mobile">
-								<div class="notes-group owl-carousel slidertestimonial owl-theme">
-									<div class="sm-6-12">
-										<div class="notes-item">
-											<p class="notes-p">Que a caminhada que se inicia seja repleta de amor, felicidade, carinho e cumplicidade. Parabéns ao novo casal!</p>
-											<p class="notes-author">Antonio Carlos</p>
-											<p class="notes-connect">-Avô do noivo</p>
+							</section>
+							<?php // } ?>
+						</div>
+						<div class="pos-right">
+							<input type="radio" class="hidden" name="recados" value="3">
+							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados3.jpg">
+							<section class="element-desk notes bordered-bottom">
+								<div class="container hidden-mobile">
+									<div class="notes-group   ">
+										<div class="sm-6-12">
+											<div class="notes-item">
+												<p class="notes-p ">Um casamento feliz se constrói com muito amor, carinho e compreensão. Que estes sentimentos estejam sempre presentes em suas vidas. Parabéns!</p>
+												<p class="notes-author">Carlos, <span>pai da noiva</span></p>
+											</div>
 										</div>
-									</div>
-									<div class="sm-6-12">
-										<div class="notes-item">
-											<p class="notes-p">Que esta nova etapa de suas vidas seja coberta de bênçãos, recheada de felicidade e repleta de harmonia. Parabéns!</p>
-											<p class="notes-author">Fernanda</p>
-											<p class="notes-connect">-Tia da noiva</p>
+										<div class="sm-6-12">
+											<div class="notes-item">
+												<p class="notes-p ">Que todos os sonhos que compartilham se tornem realidade, e que esta nova vida seja repleta de amor, paz e alegria, para que possam desfrutar da felicidade tão sonhada! Parabéns!</p>
+												<p class="notes-author">Júnior, <span>colega do noivo</span></p>
+											</div>
 										</div>
-									</div>
-									<div class="sm-6-12">
-										<div class="notes-item">
-											<p class="notes-p">Que este amor que vos uniu se multiplique a cada dia desta nova vida que se inicia. Felicidades ao casal!</p>
-											<p class="notes-author">Aline</p>
-											<p class="notes-connect">-Prima do noivo</p>
+										<div class="sm-6-12">
+											<div class="notes-item">
+												<p class="notes-p ">A vida é feita de momentos bons e ruins. Aproveitem intensamente os bons e estejam sempre unidos para superar os ruins. Assim se constrói um casamento duradouro e feliz! Felicidades!</p>
+												<p class="notes-author">Carla, <span>irmã do noivo</span></p>
+											</div>
 										</div>
-									</div>
-									<div class="sm-6-12">
-										<div class="notes-item">
-											<p class="notes-p">Até que enfim o casório saiu... Parabéns! Que vocês continuem unidos, companheiros e, acima de tudo, felizes.</p>
-											<p class="notes-author">Fábio</p>
-											<p class="notes-connect">-Amigo da noiva</p>
+										<div class="sm-6-12">
+											<div class="notes-item">
+												<p class="notes-p ">Parabéns por esse passo tão importante em suas vidas. Que vocês sejam muito felizes!</p>
+												<p class="notes-author">Bruna, <span>amiga do casal</span></p>
+											</div>
 										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-						<?php // } ?>
-					</div>
-					<div>
-						<input type="radio" class="hidden" name="recados" value="3">
-						<?php // if($widthSize < 768) {?>
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados3.jpg">
-						<?php // } else { ?>
-						<section class="element-desk notes bordered-bottom">
-							<div class="container hidden-mobile">
-								<div class="notes-group owl-carousel slidertestimonial owl-theme">
-									<div class="sm-6-12">
-										<div class="notes-item">
-											<p class="notes-p ">Um casamento feliz se constrói com muito amor, carinho e compreensão. Que estes sentimentos estejam sempre presentes em suas vidas. Parabéns!</p>
-											<p class="notes-author">Carlos, <span>pai da noiva</span></p>
-										</div>
-									</div>
-									<div class="sm-6-12">
-										<div class="notes-item">
-											<p class="notes-p ">Que todos os sonhos que compartilham se tornem realidade, e que esta nova vida seja repleta de amor, paz e alegria, para que possam desfrutar da felicidade tão sonhada! Parabéns!</p>
-											<p class="notes-author">Júnior, <span>colega do noivo</span></p>
-										</div>
-									</div>
-									<div class="sm-6-12">
-										<div class="notes-item">
-											<p class="notes-p ">A vida é feita de momentos bons e ruins. Aproveitem intensamente os bons e estejam sempre unidos para superar os ruins. Assim se constrói um casamento duradouro e feliz! Felicidades!</p>
-											<p class="notes-author">Carla, <span>irmã do noivo</span></p>
-										</div>
-									</div>
-									<div class="sm-6-12">
-										<div class="notes-item">
-											<p class="notes-p ">Parabéns por esse passo tão importante em suas vidas. Que vocês sejam muito felizes!</p>
-											<p class="notes-author">Bruna, <span>amiga do casal</span></p>
-										</div>
-									</div>
 
+									</div>
 								</div>
-							</div>
-						</section>
-						<?php // } ?>
-					</div>
-					<div>
-						<input type="radio" class="hidden" name="recados" value="4">
-						<?php // if($widthSize < 768) {?>
-						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados4.jpg">
-						<?php // } else { ?>
-						<section class="element-desk space-default testimonial">
-							<div class="containr max-width-content hidden-mobile">
-								<div class="owl-carousel slidertestimonial owl-theme">
-									<div class="sm-6-12">
-										<div class="holder">
-											<p class="font-playfair messages">Que esta união tão bonita seja repleta de amor e perdure para sempre. Sejam muito felizes!</p>
-											<p class="author">Júlia, <span style="font-size: 14px;">prima da noiva</span></p>
+							</section>
+							<?php // } ?>
+						</div>
+						<div class="pos-right">
+							<input type="radio" class="hidden" name="recados" value="4">
+							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados4.jpg">
+							<section class="element-desk space-default testimonial">
+								<div class="containr max-width-content hidden-mobile">
+									<div class="  ">
+										<div class="sm-6-12">
+											<div class="holder">
+												<p class="font-playfair messages">Que esta união tão bonita seja repleta de amor e perdure para sempre. Sejam muito felizes!</p>
+												<p class="author">Júlia, <span style="font-size: 14px;">prima da noiva</span></p>
+											</div>
 										</div>
-									</div>
-							
-									<div class="sm-6-12">
-										<div class="holder">
-											<p class="font-playfair messages">As boas energias que prevalecem em cada momento da vida vêm do amor mais sincero. Felicidades nessa união!</p>
-											<p class="author">Pedro, <span style="font-size: 14px;">irmão do noivo</span></p>
+								
+										<div class="sm-6-12">
+											<div class="holder">
+												<p class="font-playfair messages">As boas energias que prevalecem em cada momento da vida vêm do amor mais sincero. Felicidades nessa união!</p>
+												<p class="author">Pedro, <span style="font-size: 14px;">irmão do noivo</span></p>
+											</div>
 										</div>
-									</div>
-									<div class="sm-6-12">
-										<div class="holder">
-											<p class="font-playfair messages">Parabéns por este momento tão sublime da união entre duas pessoas que se amam. Toda a felicidade do mundo à vocês!</p>
-											<p class="author">Jaqueline, <span style="font-size: 14px;">mãe do noivo</span></p>
+										<div class="sm-6-12">
+											<div class="holder">
+												<p class="font-playfair messages">Parabéns por este momento tão sublime da união entre duas pessoas que se amam. Toda a felicidade do mundo à vocês!</p>
+												<p class="author">Jaqueline, <span style="font-size: 14px;">mãe do noivo</span></p>
+											</div>
 										</div>
-									</div>
-							
-									<div class="sm-6-12">
-										<div class="holder">
-											<p class="font-playfair messages">No momento em que vocês assumem o compromisso de serem felizes juntos, só posso desejar que tal felicidade se realize plenamente, e que o passar dos anos só venha a confirmar e reforçar o amor que os une.</p>
-											<p class="author">Bruno, <span style="font-size: 14px;">Irmão da noiva</span></p>
+								
+										<div class="sm-6-12">
+											<div class="holder">
+												<p class="font-playfair messages">No momento em que vocês assumem o compromisso de serem felizes juntos, só posso desejar que tal felicidade se realize plenamente, e que o passar dos anos só venha a confirmar e reforçar o amor que os une.</p>
+												<p class="author">Bruno, <span style="font-size: 14px;">Irmão da noiva</span></p>
+											</div>
 										</div>
+										
 									</div>
-									
 								</div>
-							</div>
-						</section>
-						<?php // } ?>
+							</section>
+							<?php // } ?>
+						</div>
 					</div>
 				</div>
 
 				<h2 class="component-title">Blog do casal</h2>
-				<div class="owl-carousel slidersingle components">
-					<div>
+				<div class=" main_slider components">
+					<div class="pos-right actived">
 						<input type="radio" class="hidden" name="blog" value="1">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog1.jpg">
-						<?php // } else { ?>
 						<div class="containr element-desk space-default">
 							<div class="blog blog-default column hidden-mobile">
 								<div class="sm-4-12">
@@ -1269,11 +1220,9 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div>
+					<div class="pos-right">
 						<input type="radio" class="hidden" name="blog" value="2">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog2.jpg">
-						<?php // } else { ?>
 						<div class="containr element-desk space-default">
 							<div class="blog bg-overlay hidden-mobile column">
 								<div class="sm-4-12">
@@ -1369,11 +1318,9 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div>
+					<div class="pos-right">
 						<input type="radio" class="hidden" name="blog" value="3">
-						<?php // if($widthSize < 768) {?>
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog4.jpg">
-						<?php // } else { ?>
 						<section class="element-desk space-default services new-blog">
 							<div class="containe hidden-mobile">
 								<div class="column">

@@ -1,0 +1,42 @@
+.main_slider {
+    position: relative;   
+    .pos-right, .pos-left {
+        width: 100%;
+        right: -110%;
+        transition: right .4s ease;
+    } 
+    
+    .absolute {
+        position: absolute;
+        top: 0;
+    }
+ 
+    .pos-left {
+        right: 110%;
+    }
+    .actived {
+        position: relative;
+        right: 0;    
+    }
+
+    // Controles
+    .controlls {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        .a-prev, .a-next {
+            position: absolute;
+            left: -20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 25px;    
+        }
+        .a-next {
+            left: auto;
+            right: 40px;    
+        }
+    }
+}

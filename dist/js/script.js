@@ -232,34 +232,60 @@ var x = setInterval(function() {
 		}
 		e.preventDefault();
 	});
+
+	$('.a-next').click(function(e) {
+		const group = this.dataset.group
+		const length = document.querySelectorAll('.'+group+'_item');
+		const actived = document.querySelector('.'+group+'_item.actived');
+		
+		actived.classList.remove('actived')
+		actived.classList.add('pos-left');
+		actived.classList.add('absolute');
+		actived.nextElementSibling.classList.add('actived')
+		actived.nextElementSibling.classList.remove('absolute')
+		e.preventDefault(); 
+	});
+
+	$('.a-next').click(function(e) {
+		const group = this.dataset.group
+		const length = document.querySelectorAll('.'+group+'_item');
+		const actived = document.querySelector('.'+group+'_item.actived');
+		
+		actived.classList.remove('actived')
+		actived.classList.add('pos-left');
+		actived.classList.add('absolute');
+		actived.nextElementSibling.classList.add('actived')
+		actived.nextElementSibling.classList.remove('absolute')
+		e.preventDefault(); 
+	});
 });
 
 $(window).on('load', function() {
- 	$(".slidersingle").owlCarousel({
-	    autoHeight: true,
-	    items:1,
-	    nav: true,
-	    navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
- 	});
+ 	// $(".slidersingle").owlCarousel({
+	//     autoHeight: true,
+	//     items:1,
+	//     nav: true,
+	//     navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
+ 	// });
 
- 	$(".slidertestimonial").owlCarousel({
-	    autoHeight: true,
-		responsive : {
-		    0 : {
-		        items:1,
-		    },
-		    768 : {
-		       items:2, 
-		    }
-		},
-	    loop:true,
-	    nav: false,
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:false, 
-	    // nav: true,
-	    // navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
- 	});
+ 	// $(".slidertestimonial").owlCarousel({
+	//     autoHeight: true,
+	// 	responsive : {
+	// 	    0 : {
+	// 	        items:1,
+	// 	    },
+	// 	    768 : {
+	// 	       items:2, 
+	// 	    }
+	// 	},
+	//     loop:true,
+	//     nav: false,
+	// 	autoplay:true,
+	// 	autoplayTimeout:3000,
+	// 	autoplayHoverPause:false, 
+	//     // nav: true,
+	//     // navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
+ 	// });
 
  	$("#sliderhome").owlCarousel({
 	    items:1,
