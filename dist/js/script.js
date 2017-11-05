@@ -116,102 +116,11 @@ var x = setInterval(function() {
 
  	function setRadio() {
  		setTimeout(function() {
- 			$('.owl-item.active').find($('input:radio')).prop('checked', true);
+ 			$('.actived').find($('input:radio')).prop('checked', true);
  		}, 100);
  	}
 
  	setRadio();
-
- 	$(".owl-carousel").on('changed.owl.carousel', function() {
- 		setRadio();
- 	});
-
- 	// $('.change-dashboard').click(function(e){
- 	// 	$('.change-dashboard').removeClass('active');
- 	// 	$('.dashboard-view').removeClass('active');
- 	// 	$(this).addClass('active');
- 	// 	$('.dashboard').find("[data-show='" + $(this).data().menu + "']").addClass('active');
- 	// 	// console.log($(this).data().menu);
- 	// 	e.preventDefault();
- 	// });
-
- 	// function setValue() {
- 	// 	var radio = $('.radio-plan:checked').val(),
- 	// 		preview = document.querySelector('.span-value')
- 	// 		select = $('#periodo').val();
- 	// 		preview.innerHTML = 'das'; 
- 	// 	if(radio == 1 && select == 3) {
- 	// 		preview.innerHTML = '49'; 
- 	// 	};
-
- 	// 	if(radio == 1 && select == 6) {
- 	// 		preview.innerHTML = '79'; 
- 	// 	};
-
- 	// 	if(radio == 1 && select == 1) {
- 	// 		preview.innerHTML = '149'; 
- 	// 	};
-
- 	// 	if(radio == 2 && select == 3) {
- 	// 		preview.innerHTML = '79'; 
- 	// 	};
-
- 	// 	if(radio == 2 && select == 6) {
- 	// 		preview.innerHTML = '149'; 
- 	// 	};
-
- 	// 	if(radio == 2 && select == 1) {
- 	// 		preview.innerHTML = '199'; 
- 	// 	};
-
- 	// } 
-
- 	// $('#periodo').change(function() {
- 	// 	setValue();
- 	// });	
-
- 	// $('.radio-plan').change(function() {
- 	// 	setValue();
- 	// });	
-
- 	// setValue();
-
-	//  $('.select_simples').change(function() {
-	// 	 var option = $(this).val(),
-	// 	 	preview_value_s = document.querySelector('.value_total_simples');
-	// 		 preview_parceled_s = document.querySelector('.value_parceled_simples');
-	// 	if(option == 1) {
-	// 		preview_value_s.innerHTML = '197,40';
-	// 		preview_parceled_s.innerHTML = '32';
-	// 	}
-	// 	if(option == 6) {
-	// 		preview_value_s.innerHTML = '89,40';
-	// 		preview_parceled_s.innerHTML = '14';
-	// 	}
-	// 	if(option == 3) {
-	// 		preview_value_s.innerHTML = '41,40';
-	// 		preview_parceled_s.innerHTML = '6';
-	// 	} 
-	//  });
-
-
-	//  $('.select_advanced').change(function() {
-	// 	 var option = $(this).val(),
-	// 	 	preview_value = document.querySelector('.value_total_advanced');
-	// 		 preview_parceled = document.querySelector('.value_parceled_advanced');
-	// 	if(option == 1) {
-	// 		preview_value.innerHTML = '257,40';
-	// 		preview_parceled.innerHTML = '42';
-	// 	}
-	// 	if(option == 6) {
-	// 		preview_value.innerHTML = '137,40';
-	// 		preview_parceled.innerHTML = '22';
-	// 	}
-	// 	if(option == 3) {
-	// 		preview_value.innerHTML = '59,40';
-	// 		preview_parceled.innerHTML = '9';
-	// 	}
-	//  });
 
 	 $('.color').click(function(e){
 		var color = $(this).data().color;
@@ -235,27 +144,35 @@ var x = setInterval(function() {
 
 	$('.a-next').click(function(e) {
 		const group = this.dataset.group
-		const length = document.querySelectorAll('.'+group+'_item');
+		const length = document.querySelectorAll('.'+group+'_item').length;
 		const actived = document.querySelector('.'+group+'_item.actived');
-		
+		if(parseInt(actived.dataset.order) === length - 1) {
+			$(this).addClass('disabled');
+		}
+		$('.'+group+'_a.a-prev').removeClass('disabled');
 		actived.classList.remove('actived')
 		actived.classList.add('pos-left');
 		actived.classList.add('absolute');
 		actived.nextElementSibling.classList.add('actived')
 		actived.nextElementSibling.classList.remove('absolute')
+		setRadio();
 		e.preventDefault(); 
 	});
 
-	$('.a-next').click(function(e) {
+	$('.a-prev').click(function(e) {
 		const group = this.dataset.group
-		const length = document.querySelectorAll('.'+group+'_item');
+		const length = document.querySelectorAll('.'+group+'_item').length;
 		const actived = document.querySelector('.'+group+'_item.actived');
-		
+		if(parseInt(actived.dataset.order) === 1 + 1) {
+			$(this).addClass('disabled');
+		}
+		$('.'+group+'_a.a-next').removeClass('disabled');
 		actived.classList.remove('actived')
-		actived.classList.add('pos-left');
+		actived.classList.remove('pos-left');
 		actived.classList.add('absolute');
-		actived.nextElementSibling.classList.add('actived')
-		actived.nextElementSibling.classList.remove('absolute')
+		actived.previousElementSibling.classList.add('actived')
+		actived.previousElementSibling.classList.remove('absolute')
+		setRadio();
 		e.preventDefault(); 
 	});
 });

@@ -26,17 +26,28 @@
         bottom: 0;
         margin: auto;
         width: 100%;
+        z-index 9999;
         .a-prev, .a-next {
             position: absolute;
-            left: -20px;
+            left: -30px;
             top: 0;
             bottom: 0;
             margin: auto;
-            height: 25px;    
+            height: 45px;
+            background: #c3c3c3;
+            line-height: 45px;
+            width: 30px;
+            text-align: center;
+            border-radius: 20px 0 0 20px;
+            color: #fff;
         }
         .a-next {
             left: auto;
-            right: 40px;    
+            right: 30px;   
+            border-radius: 0 20px 20px 0; 
+        }
+        .disabled {
+            color: #dbdbdb;
         }
     }
 }

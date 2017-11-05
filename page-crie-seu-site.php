@@ -21,8 +21,8 @@
 				<p>Escolha o modelo do seu site. As imagens e textos você poderá trocar depois quando ele estiver pronto.</p>
 				<div class=" main_slider components mg-bottom header_s">
 					<div class="controlls">
-						<a href="#" data-group="header_s" class="a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-						<a href="#" data-group="header_s" class="a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						<a href="#" data-group="header_s" class="header_s_a disabled a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#" data-group="header_s" class="header_s_a a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 					</div>
 					<div data-order="1" class="pos-right header_s_item header_s_1 actived">
 						<input type="radio" class="hidden" name="header" value="1">
@@ -178,12 +178,12 @@
 					
 				</div>
 				<h2 class="component-title">Os noivos</h2>
-				<div class=" main_slider components couple">	
-					<!-- <div class="controlls">
-						<a href="#" class="a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-						<a href="#" class="a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-					</div> -->
-					<div class="pos-right actived">
+				<div class=" main_slider components couple noivos_s">	
+					<div class="controlls">
+						<a href="#" data-group="noivos_s" class="noivos_s_a disabled a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#" data-group="noivos_s" class="noivos_s_a a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<div data-order="1" class="pos-right noivos_s_item actived">
 						<input type="radio" class="hidden" name="casal" value="1">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos1.jpg">
 						<div class="element-desk space-default">
@@ -217,7 +217,7 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="2" class="absolute pos-right noivos_s_item">
 						<input type="radio" class="hidden" name="casal" value="2">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos2.jpg">
 						<div class="element-desk space-default">
@@ -247,7 +247,7 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="3" class="absolute pos-right noivos_s_item">
 						<input type="radio" class="hidden" name="casal" value="3">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos3.jpg">
 						<div class=" element-desk couple-item space-default single-col">
@@ -265,7 +265,7 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="4" class="absolute pos-right noivos_s_item">
 						<input type="radio" class="hidden" name="casal" value="4">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos4.jpg">
 						<div class="element-desk couple space-default under-other single-col">
@@ -288,7 +288,7 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="5" class="absolute pos-right noivos_s_item">
 						<input type="radio" class="hidden" name="casal" value="5">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/noivos5.jpg">
 						<div class="element-desk couple space-default block">
@@ -334,8 +334,12 @@
 
 				<h2 class="component-title">Locais</h2>
 				<div class="space-bottom">
-					<div class=" main_slider components">
-						<div class="pos-right actived">
+					<div class=" main_slider components local_s">
+						<div class="controlls">
+							<a href="#" data-group="local_s" class="local_s_a disabled a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+							<a href="#" data-group="local_s" class="local_s_a a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</div>
+						<div data-order="1" class="pos-right local_s_item actived">
 							<input type="radio" class="hidden" name="local" value="1">
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos1.jpg">
 							<section class="space-default element-desk local with-img no-bg-mobile">
@@ -372,7 +376,7 @@
 							</section>
 							<?php // } ?>
 						</div>
-						<div class="pos-right">
+						<div data-order="2" class="absolute local_s_item pos-right">
 							<input type="radio" class="hidden" name="local" value="2">
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos2.jpg">
 							<section class="space-default element-desk local with-title">
@@ -400,7 +404,7 @@
 							</section>
 							<?php // } ?>
 						</div>
-						<div class="pos-right">
+						<div data-order="3" class="absolute local_s_item pos-right">
 							<input type="radio" class="hidden" name="local" value="3">
 							<img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/img/mobile/eventos3.jpg">
 							<section class="space-defult element-desk local">
@@ -513,8 +517,12 @@
 				</div>
 
 				<h2 class="component-title">Contagem regressiva</h2>
-				<div class=" main_slider components space-bottom">	
-					<div class="pos-right actived">
+				<div class=" main_slider components space-bottom timer_s">	
+					<div class="controlls">
+						<a href="#" data-group="timer_s" class="timer_s_a disabled a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#" data-group="timer_s" class="timer_s_a a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<div data-order="1" class="timer_s_item pos-right actived">
 						<input type="radio" class="hidden" name="contagem" value="1">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem1.jpg">
 						<section class="element-desk space-default timer overlay no-bg-mobile">
@@ -558,7 +566,7 @@
 						</section>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="2" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="2">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem2.jpg">
 						<section class="element-desk space-default timer overlay simple no-bg-mobile">
@@ -602,7 +610,7 @@
 						</section>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="3" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="3">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem3.jpg">
 						<section class="element-desk space-default timer simple triangle no-bg-mobile">
@@ -647,7 +655,7 @@
 						</section>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="4" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="4">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem4.jpg">
 						<section class="element-desk space-default timer simple triangle overlay circle no-bg-mobile">
@@ -691,7 +699,7 @@
 						</section>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="5" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="5">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem5.jpg">
 						<section class="timer one-color no-bg">
@@ -731,7 +739,7 @@
 						</section>
 						<?php // } ?>
 					</div> 
-					<div class="pos-right">
+					<div data-order="6" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="6">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/contagem6.jpg">
 						<section class="no-background space-defaul timer">
@@ -779,8 +787,12 @@
 				
 				<h2 class="component-title">Confirmação de presença</h2>
 				<div class="space-bottom">
-					<div class=" main_slider components ">
-						<div class="pos-right actived">
+					<div class=" main_slider components rsvp_s">
+						<div class="controlls">
+							<a href="#" data-group="rsvp_s" class="rsvp_s_a disabled a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+							<a href="#" data-group="rsvp_s" class="rsvp_s_a a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</div>
+						<div data-order="1" class="rsvp_s_item pos-right actived">
 							<input type="radio" class="hidden" name="rsvp" value="1">
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp1.jpg">
 							<div class="rsvp rsvp-default element-desk space-default no-bg-mobile">
@@ -810,7 +822,7 @@
 							</div>
 							<?php // } ?>
 						</div>
-						<div class="pos-right">
+						<div data-order="2" class="rsvp_s_item absolute pos-right">
 							<input type="radio" class="hidden" name="rsvp" value="2">
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp2.jpg">
 							<div class="rsvp element-desk space-default rsvp-pink">
@@ -839,7 +851,7 @@
 							</div>
 							<?php // } ?>
 						</div>
-						<div class="pos-right">
+						<div data-order="3" class="rsvp_s_item absolute pos-right">
 							<input type="radio" class="hidden" name="rsvp" value="3">
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/rsvp3.jpg">
 							<div class="rsvp element-desk space-default rsvp-font no-bg-mobile">
@@ -880,8 +892,12 @@
 
 				<!-- <h3 class="components-title">Galeria de Foto</h3> -->
 				<h2 class=" component-title">Galeria de Fotos</h2>
-				<div class=" main_slider components mg-bottom">
-					<div class="pos-right actived">
+				<div class=" main_slider components mg-bottom fotos_s">
+					<div class="controlls">
+						<a href="#" data-group="fotos_s" class="fotos_s_a disabled a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#" data-group="fotos_s" class="fotos_s_a a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<div data-order="1" class="fotos_s_item pos-right actived">
 						<input type="radio" class="hidden" name="fotos" value="1">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos1.jpg">
 						<div class="element-desk components-item gallery hidden-mobile column less-centered">
@@ -919,7 +935,7 @@
 						<?php // } ?>
 					</div>
 
-					<div class="pos-right">
+					<div data-order="2" class="absolute fotos_s_item pos-right">
 						<input type="radio" class="hidden" name="fotos" value="2">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos2.jpg">
 						<div class="element-desk components-item gallery hidden-mobile gallery-tall less-centered">
@@ -947,7 +963,7 @@
 						<?php // } ?>
 					</div>
 
-					<div class="pos-right">
+					<div data-order="3" class="absolute fotos_s_item pos-right">
 						<input type="radio" class="hidden" name="fotos" value="3">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos3.jpg">
 						<div class="element-desk gallery hidden-mobile gallery-featured">
@@ -976,7 +992,7 @@
 					</div>
 
 
-					<div class="pos-right">
+					<div data-order="4" class="absolute fotos_s_item pos-right">
 						<input type="radio" class="hidden" name="fotos" value="4">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/fotos4.jpg">
 						<div class="element-desk gallery hidden-mobile gallery-five less-centered">				
@@ -1001,8 +1017,12 @@
 					
 				</div>
 					<h2 class="component-title">Página de Recados</h2>
-					<div class=" main_slider components mg-bottom">
-						<div class="pos-right actived">
+					<div class=" main_slider components mg-bottom recados_s">
+						<div class="controlls">
+							<a href="#" data-group="recados_s" class="recados_s_a disabled a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+							<a href="#" data-group="recados_s" class="recados_s_a a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</div>
+						<div data-order="1" class="recados_s_item pos-right actived">
 							<input type="radio" class="hidden" name="recados" value="1">
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados1.jpg">
 							<section class="element-desk space-defaul notes">
@@ -1042,7 +1062,7 @@
 								</div>
 							</section>
 						</div>
-						<div class="pos-right">
+						<div data-order="2" class="absolute recados_s_item pos-right">
 							<input type="radio" class="hidden" name="recados" value="2">
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados2.jpg">
 							<section class="element-desk space-default notes overlay box no-bg-mobile">
@@ -1081,7 +1101,7 @@
 							</section>
 							<?php // } ?>
 						</div>
-						<div class="pos-right">
+						<div data-order="3" class="absolute recados_s_item pos-right">
 							<input type="radio" class="hidden" name="recados" value="3">
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados3.jpg">
 							<section class="element-desk notes bordered-bottom">
@@ -1117,7 +1137,7 @@
 							</section>
 							<?php // } ?>
 						</div>
-						<div class="pos-right">
+						<div data-order="4" class="absolute recados_s_item pos-right">
 							<input type="radio" class="hidden" name="recados" value="4">
 							<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/recados4.jpg">
 							<section class="element-desk space-default testimonial">
@@ -1159,8 +1179,12 @@
 				</div>
 
 				<h2 class="component-title">Blog do casal</h2>
-				<div class=" main_slider components">
-					<div class="pos-right actived">
+				<div class=" main_slider components blog_s">
+					<div class="controlls">
+						<a href="#" data-group="blog_s" class="blog_s_a disabled a-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#" data-group="blog_s" class="blog_s_a a-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<div data-order="1" class="blog_s_item pos-right actived">
 						<input type="radio" class="hidden" name="blog" value="1">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog1.jpg">
 						<div class="containr element-desk space-default">
@@ -1220,7 +1244,7 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="2" class="blog_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="blog" value="2">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog2.jpg">
 						<div class="containr element-desk space-default">
@@ -1318,7 +1342,7 @@
 						</div>
 						<?php // } ?>
 					</div>
-					<div class="pos-right">
+					<div data-order="3" class="blog_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="blog" value="3">
 						<img class="img-mobile lazy" src="<?php echo get_template_directory_uri(); ?>/img/mobile/blog4.jpg">
 						<section class="element-desk space-default services new-blog">
