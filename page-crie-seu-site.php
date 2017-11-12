@@ -1343,7 +1343,7 @@
 				</div>
 				<input type="hidden" value="1" name="createPage">
 			</div>
-			<div class="mg-bottom ">
+			<div class="mg-bottom container ">
 				<p class="mg-bottom">Agora confirme o nome da noiva e do noivo.</p>
 				<div class="max-width-content form bordered">
 					<div class="column">

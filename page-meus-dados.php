@@ -15,6 +15,16 @@
 							 Seu site está sendo criado. Em breve você receberá todos os dados de acesso.<br/>Se tiver alguma dúvida, por favor, entre em contato conosco pelo telefone ou email no rodapé do site.</p>
 					<?php } ?>
 
+					<?php if($progress == 3) { ?>
+	 					<p class="alert alert-danger a-center mg-boottom">
+							Seus 7 dias gratuitos acabaram, por favor, realize o pagamento para continuar usando nossos serviços.</p>
+					<?php } ?>
+
+					<?php if($progress == 4) { ?>
+	 					<p class="alert alert-danger a-center mg-boottom">
+							Não identificamos o seu pagamento, por favor, entre em contato conosco para continuar usando nosso serviço.</p>
+					<?php } ?>
+
 					<?php
 						$paymentok = get_user_meta(get_current_user_id(), 'payment_success');
 					?>
@@ -22,7 +32,7 @@
 	 				<?php if($progress == 2) { ?>
 	 					<p class="alert alert-success a-center mg-boottom">
 						 	<!--<i class="fa fa-smile-o" aria-hidden="true"></i>-->
-							 Seu site está pronto! Use as informações a baixo para acessa-lo.</p>
+							 Seu site está pronto! Use as informações a baixo para acessa-lo. Lembre que você tem 7 dias de teste gratuitamente.</p>
 					<?php } ?>
 
 					<?php if($progress !== '1') { ?>

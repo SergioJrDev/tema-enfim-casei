@@ -155,7 +155,7 @@
 						 <ul>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Blog Profissional</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Responsivo para celular</li>
-							<li><i class="fa fa-check" aria-hidden="true"></i> Albuns de fotos</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i> Albuns com até 800 fotos</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Save the date</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Contagem Regressiva/Progressiva</li>
 							<li><i class="fa fa-check" aria-hidden="true"></i> Mural de recados</li>
