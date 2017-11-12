@@ -1,5 +1,5 @@
 /* Hamburger */
-header {
+header:not(.woocommerce-Address-title) {
 	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
 		background-color: #fff;
 	}
@@ -7,7 +7,7 @@ header {
 
 
 /* default */
-header {
+header:not(.woocommerce-Address-title) {
 	background color_theme;
 	position: relative;
 	padding: 10px 0;
@@ -118,7 +118,7 @@ header {
 }
 
 @media screen and (min-width: sm) {
-	header {
+	header:not(.woocommerce-Address-title) {
 		height: 90px;
 		line-height: 80px;
 		padding: 0;

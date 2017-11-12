@@ -46,10 +46,10 @@
 					<nav class="nav-content">
 						<ul class="nav-list">
 							<?php if(!is_user_logged_in()) { ?>
-								<li><a href="<?php echo home_url('login'); ?>">Entrar</a></li>
+								<li><a href="<?php echo home_url('/minha-conta'); ?>">Entrar</a></li>
 							<?php } else { ?>
-								<li><a href="<?php echo home_url('/meus-dados'); ?>">Meus dados</a></li>
-								<li><a href="<?php echo wp_logout_url(home_url()); ?>">Sair</a></li>
+								<li><a href="<?php echo home_url('/meus-dados'); ?>">Meu site</a></li>
+								<li><a href="<?php echo home_url('/minha-conta'); ?>">Minha Conta</a></li>
 							<?php } ?>
 						</ul>
 					</nav>

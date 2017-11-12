@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="pad-space archive centered single-z">
+	<div class="space-default a-center archive centered single-z">
 		<div class="container">
 			<p>Conteudo não encontrado :(</p>
 		</div>

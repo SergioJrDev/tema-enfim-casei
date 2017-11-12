@@ -414,7 +414,7 @@ function makeLogin() {
 			exit;
 		} else {
 			if($front) {
-				wp_redirect(home_url('/login?e=1'));
+				wp_redirect(home_url('/minha-conta?e=1'));
 				exit;
 			} else {
 				$errors[] = "E-mail ou senha inválidos. Por favor, confirme seus dados e tente novamente.";
@@ -436,5 +436,26 @@ function savePlan() {
 	}
 }
 
+/*----------------------------------------------------------------------------*/
+// redirects for login / logout
+/*----------------------------------------------------------------------------*/
+add_filter('woocommerce_login_redirect', 'login_redirect');
+
+function login_redirect($redirect_to) {
+
+    return home_url();
+
+}
+
+add_action('wp_logout','logout_redirect');
+
+function logout_redirect(){
+
+    wp_redirect( home_url() );
+    
+    exit;
+
+}
 
 ?>
+

@@ -11,17 +11,7 @@
 						<li><a href="<?php echo home_url(); ?>">Início</a></li>
 						<li><a style="color: #333;" href="<?php the_permalink(); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i> <?php the_title(); ?></a></li>
 					</ul>
-					<?php
-						if(has_post_thumbnail()) { ?>
-							<figure class="thumbnail-post">
-								<img src="<?php echo the_post_thumbnail_url(); ?>" alt="">
-							</figure>
-						<?php }
-					?>
-					<div class="describe_title">
-						<h2 style="font-weight: bold;"><?php the_title(); ?></h2>
-					</div>
-						<?php the_content(); ?>
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>

@@ -367,7 +367,7 @@
 												</div>
 												<div class="local-content">
 													<h2 >Festa</h2>
-													<p>Agora vamos ao que interessa! Delicioso coquetel, com salgados fabulosos e uma massa deliciosa, com direito a se acabar nos doces finos. Bebida é o que não falta. Ah! E alonguem as pernas, porque a balada vai ser TOP!</p>
+													<p>Agora vamos ao que interessa! Delicioso coquetel, com salgados fabulosos e uma massa deliciosa, com direito a se acabar nos doces finos. Ah! E alonguem as pernas, porque a balada vai ser TOP!</p>
 													<p class="local-featured open-sans">Sábado, 6 de janeiro de 2018</p>
 													<p class="local-featured open-sans">Av do Brasil, #178</p>
 												</div>
@@ -742,7 +742,6 @@
 					</div> 
 					<div data-order="6" class="timer_s_item absolute pos-right">
 						<input type="radio" class="hidden" name="contagem" value="6">
-						 -->
 						<section class="no-background space-defaul timer">
 							<div class="containe max_width ">
 								<h2 class="a-center section-title style_font">O Dia do casamento chega em...</h2>

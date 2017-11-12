@@ -7,7 +7,7 @@
 					<li><a href="<?php echo home_url(); ?>">Início</a></li>
 					<li><a style="color: #333;" href="<?php the_permalink(); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i> Meus Dados</a></li>
 				</ul>
-	 				<h2 class=" title-descr tab-bottom font-poppins">Painel de controle</h2>
+	 				<h2 class=" title-descr tab-bottom font-poppins">Criação de site</h2>
 	 				<?php $progress = get_user_meta(get_current_user_id())['pronto'][0]; ?>
 	 				<?php if($progress == 1) { ?>
 	 					<p class="alert alert-success a-center mg-boottom">
